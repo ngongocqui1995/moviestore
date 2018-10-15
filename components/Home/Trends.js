@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { url } from '../../variables/general'
+import { connect } from 'react-redux'
 
-export default class Trends extends Component {
+class Trends extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -167,3 +168,11 @@ export default class Trends extends Component {
         }
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        data: state.trends_Main_Home
+    };
+}
+
+export default connect(mapStateToProps) (Trends)

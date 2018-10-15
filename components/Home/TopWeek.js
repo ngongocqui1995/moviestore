@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
 import { url } from '../../variables/general'
+import { connect } from 'react-redux'
 
-export default class TopWeek extends Component {
+
+class TopWeek extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: []
+            data_1: [],
+            data_2: [],
+            data_3: [],
+            data_4: [],
+            data_5: [],
+            data_6: [],
         }
     }
 
@@ -16,8 +23,9 @@ export default class TopWeek extends Component {
     }
 
     render() {
-        const { data } = this.props
-        if (!data || data.length === 0) {
+        const { data_1, data_2, data_3, data_4, data_5, data_6 } = this.props
+        if (!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || 
+            !data_4 || data_4.length === 0 || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0) {
             return <div className="text-center">Loading fail...</div>
         }
         else {
@@ -38,148 +46,136 @@ export default class TopWeek extends Component {
                                 <div className="gutter-30">
                                     <div className="owl-carousel owl-theme-adonis">
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key < 5) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key >= 5 && key < 10) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) =>  (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key >= 10 && key < 15) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_3 || data_3.length === 0 ? "" : data_3.map((prop, key) => (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key >= 15 && key < 20) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_4 || data_4.length === 0 ? "" : data_4.map((prop, key) => (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key >= 20 && key < 25) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_5 || data_5.length === 0 ? "" : data_5.map((prop, key) => (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                         <div className="item">
-                                            {!data || data.length === 0 ? "" : data.map((prop, key) => {
-                                                if (key >= 25 && key < 30) {
-                                                    return (
-                                                        <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
-                                                            <div className="img-box img-box-sm box-rounded-sm">
-                                                                <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
-                                                            </div>
-                                                            <div className="des">
-                                                                <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
-                                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
-                                                            </div>
-                                                            <div className="hover-state d-flex justify-content-between align-items-center">
-                                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
-                                                                <div className="d-flex align-items-center">
-                                                                    <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
-                                                                    <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
-                                                                </div>
+                                            {
+                                                !data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => (
+                                                    <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
+                                                        <div className="img-box img-box-sm box-rounded-sm">
+                                                            <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
+                                                        </div>
+                                                        <div className="des">
+                                                            <h6 className="title fs-2"><a href="#">{prop.title || ""}</a></h6>
+                                                            <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                        </div>
+                                                        <div className="hover-state d-flex justify-content-between align-items-center">
+                                                            <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                            <div className="d-flex align-items-center">
+                                                                <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank" /></svg></span>
+                                                                <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
                                                             </div>
                                                         </div>
-                                                    )
-                                                }
-                                            })}
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -218,3 +214,18 @@ export default class TopWeek extends Component {
         }
     }
 }
+
+
+
+function mapStateToProps(state) {
+    return {
+        data_1: state.topWeek_1,
+        data_2: state.topWeek_2,
+        data_3: state.topWeek_3,
+        data_4: state.topWeek_4,
+        data_5: state.topWeek_5,
+        data_6: state.topWeek_6,
+    };
+}
+
+export default connect(mapStateToProps) (TopWeek)

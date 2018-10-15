@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
-import fetchData from '../../api/api'
+import { connect } from 'react-redux'
 import { url } from '../../variables/general'
 
-export default class Recommend_Anime extends Component {
+class Recommend_Anime extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data_1: [],
+            data_2: [],
+            data_3: [],
+            data_4: [],
+            data_5: [],
+            data_6: [],
         }
     }
 
     render() {
-        const { data } = this.props
-        if(!data || data.length === 0)
+        const { data_1, data_2, data_3, data_4, data_5, data_6 } = this.props
+        if(!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || !data_4 || data_4.length === 0
+            || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0)
         {
             return <div className="text-center">Loading fail ...</div>
         }
@@ -29,7 +35,7 @@ export default class Recommend_Anime extends Component {
                         <div className="gutter-30">
                             <div className="owl-carousel owl-theme-adonis">
                                 <div className="item">
-                                    {!data[0] || data[0].length === 0 ? "" : data[0].map((prop, key) => (
+                                    {!data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -50,7 +56,7 @@ export default class Recommend_Anime extends Component {
                                 </div>
     
                                 <div className="item">
-                                    {!data[1] || data[1].length === 0 ? "" : data[1].map((prop, key) => (
+                                    {!data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -70,7 +76,7 @@ export default class Recommend_Anime extends Component {
                                     ))}
                                 </div>
                                 <div className="item">
-                                    {!data[2] || data[2].length === 0 ? "" : data[2].map((prop, key) => (
+                                    {!data_3 || data_3.length === 0 ? "" : data_3.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -90,7 +96,7 @@ export default class Recommend_Anime extends Component {
                                     ))}
                                 </div>
                                 <div className="item">
-                                    {!data[3] || data[3].length === 0 ? "" : data[3].map((prop, key) => (
+                                    {!data_4 || data_4.length === 0 ? "" : data_4.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -110,7 +116,7 @@ export default class Recommend_Anime extends Component {
                                     ))}
                                 </div>
                                 <div className="item">
-                                    {!data[4] || data[4].length === 0 ? "" : data[4].map((prop, key) => (
+                                    {!data_5 || data_5.length === 0 ? "" : data_5.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -130,7 +136,7 @@ export default class Recommend_Anime extends Component {
                                     ))}
                                 </div>
                                 <div className="item">
-                                    {!data[5] || data[5].length === 0 ? "" : data[5].map((prop, key) => (
+                                    {!data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
@@ -158,3 +164,16 @@ export default class Recommend_Anime extends Component {
         }
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        data_1: state.recommend_Anime_1,
+        data_2: state.recommend_Anime_2,
+        data_3: state.recommend_Anime_3,
+        data_4: state.recommend_Anime_4,
+        data_5: state.recommend_Anime_5,
+        data_6: state.recommend_Anime_6,
+    };
+}
+
+export default connect(mapStateToProps) (Recommend_Anime);

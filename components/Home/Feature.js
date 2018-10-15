@@ -42,7 +42,7 @@ class Feature extends Component {
                                     {!data[0] || data[0].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[0].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[0].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -61,7 +61,7 @@ class Feature extends Component {
                                     {!data[1] || data[1].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[1].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[1].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -80,7 +80,7 @@ class Feature extends Component {
                                     {!data[2] || data[2].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[2].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[2].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -99,7 +99,7 @@ class Feature extends Component {
                                     {!data[3] || data[3].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[3].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[3].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -118,7 +118,7 @@ class Feature extends Component {
                                     {!data[4] || data[4].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[4].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[4].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -137,7 +137,7 @@ class Feature extends Component {
                                     {!data[5] || data[5].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[5].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[5].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -156,7 +156,7 @@ class Feature extends Component {
                                     {!data[6] || data[6].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[6].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[6].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -175,7 +175,7 @@ class Feature extends Component {
                                     {!data[7] || data[7].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[7].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[7].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -194,7 +194,7 @@ class Feature extends Component {
                                     {!data[8] || data[8].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[8].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[8].imageMain  || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -213,7 +213,7 @@ class Feature extends Component {
                                     {!data[9] || data[9].length === 0 ? "" : 
                                         <div className="music-img-box">
                                             <div className="img-box box-rounded-md">
-                                                <img className="resize2" src={url + data[9].imageMain + "/196/150" || ""}  alt="" />
+                                                <img className="resize2" src={url + data[9].imageMain || ""}  alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>

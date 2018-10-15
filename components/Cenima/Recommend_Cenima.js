@@ -1,17 +1,29 @@
 import React, { Component } from 'react'
 import { url } from '../../variables/general'
+import { connect } from 'react-redux'
 
-export default class Recommend_Cenima extends Component {
+class Recommend_Cenima extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: []
+            data_1: [],
+            data_2: [],
+            data_3: [],
+            data_4: [],
+            data_5: [],
+            data_6: [],
+            data_7: [],
+            data_8: [],
+            data_9: [],
+            data_10: [],
         }
     }
 
     render() {
-        const { data } = this.props
-        if (!data || data.length === 0) {
+        const { data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_10 } = this.props
+        if (!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || !data_4 || data_4.length === 0
+            || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0 || !data_7 || data_7.length === 0 || !data_8 || data_8.length === 0
+            || !data_9 || data_9.length === 0 || !data_10 || data_10.length === 0) {
             return <div className="text-center"> Loading fail ...</div>
         }
         else {
@@ -30,7 +42,7 @@ export default class Recommend_Cenima extends Component {
                         <div className="gutter-30">
                             <div className="owl-carousel owl-theme-adonis">
                                 <div className="item">
-                                    {!data[0] || data[0].length === 0 ? "" : data[0].map((prop, key) => {
+                                    {!data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -72,7 +84,7 @@ export default class Recommend_Cenima extends Component {
                                 </div>
 
                                 <div className="item">
-                                    {!data[1] || data[1].length === 0 ? "" : data[1].map((prop, key) => {
+                                    {!data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -113,7 +125,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[2] || data[2].length === 0 ? "" : data[2].map((prop, key) => {
+                                    {!data_3 || data_3.length === 0 ? "" : data_3.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -154,7 +166,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[3] || data[3].length === 0 ? "" : data[3].map((prop, key) => {
+                                    {!data_4 || data_4.length === 0 ? "" : data_4.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -195,7 +207,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[4] || data[4].length === 0 ? "" : data[4].map((prop, key) => {
+                                    {!data_5 || data_5.length === 0 ? "" : data_5.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -236,7 +248,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[5] || data[5].length === 0 ? "" : data[5].map((prop, key) => {
+                                    {!data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -277,7 +289,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[6] || data[6].length === 0 ? "" : data[6].map((prop, key) => {
+                                    {!data_7 || data_7.length === 0 ? "" : data_7.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -318,7 +330,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[7] || data[7].length === 0 ? "" : data[7].map((prop, key) => {
+                                    {!data_8 || data_8.length === 0 ? "" : data_8.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -359,7 +371,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[8] || data[8].length === 0 ? "" : data[8].map((prop, key) => {
+                                    {!data_9 || data_9.length === 0 ? "" : data_9.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -400,7 +412,7 @@ export default class Recommend_Cenima extends Component {
                                     })}
                                 </div>
                                 <div className="item">
-                                    {!data[9] || data[9].length === 0 ? "" : data[9].map((prop, key) => {
+                                    {!data_10 || data_10.length === 0 ? "" : data_10.map((prop, key) => {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
@@ -450,3 +462,21 @@ export default class Recommend_Cenima extends Component {
         }
     }
 }
+
+
+function mapStateToProps(state) {
+    return {
+        data_1: state.recommend_Cenima_1,
+        data_2: state.recommend_Cenima_2,
+        data_3: state.recommend_Cenima_3,
+        data_4: state.recommend_Cenima_4,
+        data_5: state.recommend_Cenima_5,
+        data_6: state.recommend_Cenima_6,
+        data_7: state.recommend_Cenima_7,
+        data_8: state.recommend_Cenima_8,
+        data_9: state.recommend_Cenima_9,
+        data_10: state.recommend_Cenima_10,
+    };
+}
+
+export default connect(mapStateToProps) (Recommend_Cenima);

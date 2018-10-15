@@ -46,7 +46,7 @@ class CommonMovies extends Component {
                                     {!data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
@@ -67,7 +67,7 @@ class CommonMovies extends Component {
                                     {!data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
@@ -87,7 +87,7 @@ class CommonMovies extends Component {
                                     {!data_3 || data_3.length === 0 ? "" : data_3.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
@@ -107,7 +107,7 @@ class CommonMovies extends Component {
                                     {!data_4 || data_4.length === 0 ? "" : data_4.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
@@ -127,7 +127,7 @@ class CommonMovies extends Component {
                                     {!data_5 || data_5.length === 0 ? "" : data_5.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
@@ -147,7 +147,7 @@ class CommonMovies extends Component {
                                     {!data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src={url + prop.imageMain + "/50/50" || ""} alt="" />
+                                                <img src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>

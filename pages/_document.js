@@ -9,7 +9,7 @@ export default class CustomDocument extends Document {
       <html>
         <Head>
             <link href="/static/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-            <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet"/>
+            <link href="/static/assets/fonts/family.css" rel="stylesheet"/>
             <link href="/static/assets/vendors/owl/css/owl.carousel.min.css" rel="stylesheet"/>
             <link href="/static/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet"/>
             <link href="/static/assets/css/adonis.css" rel="stylesheet"/>

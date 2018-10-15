@@ -16,12 +16,12 @@ export default class MainHome extends Component {
                 <hr />
                 <div className="pb-1 mb-3 pb-xl-5 mb-xl-1"></div>
                 <NewDay/>
-                <Trends data={this.props.Trends}/>
-                <TopWeek data={this.props.TopWeek}/>
+                <Trends/>
+                <TopWeek/>
                 <Feature/>
                 <CommonMovies/>
                 <div className="pt-e-20 pt-e-lg-40"></div>
-                <NewUpdate data= {this.props.NewUpdate}/>
+                <NewUpdate/>
             </div>
         )
     }
