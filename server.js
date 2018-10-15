@@ -2,6 +2,8 @@ const express = require('express')
 const next = require('next')
 
 const dev = process.env.NODE_ENV !== 'production'
+const port = process.env.PORT || 4096
+
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
@@ -15,20 +17,26 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
+  server.get('/', (req, res) => {
+    const actualPage = '/index'
+    app.render(req, res, actualPage)
+  })
+
+  server.get('/detail', (req, res) => {
+    const actualPage = '/Detail'
+    app.render(req, res, actualPage)
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
 
-  server.get('/p/:id', (req, res) => {
-    const actualPage = '/post'
-    const queryParams = { id: req.params.id }
-    app.render(req, res, actualPage, queryParams)
+
+  server.listen(port, (err) => {
+    if (err) throw err;
+    console.log(`Listening on http://localhost:${port}`);
   })
 
-  server.listen(3000, (err) => {
-    if (err) throw err
-    console.log('> Ready on http://localhost:3000')
-  })
 })
 .catch((ex) => {
   console.error(ex.stack)
