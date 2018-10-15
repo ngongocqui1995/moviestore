@@ -13,6 +13,11 @@ class MainRomance extends Component {
             data_3: [],
             data_4: [],
             data_5: [],
+            data_6: [],
+            data_7: [],
+            data_8: [],
+            data_9: [],
+            data_10: [],
             isLoading: false
         }
     }
@@ -22,9 +27,11 @@ class MainRomance extends Component {
     }
 
     render() {
-        const { data_1, data_2, data_3, data_4, data_5 } = this.props
+        const { data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_10 } = this.props
         if (!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || 
-            !data_4 || data_4.length === 0 || !data_5 || data_5.length === 0) {
+            !data_4 || data_4.length === 0 || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0 || 
+            !data_7 || data_7.length === 0 || !data_8 || data_8.length === 0 || !data_9 || data_9.length === 0 || 
+            !data_10 || data_10.length === 0) {
             return <div className="text-center">Loading ...</div>
         }
         else {
@@ -121,6 +128,91 @@ class MainRomance extends Component {
                                     </div>
                                 ))
                             }
+                            {
+                                !data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => (
+                                    <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
+                                        <article className="news-box">
+                                            <div className="box-rounded-sm img-box">
+                                                <img src={url + prop.imageMain || ""} alt="" />
+                                            </div>
+                                            <div className="info-box">
+                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="excerpt">{prop.content || ""}</p>
+                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                ))
+                            }
+                            {
+                                !data_7 || data_7.length === 0 ? "" : data_7.map((prop, key) => (
+                                    <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
+                                        <article className="news-box">
+                                            <div className="box-rounded-sm img-box">
+                                                <img src={url + prop.imageMain || ""} alt="" />
+                                            </div>
+                                            <div className="info-box">
+                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="excerpt">{prop.content || ""}</p>
+                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                ))
+                            }
+                            {
+                                !data_8 || data_8.length === 0 ? "" : data_8.map((prop, key) => (
+                                    <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
+                                        <article className="news-box">
+                                            <div className="box-rounded-sm img-box">
+                                                <img src={url + prop.imageMain || ""} alt="" />
+                                            </div>
+                                            <div className="info-box">
+                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="excerpt">{prop.content || ""}</p>
+                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                ))
+                            }
+                            {
+                                !data_9 || data_9.length === 0 ? "" : data_9.map((prop, key) => (
+                                    <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
+                                        <article className="news-box">
+                                            <div className="box-rounded-sm img-box">
+                                                <img src={url + prop.imageMain || ""} alt="" />
+                                            </div>
+                                            <div className="info-box">
+                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="excerpt">{prop.content || ""}</p>
+                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                ))
+                            }
+                            {
+                                !data_10 || data_10.length === 0 ? "" : data_10.map((prop, key) => (
+                                    <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
+                                        <article className="news-box">
+                                            <div className="box-rounded-sm img-box">
+                                                <img src={url + prop.imageMain || ""} alt="" />
+                                            </div>
+                                            <div className="info-box">
+                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="excerpt">{prop.content || ""}</p>
+                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </section>
                 </main>
@@ -139,6 +231,11 @@ function mapStateToProps(state) {
         data_3: state.main_Romance_3,
         data_4: state.main_Romance_4,
         data_5: state.main_Romance_5,
+        data_6: state.main_Romance_6,
+        data_7: state.main_Romance_7,
+        data_8: state.main_Romance_8,
+        data_9: state.main_Romance_9,
+        data_10: state.main_Romance_10,
     };
 }
 

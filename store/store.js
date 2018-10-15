@@ -38,8 +38,13 @@ export const storeCommonMovies_6 = ( data ) => ( {
     data
 });
 
-export const storeFeatureMainHome = ( data ) => ( {
-    type: "STORE_FEATURE_MAIN_HOME",
+export const storeFeatureMainHome_1 = ( data ) => ( {
+    type: "STORE_FEATURE_MAIN_HOME_1",
+    data
+});
+
+export const storeFeatureMainHome_2 = ( data ) => ( {
+    type: "STORE_FEATURE_MAIN_HOME_2",
     data
 });
 
@@ -183,6 +188,31 @@ export const storeMainRomance_5 = ( data ) => ( {
     data
 });
 
+export const storeMainRomance_6 = ( data ) => ( {
+    type: "STORE_MAIN_ROMANCE_6",
+    data
+});
+
+export const storeMainRomance_7 = ( data ) => ( {
+    type: "STORE_MAIN_ROMANCE_7",
+    data
+});
+
+export const storeMainRomance_8 = ( data ) => ( {
+    type: "STORE_MAIN_ROMANCE_8",
+    data
+});
+
+export const storeMainRomance_9 = ( data ) => ( {
+    type: "STORE_MAIN_ROMANCE_9",
+    data
+});
+
+export const storeMainRomance_10 = ( data ) => ( {
+    type: "STORE_MAIN_ROMANCE_10",
+    data
+});
+
 
 ////////////////////////////////////////////////////////////////////////////
 /////////////////////////// CENIMA /////////////////////////////////////////
@@ -256,6 +286,11 @@ export const storeTopViewsCenima = ( data ) => ( {
 ////////////////////////////////////////////////////////////////////////////
 //////////////////////////// ANIME /////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
+
+export const storeTopViewsAnime = ( data ) => ( {
+    type: "STORE_TOP_VIEWS_ANIME",
+    data
+});
 
 export const storeNewUpdateAnime = ( data ) => ( {
     type: "STORE_NEW_UPDATE_ANIME",
@@ -349,9 +384,17 @@ const commonMovies_6_Reducer = ( state = [ ], action ) => {
     }
 }
 
-const feature_Main_Home_Reducer = ( state = [ ], action ) => {
+const feature_Main_Home_1_Reducer = ( state = [ ], action ) => {
     switch ( action.type ) {
-        case "STORE_FEATURE_MAIN_HOME":
+        case "STORE_FEATURE_MAIN_HOME_1":
+            return action.data;
+        default: return state;
+    }
+}
+
+const feature_Main_Home_2_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_FEATURE_MAIN_HOME_2":
             return action.data;
         default: return state;
     }
@@ -541,6 +584,45 @@ const main_Romance_5_Reducer = ( state = [ ], action ) => {
     }
 }
 
+const main_Romance_6_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_ROMANCE_6":
+            return action.data;
+        default: return state;
+    }
+}
+
+const main_Romance_7_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_ROMANCE_7":
+            return action.data;
+        default: return state;
+    }
+}
+
+const main_Romance_8_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_ROMANCE_8":
+            return action.data;
+        default: return state;
+    }
+}
+
+const main_Romance_9_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_ROMANCE_9":
+            return action.data;
+        default: return state;
+    }
+}
+
+const main_Romance_10_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_ROMANCE_10":
+            return action.data;
+        default: return state;
+    }
+}
 
 ////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// CENIMA ///////////////////////////////////////
@@ -694,6 +776,14 @@ const topViews_Cenima_Reducer = ( state = [ ], action ) => {
 /////////////////////////// ANIME //////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+const topViews_Anime_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_TOP_VIEWS_ANIME":
+            return action.data;
+        default: return state;
+    }
+}
+
 const newUpdate_Anime_Reducer = ( state = [ ], action ) => {
     switch ( action.type ) {
         case "STORE_NEW_UPDATE_ANIME":
@@ -759,7 +849,8 @@ const reducer = combineReducers( {
     commonMovies_4: commonMovies_4_Reducer,
     commonMovies_5: commonMovies_5_Reducer,
     commonMovies_6: commonMovies_6_Reducer,
-    feature_Main_Home: feature_Main_Home_Reducer,
+    feature_Main_Home_1: feature_Main_Home_1_Reducer,
+    feature_Main_Home_2: feature_Main_Home_2_Reducer,
     newDay_1: newDay_1_Reducer,
     newDay_2: newDay_2_Reducer,
     newDay_3: newDay_3_Reducer,
@@ -801,6 +892,11 @@ const reducer = combineReducers( {
     main_Romance_3: main_Romance_3_Reducer,
     main_Romance_4: main_Romance_4_Reducer,
     main_Romance_5: main_Romance_5_Reducer,
+    main_Romance_6: main_Romance_6_Reducer,
+    main_Romance_7: main_Romance_7_Reducer,
+    main_Romance_8: main_Romance_8_Reducer,
+    main_Romance_9: main_Romance_9_Reducer,
+    main_Romance_10: main_Romance_10_Reducer,
     newUpdate_Anime: newUpdate_Anime_Reducer,
     recommend_Anime_1: recommend_Anime_1_Reducer,
     recommend_Anime_2: recommend_Anime_2_Reducer,
@@ -808,6 +904,7 @@ const reducer = combineReducers( {
     recommend_Anime_4: recommend_Anime_4_Reducer,
     recommend_Anime_5: recommend_Anime_5_Reducer,
     recommend_Anime_6: recommend_Anime_6_Reducer,
+    topViews_Anime: topViews_Anime_Reducer,
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////

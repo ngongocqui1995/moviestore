@@ -81,9 +81,20 @@ export default class {
     return data
   }
 
-  static async __get_Feature_Main_Home() {
+  static async __get_Feature_Main_Home_1() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 10,
+        "limit": 5,
+        "indexPage": 1,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Feature_Main_Home_2() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 5,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -347,7 +358,7 @@ export default class {
 
   static async __get_Main_Romance_1() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
+        "limit": 2,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -358,7 +369,7 @@ export default class {
 
   static async __get_Main_Romance_2() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
+        "limit": 2,
         "indexPage": 2,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -369,7 +380,7 @@ export default class {
 
   static async __get_Main_Romance_3() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
+        "limit": 2,
         "indexPage": 3,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -380,7 +391,7 @@ export default class {
 
   static async __get_Main_Romance_4() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
+        "limit": 2,
         "indexPage": 4,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -391,8 +402,63 @@ export default class {
 
   static async __get_Main_Romance_5() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
-        "indexPage": 4,
+        "limit": 2,
+        "indexPage": 5,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_Romance_6() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 6,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_Romance_7() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 7,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_Romance_8() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 8,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_Romance_9() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 9,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_Romance_10() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 10,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
     })
@@ -619,6 +685,17 @@ export default class {
   static async __get_Recommend_Anime_6() {
     const res = await axios.post(`${url}v1/collection/limit`, {
         "limit": 2,
+        "indexPage": 1,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Top_Views_Anime() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 6,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
