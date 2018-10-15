@@ -8,6 +8,11 @@ export default class CustomDocument extends Document {
     return (
       <html>
         <Head>
+            <link rel="shortcut icon" href="favicon.ico"/>
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/icon/apple-touch-icon.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/icon/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/icon/favicon-16x16.png"/>
+            <link rel="manifest" href="/static/assets/icon/site.webmanifest"/>
             <link href="/static/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
             <link href="/static/assets/fonts/family.css" rel="stylesheet"/>
             <link href="/static/assets/vendors/owl/css/owl.carousel.min.css" rel="stylesheet"/>
@@ -38,6 +43,7 @@ export default class CustomDocument extends Document {
         </Head>
         <body>
           <Main />
+          <NextScript/>
         </body>
       </html>
     )
