@@ -156,95 +156,95 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        href: "/static/assets/icon/apple-touch-icon.png"
+        href: "/assets/icon/apple-touch-icon.png"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: "/static/assets/icon/favicon-32x32.png"
+        href: "/assets/icon/favicon-32x32.png"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: "/static/assets/icon/favicon-16x16.png"
+        href: "/assets/icon/favicon-16x16.png"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         rel: "manifest",
-        href: "/static/assets/icon/site.webmanifest"
+        href: "/assets/icon/site.webmanifest"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/vendors/bootstrap/css/bootstrap.min.css",
+        href: "/assets/vendors/bootstrap/css/bootstrap.min.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/fonts/family.css",
+        href: "/assets/fonts/family.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/vendors/owl/css/owl.carousel.min.css",
+        href: "/assets/vendors/owl/css/owl.carousel.min.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.css",
+        href: "/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/css/adonis.css",
+        href: "/assets/css/adonis.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "/static/assets/css/responsive.css",
+        href: "/assets/css/responsive.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/jquery/jquery.min.js"
+        src: "/assets/vendors/jquery/jquery.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/bootstrap/js/popper.min.js"
+        src: "/assets/vendors/bootstrap/js/popper.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/bootstrap/js/bootstrap.min.js"
+        src: "/assets/vendors/bootstrap/js/bootstrap.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"
+        src: "/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/jplayer/jquery.jplayer.min.js"
+        src: "/assets/vendors/jplayer/jquery.jplayer.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/jplayer/jplayer.playlist.js"
+        src: "/assets/vendors/jplayer/jplayer.playlist.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/owl/js/owl.carousel.min.js"
+        src: "/assets/vendors/owl/js/owl.carousel.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/anime/anime.min.js"
+        src: "/assets/vendors/anime/anime.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"
+        src: "/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/masonry/masonry.pkgd.min.js"
+        src: "/assets/vendors/masonry/masonry.pkgd.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/vendors/history/jquery.history.js"
+        src: "/assets/vendors/history/jquery.history.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/bootstrap-hover-menu.js"
+        src: "/assets/js/bootstrap-hover-menu.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/dropdown-menu.js"
+        src: "/assets/js/dropdown-menu.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/bootstrap-hover-menu.js"
+        src: "/assets/js/bootstrap-hover-menu.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/player.js"
+        src: "/assets/js/player.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/viewport.js"
+        src: "/assets/js/viewport.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/effects.js"
+        src: "/assets/js/effects.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/dropdown-menu.js"
+        src: "/assets/js/dropdown-menu.js"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
-        src: "/static/assets/js/app.js"
+        src: "/assets/js/app.js"
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));
     }
   }], [{

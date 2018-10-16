@@ -18,7 +18,7 @@ export default class Detail extends Component {
                                         <div className="album-image">
                                             <div className="music-img-box d-inline-block">
                                                 <div className="img-box">
-                                                    <img className="retina box-rounded-md" src="/static/assets/images/single/single-2.jpg" data-2x="/static/assets/images/single/single-2@2x.jpg" alt="" />
+                                                    <img className="retina box-rounded-md" src="/assets/images/single/single-2.jpg" data-2x="/assets/images/single/single-2@2x.jpg" alt="" />
                                                 </div>
                                                 <div className="absolute-info">
                                                     <a className="btn btn-60-60 btn-primary absolute-center adonis-album-button round-btn text-light" data-album-id="1" role="button" tabindex="0">
@@ -280,7 +280,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-1.jpg" data-2x="/static/assets/images/new-releases/new-releases-1@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-1.jpg" data-2x="/assets/images/new-releases/new-releases-1@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -297,7 +297,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-2.jpg" data-2x="/static/assets/images/new-releases/new-releases-2@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-2.jpg" data-2x="/assets/images/new-releases/new-releases-2@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -314,7 +314,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-3.jpg" data-2x="/static/assets/images/new-releases/new-releases-3@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-3.jpg" data-2x="/assets/images/new-releases/new-releases-3@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -331,7 +331,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-4.jpg" data-2x="/static/assets/images/new-releases/new-releases-4@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-4.jpg" data-2x="/assets/images/new-releases/new-releases-4@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -348,7 +348,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-5.jpg" data-2x="/static/assets/images/new-releases/new-releases-5@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-5.jpg" data-2x="/assets/images/new-releases/new-releases-5@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -365,7 +365,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-6.jpg" data-2x="/static/assets/images/new-releases/new-releases-6@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-6.jpg" data-2x="/assets/images/new-releases/new-releases-6@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -382,7 +382,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-7.jpg" data-2x="/static/assets/images/new-releases/new-releases-7@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-7.jpg" data-2x="/assets/images/new-releases/new-releases-7@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -399,7 +399,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-8.jpg" data-2x="/static/assets/images/new-releases/new-releases-8@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-8.jpg" data-2x="/assets/images/new-releases/new-releases-8@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -416,7 +416,7 @@ export default class Detail extends Component {
                                                 <div className="item hover-bg-item">
                                                     <div className="music-img-box">
                                                         <div className="img-box box-rounded-sm">
-                                                            <img className="retina" src="/static/assets/images/new-releases/new-releases-9.jpg" data-2x="/static/assets/images/new-releases/new-releases-9@2x.jpg" alt="" />
+                                                            <img className="retina" src="/assets/images/new-releases/new-releases-9.jpg" data-2x="/assets/images/new-releases/new-releases-9@2x.jpg" alt="" />
                                                             <div className="hover-state">
                                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                                     <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>

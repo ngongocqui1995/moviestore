@@ -28,7 +28,6 @@ class Feature extends Component {
                 <section>
                     <div className="d-flex">
                         <div className="title-box">
-                            <h6 className="sub-title inactive-color">Feature</h6>
                             <h2 className="title h3-md">Đặc sắc</h2>
                         </div>
                         <div className="button-right ml-auto ml-auto d-flex align-items-end">

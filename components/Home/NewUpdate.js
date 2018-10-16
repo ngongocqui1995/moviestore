@@ -27,7 +27,6 @@ class NewUpdate extends Component {
             return (
                 <section>
                     <div className="title-box">
-                        <h6 className="sub-title inactive-color">New Update</h6>
                         <h2 className="title h3-md">Mới cập nhật (Liên tục 24/7)</h2>
                     </div>
                     <div className="adonis-carousel"  data-animation-item=".item" data-dots="yes" data-scrollbar="yes" data-loop="no" data-auto-width="yes" data-responsive-width="0:100%|400:50%|730:33.33%|1100:25%|1460:20%">

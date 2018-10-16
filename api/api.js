@@ -292,10 +292,10 @@ export default class {
 
   static async __get_Main_News_1() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 4,
+        "limit": 2,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -303,10 +303,10 @@ export default class {
 
   static async __get_Main_News_2() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 4,
+        "limit": 2,
         "indexPage": 2,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -314,10 +314,10 @@ export default class {
 
   static async __get_Main_News_3() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 4,
+        "limit": 2,
         "indexPage": 3,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -325,10 +325,76 @@ export default class {
 
   static async __get_Main_News_4() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 4,
+        "limit": 2,
         "indexPage": 4,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_5() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 5,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_6() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 6,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_7() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 7,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_8() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 8,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_9() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 9,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
+
+  static async __get_Main_News_10() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 2,
+        "indexPage": 10,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -350,7 +416,7 @@ export default class {
         "limit": 2,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -361,7 +427,7 @@ export default class {
         "limit": 2,
         "indexPage": 2,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -372,7 +438,7 @@ export default class {
         "limit": 2,
         "indexPage": 3,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -383,7 +449,7 @@ export default class {
         "limit": 2,
         "indexPage": 4,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -394,7 +460,7 @@ export default class {
         "limit": 2,
         "indexPage": 5,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -405,7 +471,7 @@ export default class {
         "limit": 2,
         "indexPage": 6,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -416,7 +482,7 @@ export default class {
         "limit": 2,
         "indexPage": 7,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -427,7 +493,7 @@ export default class {
         "limit": 2,
         "indexPage": 8,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -438,7 +504,7 @@ export default class {
         "limit": 2,
         "indexPage": 9,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -449,7 +515,7 @@ export default class {
         "limit": 2,
         "indexPage": 10,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+          0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
     })
     const data = res.data
     return data
@@ -604,6 +670,17 @@ export default class {
   //////////////////////////////////////////////////////////////////////
   ///////////////////////// API ANIME //////////////////////////////////
   //////////////////////////////////////////////////////////////////////
+
+  static async __get_Data_Carousel_Anime() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 6,
+        "indexPage": 1,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
 
   static async __get_New_Update_Anime() {
     const res = await axios.post(`${url}v1/collection/limit`, {

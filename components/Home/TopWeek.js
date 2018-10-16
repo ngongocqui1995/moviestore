@@ -35,7 +35,6 @@ class TopWeek extends Component {
                         <div className="col-xxl-7 col-lg-8">
                             <div className="d-flex flex-row">
                                 <div className="title-box">
-                                    <h6 className="sub-title inactive-color">Top Week</h6>
                                     <h2 className="title h3-md">Top tuần có gì hot ?</h2>
                                 </div>
                                 <div className="button-right ml-auto ml-auto mt-auto mb-4 d-flex">
@@ -189,7 +188,7 @@ class TopWeek extends Component {
                             </div>
                             <div className="music-img-box">
                                 <div className="img-box box-rounded-md">
-                                    <img src="/static/assets/images/watch-now/watch-now.jpg" alt="" />
+                                    <img src="/assets/images/watch-now/watch-now.jpg" alt="" />
                                 </div>
                                 <div className="hover-state show">
                                     <div className="absolute-top pl-e-15 pr-e-15 pt-e-15 pl-e-md-30 pr-e-md-30 pt-e-md-30">

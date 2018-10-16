@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1058,9 +1058,9 @@ function () {
               case 0:
                 _context27.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
+                  "limit": 2,
                   "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1093,9 +1093,9 @@ function () {
               case 0:
                 _context28.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
+                  "limit": 2,
                   "indexPage": 2,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1128,9 +1128,9 @@ function () {
               case 0:
                 _context29.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
+                  "limit": 2,
                   "indexPage": 3,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1163,9 +1163,9 @@ function () {
               case 0:
                 _context30.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
+                  "limit": 2,
                   "indexPage": 4,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1186,9 +1186,9 @@ function () {
       };
     }()
   }, {
-    key: "__get_Main_Comedy",
+    key: "__get_Main_News_5",
     value: function () {
-      var _get_Main_Comedy = _asyncToGenerator(
+      var _get_Main_News_5 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee31() {
         var res, data;
@@ -1198,9 +1198,9 @@ function () {
               case 0:
                 _context31.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "limit": 2,
+                  "indexPage": 5,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1216,14 +1216,14 @@ function () {
         }, _callee31, this);
       }));
 
-      return function __get_Main_Comedy() {
-        return _get_Main_Comedy.apply(this, arguments);
+      return function __get_Main_News_5() {
+        return _get_Main_News_5.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_1",
+    key: "__get_Main_News_6",
     value: function () {
-      var _get_Main_Romance_ = _asyncToGenerator(
+      var _get_Main_News_6 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee32() {
         var res, data;
@@ -1234,8 +1234,8 @@ function () {
                 _context32.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 6,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1251,14 +1251,14 @@ function () {
         }, _callee32, this);
       }));
 
-      return function __get_Main_Romance_1() {
-        return _get_Main_Romance_.apply(this, arguments);
+      return function __get_Main_News_6() {
+        return _get_Main_News_6.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_2",
+    key: "__get_Main_News_7",
     value: function () {
-      var _get_Main_Romance_2 = _asyncToGenerator(
+      var _get_Main_News_7 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee33() {
         var res, data;
@@ -1269,8 +1269,8 @@ function () {
                 _context33.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 2,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 7,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1286,14 +1286,14 @@ function () {
         }, _callee33, this);
       }));
 
-      return function __get_Main_Romance_2() {
-        return _get_Main_Romance_2.apply(this, arguments);
+      return function __get_Main_News_7() {
+        return _get_Main_News_7.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_3",
+    key: "__get_Main_News_8",
     value: function () {
-      var _get_Main_Romance_3 = _asyncToGenerator(
+      var _get_Main_News_8 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee34() {
         var res, data;
@@ -1304,8 +1304,8 @@ function () {
                 _context34.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 3,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 8,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1321,14 +1321,14 @@ function () {
         }, _callee34, this);
       }));
 
-      return function __get_Main_Romance_3() {
-        return _get_Main_Romance_3.apply(this, arguments);
+      return function __get_Main_News_8() {
+        return _get_Main_News_8.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_4",
+    key: "__get_Main_News_9",
     value: function () {
-      var _get_Main_Romance_4 = _asyncToGenerator(
+      var _get_Main_News_9 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee35() {
         var res, data;
@@ -1339,8 +1339,8 @@ function () {
                 _context35.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 4,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 9,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1356,14 +1356,14 @@ function () {
         }, _callee35, this);
       }));
 
-      return function __get_Main_Romance_4() {
-        return _get_Main_Romance_4.apply(this, arguments);
+      return function __get_Main_News_9() {
+        return _get_Main_News_9.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_5",
+    key: "__get_Main_News_10",
     value: function () {
-      var _get_Main_Romance_5 = _asyncToGenerator(
+      var _get_Main_News_10 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee36() {
         var res, data;
@@ -1374,8 +1374,8 @@ function () {
                 _context36.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 5,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 10,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1391,14 +1391,14 @@ function () {
         }, _callee36, this);
       }));
 
-      return function __get_Main_Romance_5() {
-        return _get_Main_Romance_5.apply(this, arguments);
+      return function __get_Main_News_10() {
+        return _get_Main_News_10.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_6",
+    key: "__get_Main_Comedy",
     value: function () {
-      var _get_Main_Romance_6 = _asyncToGenerator(
+      var _get_Main_Comedy = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee37() {
         var res, data;
@@ -1408,9 +1408,9 @@ function () {
               case 0:
                 _context37.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 2,
-                  "indexPage": 6,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "limit": 4,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
 
               case 2:
@@ -1426,14 +1426,14 @@ function () {
         }, _callee37, this);
       }));
 
-      return function __get_Main_Romance_6() {
-        return _get_Main_Romance_6.apply(this, arguments);
+      return function __get_Main_Comedy() {
+        return _get_Main_Comedy.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_7",
+    key: "__get_Main_Romance_1",
     value: function () {
-      var _get_Main_Romance_7 = _asyncToGenerator(
+      var _get_Main_Romance_ = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee38() {
         var res, data;
@@ -1444,8 +1444,8 @@ function () {
                 _context38.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 7,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1461,14 +1461,14 @@ function () {
         }, _callee38, this);
       }));
 
-      return function __get_Main_Romance_7() {
-        return _get_Main_Romance_7.apply(this, arguments);
+      return function __get_Main_Romance_1() {
+        return _get_Main_Romance_.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_8",
+    key: "__get_Main_Romance_2",
     value: function () {
-      var _get_Main_Romance_8 = _asyncToGenerator(
+      var _get_Main_Romance_2 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee39() {
         var res, data;
@@ -1479,8 +1479,8 @@ function () {
                 _context39.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 8,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 2,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1496,14 +1496,14 @@ function () {
         }, _callee39, this);
       }));
 
-      return function __get_Main_Romance_8() {
-        return _get_Main_Romance_8.apply(this, arguments);
+      return function __get_Main_Romance_2() {
+        return _get_Main_Romance_2.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_9",
+    key: "__get_Main_Romance_3",
     value: function () {
-      var _get_Main_Romance_9 = _asyncToGenerator(
+      var _get_Main_Romance_3 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee40() {
         var res, data;
@@ -1514,8 +1514,8 @@ function () {
                 _context40.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 9,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 3,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1531,14 +1531,14 @@ function () {
         }, _callee40, this);
       }));
 
-      return function __get_Main_Romance_9() {
-        return _get_Main_Romance_9.apply(this, arguments);
+      return function __get_Main_Romance_3() {
+        return _get_Main_Romance_3.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Main_Romance_10",
+    key: "__get_Main_Romance_4",
     value: function () {
-      var _get_Main_Romance_10 = _asyncToGenerator(
+      var _get_Main_Romance_4 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee41() {
         var res, data;
@@ -1549,8 +1549,8 @@ function () {
                 _context41.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 10,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 4,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1566,17 +1566,14 @@ function () {
         }, _callee41, this);
       }));
 
-      return function __get_Main_Romance_10() {
-        return _get_Main_Romance_10.apply(this, arguments);
+      return function __get_Main_Romance_4() {
+        return _get_Main_Romance_4.apply(this, arguments);
       };
-    }() //////////////////////////////////////////////////////////////////////
-    /////////////////////// API CENIMA ///////////////////////////////////
-    //////////////////////////////////////////////////////////////////////
-
+    }()
   }, {
-    key: "__get_Data_Carousel_Cenima",
+    key: "__get_Main_Romance_5",
     value: function () {
-      var _get_Data_Carousel_Cenima = _asyncToGenerator(
+      var _get_Main_Romance_5 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee42() {
         var res, data;
@@ -1586,9 +1583,9 @@ function () {
               case 0:
                 _context42.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 4,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "limit": 2,
+                  "indexPage": 5,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1604,14 +1601,14 @@ function () {
         }, _callee42, this);
       }));
 
-      return function __get_Data_Carousel_Cenima() {
-        return _get_Data_Carousel_Cenima.apply(this, arguments);
+      return function __get_Main_Romance_5() {
+        return _get_Main_Romance_5.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_New_Update_Cenima",
+    key: "__get_Main_Romance_6",
     value: function () {
-      var _get_New_Update_Cenima = _asyncToGenerator(
+      var _get_Main_Romance_6 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee43() {
         var res, data;
@@ -1621,9 +1618,9 @@ function () {
               case 0:
                 _context43.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 6,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "limit": 2,
+                  "indexPage": 6,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1639,14 +1636,14 @@ function () {
         }, _callee43, this);
       }));
 
-      return function __get_New_Update_Cenima() {
-        return _get_New_Update_Cenima.apply(this, arguments);
+      return function __get_Main_Romance_6() {
+        return _get_Main_Romance_6.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_1",
+    key: "__get_Main_Romance_7",
     value: function () {
-      var _get_Recommend_Cenima_ = _asyncToGenerator(
+      var _get_Main_Romance_7 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee44() {
         var res, data;
@@ -1657,8 +1654,8 @@ function () {
                 _context44.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 7,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1674,14 +1671,14 @@ function () {
         }, _callee44, this);
       }));
 
-      return function __get_Recommend_Cenima_1() {
-        return _get_Recommend_Cenima_.apply(this, arguments);
+      return function __get_Main_Romance_7() {
+        return _get_Main_Romance_7.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_2",
+    key: "__get_Main_Romance_8",
     value: function () {
-      var _get_Recommend_Cenima_2 = _asyncToGenerator(
+      var _get_Main_Romance_8 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee45() {
         var res, data;
@@ -1692,8 +1689,8 @@ function () {
                 _context45.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 8,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1709,14 +1706,14 @@ function () {
         }, _callee45, this);
       }));
 
-      return function __get_Recommend_Cenima_2() {
-        return _get_Recommend_Cenima_2.apply(this, arguments);
+      return function __get_Main_Romance_8() {
+        return _get_Main_Romance_8.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_3",
+    key: "__get_Main_Romance_9",
     value: function () {
-      var _get_Recommend_Cenima_3 = _asyncToGenerator(
+      var _get_Main_Romance_9 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee46() {
         var res, data;
@@ -1727,8 +1724,8 @@ function () {
                 _context46.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 9,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1744,14 +1741,14 @@ function () {
         }, _callee46, this);
       }));
 
-      return function __get_Recommend_Cenima_3() {
-        return _get_Recommend_Cenima_3.apply(this, arguments);
+      return function __get_Main_Romance_9() {
+        return _get_Main_Romance_9.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_4",
+    key: "__get_Main_Romance_10",
     value: function () {
-      var _get_Recommend_Cenima_4 = _asyncToGenerator(
+      var _get_Main_Romance_10 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee47() {
         var res, data;
@@ -1762,8 +1759,8 @@ function () {
                 _context47.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
                   "limit": 2,
-                  "indexPage": 1,
-                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                  "indexPage": 10,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
                 });
 
               case 2:
@@ -1779,14 +1776,17 @@ function () {
         }, _callee47, this);
       }));
 
-      return function __get_Recommend_Cenima_4() {
-        return _get_Recommend_Cenima_4.apply(this, arguments);
+      return function __get_Main_Romance_10() {
+        return _get_Main_Romance_10.apply(this, arguments);
       };
-    }()
+    }() //////////////////////////////////////////////////////////////////////
+    /////////////////////// API CENIMA ///////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+
   }, {
-    key: "__get_Recommend_Cenima_5",
+    key: "__get_Data_Carousel_Cenima",
     value: function () {
-      var _get_Recommend_Cenima_5 = _asyncToGenerator(
+      var _get_Data_Carousel_Cenima = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee48() {
         var res, data;
@@ -1796,7 +1796,7 @@ function () {
               case 0:
                 _context48.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 2,
+                  "limit": 4,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -1814,14 +1814,14 @@ function () {
         }, _callee48, this);
       }));
 
-      return function __get_Recommend_Cenima_5() {
-        return _get_Recommend_Cenima_5.apply(this, arguments);
+      return function __get_Data_Carousel_Cenima() {
+        return _get_Data_Carousel_Cenima.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_6",
+    key: "__get_New_Update_Cenima",
     value: function () {
-      var _get_Recommend_Cenima_6 = _asyncToGenerator(
+      var _get_New_Update_Cenima = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee49() {
         var res, data;
@@ -1831,7 +1831,7 @@ function () {
               case 0:
                 _context49.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 2,
+                  "limit": 6,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -1849,14 +1849,14 @@ function () {
         }, _callee49, this);
       }));
 
-      return function __get_Recommend_Cenima_6() {
-        return _get_Recommend_Cenima_6.apply(this, arguments);
+      return function __get_New_Update_Cenima() {
+        return _get_New_Update_Cenima.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_7",
+    key: "__get_Recommend_Cenima_1",
     value: function () {
-      var _get_Recommend_Cenima_7 = _asyncToGenerator(
+      var _get_Recommend_Cenima_ = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee50() {
         var res, data;
@@ -1884,14 +1884,14 @@ function () {
         }, _callee50, this);
       }));
 
-      return function __get_Recommend_Cenima_7() {
-        return _get_Recommend_Cenima_7.apply(this, arguments);
+      return function __get_Recommend_Cenima_1() {
+        return _get_Recommend_Cenima_.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_8",
+    key: "__get_Recommend_Cenima_2",
     value: function () {
-      var _get_Recommend_Cenima_8 = _asyncToGenerator(
+      var _get_Recommend_Cenima_2 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee51() {
         var res, data;
@@ -1919,14 +1919,14 @@ function () {
         }, _callee51, this);
       }));
 
-      return function __get_Recommend_Cenima_8() {
-        return _get_Recommend_Cenima_8.apply(this, arguments);
+      return function __get_Recommend_Cenima_2() {
+        return _get_Recommend_Cenima_2.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_9",
+    key: "__get_Recommend_Cenima_3",
     value: function () {
-      var _get_Recommend_Cenima_9 = _asyncToGenerator(
+      var _get_Recommend_Cenima_3 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee52() {
         var res, data;
@@ -1954,14 +1954,14 @@ function () {
         }, _callee52, this);
       }));
 
-      return function __get_Recommend_Cenima_9() {
-        return _get_Recommend_Cenima_9.apply(this, arguments);
+      return function __get_Recommend_Cenima_3() {
+        return _get_Recommend_Cenima_3.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Cenima_10",
+    key: "__get_Recommend_Cenima_4",
     value: function () {
-      var _get_Recommend_Cenima_10 = _asyncToGenerator(
+      var _get_Recommend_Cenima_4 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee53() {
         var res, data;
@@ -1989,14 +1989,14 @@ function () {
         }, _callee53, this);
       }));
 
-      return function __get_Recommend_Cenima_10() {
-        return _get_Recommend_Cenima_10.apply(this, arguments);
+      return function __get_Recommend_Cenima_4() {
+        return _get_Recommend_Cenima_4.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Top_Views_Cenima",
+    key: "__get_Recommend_Cenima_5",
     value: function () {
-      var _get_Top_Views_Cenima = _asyncToGenerator(
+      var _get_Recommend_Cenima_5 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee54() {
         var res, data;
@@ -2006,7 +2006,7 @@ function () {
               case 0:
                 _context54.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 6,
+                  "limit": 2,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -2024,17 +2024,14 @@ function () {
         }, _callee54, this);
       }));
 
-      return function __get_Top_Views_Cenima() {
-        return _get_Top_Views_Cenima.apply(this, arguments);
+      return function __get_Recommend_Cenima_5() {
+        return _get_Recommend_Cenima_5.apply(this, arguments);
       };
-    }() //////////////////////////////////////////////////////////////////////
-    ///////////////////////// API ANIME //////////////////////////////////
-    //////////////////////////////////////////////////////////////////////
-
+    }()
   }, {
-    key: "__get_New_Update_Anime",
+    key: "__get_Recommend_Cenima_6",
     value: function () {
-      var _get_New_Update_Anime = _asyncToGenerator(
+      var _get_Recommend_Cenima_6 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee55() {
         var res, data;
@@ -2044,7 +2041,7 @@ function () {
               case 0:
                 _context55.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 6,
+                  "limit": 2,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -2062,14 +2059,14 @@ function () {
         }, _callee55, this);
       }));
 
-      return function __get_New_Update_Anime() {
-        return _get_New_Update_Anime.apply(this, arguments);
+      return function __get_Recommend_Cenima_6() {
+        return _get_Recommend_Cenima_6.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Anime_1",
+    key: "__get_Recommend_Cenima_7",
     value: function () {
-      var _get_Recommend_Anime_ = _asyncToGenerator(
+      var _get_Recommend_Cenima_7 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee56() {
         var res, data;
@@ -2097,14 +2094,14 @@ function () {
         }, _callee56, this);
       }));
 
-      return function __get_Recommend_Anime_1() {
-        return _get_Recommend_Anime_.apply(this, arguments);
+      return function __get_Recommend_Cenima_7() {
+        return _get_Recommend_Cenima_7.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Anime_2",
+    key: "__get_Recommend_Cenima_8",
     value: function () {
-      var _get_Recommend_Anime_2 = _asyncToGenerator(
+      var _get_Recommend_Cenima_8 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee57() {
         var res, data;
@@ -2132,14 +2129,14 @@ function () {
         }, _callee57, this);
       }));
 
-      return function __get_Recommend_Anime_2() {
-        return _get_Recommend_Anime_2.apply(this, arguments);
+      return function __get_Recommend_Cenima_8() {
+        return _get_Recommend_Cenima_8.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Anime_3",
+    key: "__get_Recommend_Cenima_9",
     value: function () {
-      var _get_Recommend_Anime_3 = _asyncToGenerator(
+      var _get_Recommend_Cenima_9 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee58() {
         var res, data;
@@ -2167,14 +2164,14 @@ function () {
         }, _callee58, this);
       }));
 
-      return function __get_Recommend_Anime_3() {
-        return _get_Recommend_Anime_3.apply(this, arguments);
+      return function __get_Recommend_Cenima_9() {
+        return _get_Recommend_Cenima_9.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Anime_4",
+    key: "__get_Recommend_Cenima_10",
     value: function () {
-      var _get_Recommend_Anime_4 = _asyncToGenerator(
+      var _get_Recommend_Cenima_10 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee59() {
         var res, data;
@@ -2202,14 +2199,14 @@ function () {
         }, _callee59, this);
       }));
 
-      return function __get_Recommend_Anime_4() {
-        return _get_Recommend_Anime_4.apply(this, arguments);
+      return function __get_Recommend_Cenima_10() {
+        return _get_Recommend_Cenima_10.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Recommend_Anime_5",
+    key: "__get_Top_Views_Cenima",
     value: function () {
-      var _get_Recommend_Anime_5 = _asyncToGenerator(
+      var _get_Top_Views_Cenima = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee60() {
         var res, data;
@@ -2219,7 +2216,7 @@ function () {
               case 0:
                 _context60.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 2,
+                  "limit": 6,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -2237,14 +2234,17 @@ function () {
         }, _callee60, this);
       }));
 
-      return function __get_Recommend_Anime_5() {
-        return _get_Recommend_Anime_5.apply(this, arguments);
+      return function __get_Top_Views_Cenima() {
+        return _get_Top_Views_Cenima.apply(this, arguments);
       };
-    }()
+    }() //////////////////////////////////////////////////////////////////////
+    ///////////////////////// API ANIME //////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+
   }, {
-    key: "__get_Recommend_Anime_6",
+    key: "__get_Data_Carousel_Anime",
     value: function () {
-      var _get_Recommend_Anime_6 = _asyncToGenerator(
+      var _get_Data_Carousel_Anime = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee61() {
         var res, data;
@@ -2254,7 +2254,7 @@ function () {
               case 0:
                 _context61.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
-                  "limit": 2,
+                  "limit": 6,
                   "indexPage": 1,
                   "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
                 });
@@ -2272,14 +2272,14 @@ function () {
         }, _callee61, this);
       }));
 
-      return function __get_Recommend_Anime_6() {
-        return _get_Recommend_Anime_6.apply(this, arguments);
+      return function __get_Data_Carousel_Anime() {
+        return _get_Data_Carousel_Anime.apply(this, arguments);
       };
     }()
   }, {
-    key: "__get_Top_Views_Anime",
+    key: "__get_New_Update_Anime",
     value: function () {
-      var _get_Top_Views_Anime = _asyncToGenerator(
+      var _get_New_Update_Anime = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee62() {
         var res, data;
@@ -2305,6 +2305,251 @@ function () {
             }
           }
         }, _callee62, this);
+      }));
+
+      return function __get_New_Update_Anime() {
+        return _get_New_Update_Anime.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_1",
+    value: function () {
+      var _get_Recommend_Anime_ = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee63() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee63$(_context63) {
+          while (1) {
+            switch (_context63.prev = _context63.next) {
+              case 0:
+                _context63.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context63.sent;
+                data = res.data;
+                return _context63.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context63.stop();
+            }
+          }
+        }, _callee63, this);
+      }));
+
+      return function __get_Recommend_Anime_1() {
+        return _get_Recommend_Anime_.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_2",
+    value: function () {
+      var _get_Recommend_Anime_2 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee64() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee64$(_context64) {
+          while (1) {
+            switch (_context64.prev = _context64.next) {
+              case 0:
+                _context64.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context64.sent;
+                data = res.data;
+                return _context64.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context64.stop();
+            }
+          }
+        }, _callee64, this);
+      }));
+
+      return function __get_Recommend_Anime_2() {
+        return _get_Recommend_Anime_2.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_3",
+    value: function () {
+      var _get_Recommend_Anime_3 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee65() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee65$(_context65) {
+          while (1) {
+            switch (_context65.prev = _context65.next) {
+              case 0:
+                _context65.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context65.sent;
+                data = res.data;
+                return _context65.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context65.stop();
+            }
+          }
+        }, _callee65, this);
+      }));
+
+      return function __get_Recommend_Anime_3() {
+        return _get_Recommend_Anime_3.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_4",
+    value: function () {
+      var _get_Recommend_Anime_4 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee66() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee66$(_context66) {
+          while (1) {
+            switch (_context66.prev = _context66.next) {
+              case 0:
+                _context66.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context66.sent;
+                data = res.data;
+                return _context66.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context66.stop();
+            }
+          }
+        }, _callee66, this);
+      }));
+
+      return function __get_Recommend_Anime_4() {
+        return _get_Recommend_Anime_4.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_5",
+    value: function () {
+      var _get_Recommend_Anime_5 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee67() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee67$(_context67) {
+          while (1) {
+            switch (_context67.prev = _context67.next) {
+              case 0:
+                _context67.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context67.sent;
+                data = res.data;
+                return _context67.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context67.stop();
+            }
+          }
+        }, _callee67, this);
+      }));
+
+      return function __get_Recommend_Anime_5() {
+        return _get_Recommend_Anime_5.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Recommend_Anime_6",
+    value: function () {
+      var _get_Recommend_Anime_6 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee68() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee68$(_context68) {
+          while (1) {
+            switch (_context68.prev = _context68.next) {
+              case 0:
+                _context68.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 2,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context68.sent;
+                data = res.data;
+                return _context68.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context68.stop();
+            }
+          }
+        }, _callee68, this);
+      }));
+
+      return function __get_Recommend_Anime_6() {
+        return _get_Recommend_Anime_6.apply(this, arguments);
+      };
+    }()
+  }, {
+    key: "__get_Top_Views_Anime",
+    value: function () {
+      var _get_Top_Views_Anime = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee69() {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee69$(_context69) {
+          while (1) {
+            switch (_context69.prev = _context69.next) {
+              case 0:
+                _context69.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/limit"), {
+                  "limit": 6,
+                  "indexPage": 1,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+                });
+
+              case 2:
+                res = _context69.sent;
+                data = res.data;
+                return _context69.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context69.stop();
+            }
+          }
+        }, _callee69, this);
       }));
 
       return function __get_Top_Views_Anime() {
@@ -2524,7 +2769,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-11.jpg",
+        src: "/assets/images/hot-song/hot-11.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -2560,7 +2805,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-9.jpg",
+        src: "/assets/images/hot-song/hot-9.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -2596,7 +2841,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-8.jpg",
+        src: "/assets/images/hot-song/hot-8.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -2640,17 +2885,17 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "mr-2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/brand-logo/apple-logo.png",
+        src: "/assets/images/brand-logo/apple-logo.png",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/brand-logo/google-apps.png",
+        src: "/assets/images/brand-logo/google-apps.png",
         alt: ""
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "widget"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "pr-4"
       }, "Language"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/brand-logo/lang-flag.png",
+        src: "/assets/images/brand-logo/lang-flag.png",
         alt: ""
       }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "pb-e-30"
@@ -2998,7 +3243,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-thumb mr-3 rounded-thumb"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/browse/browse-overview-6.jpg",
+        src: "/assets/images/browse/browse-overview-6.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "notification-desc"
@@ -3023,7 +3268,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-thumb mr-3 rounded-thumb"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/playlists/playlist-15.jpg",
+        src: "/assets/images/playlists/playlist-15.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "notification-desc"
@@ -3048,7 +3293,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-thumb mr-3 rounded-thumb"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/browse/browse-overview-5.jpg",
+        src: "/assets/images/browse/browse-overview-5.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "notification-desc"
@@ -3083,7 +3328,7 @@ function (_Component) {
         className: "user"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "rounded-circle",
-        src: "/static/assets/images/user-thumb-1.jpg",
+        src: "/assets/images/user-thumb-1.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-2 mt-2 fs-1 d-none d-lg-block"
@@ -3095,12 +3340,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-cover-image"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/user/cover.jpg",
+        src: "/assets/images/user/cover.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-profile-image rounded-circle"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/browse/browse-overview-6.jpg",
+        src: "/assets/images/browse/browse-overview-6.jpg",
         alt: ""
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "settings-bottom"
@@ -3261,8 +3506,6 @@ function (_Component) {
           key: key,
           className: "item"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "radio"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "img-box-text-over lg box-rounded-lg"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           href: "#"
@@ -3281,7 +3524,7 @@ function (_Component) {
           className: "adonis-highlight-dark"
         }, prop.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "adonis-highlight-dark"
-        }, "T\u1EADp ".concat(prop.episodes || ""))))))));
+        }, "T\u1EADp ".concat(prop.episodes || "")))))));
       }))));
     }
   }]);
@@ -3745,9 +3988,7 @@ function (_Component) {
           className: "d-flex"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "title-box"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "sub-title inactive-color"
-        }, "Feature"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           className: "title h3-md"
         }, "\u0110\u1EB7c s\u1EAFc")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "button-right ml-auto ml-auto d-flex align-items-end"
@@ -3924,9 +4165,7 @@ function (_Component) {
           className: "d-flex"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "title-box"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "sub-title inactive-color"
-        }, "Today"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           className: "title h3-md"
         }, "C\xF3 th\u1EC3 b\u1EA1n th\xEDch ?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "button-right ml-auto ml-auto d-flex align-items-end"
@@ -3962,7 +4201,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4043,7 +4281,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4124,7 +4361,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4205,7 +4441,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4286,7 +4521,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4367,7 +4601,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4448,7 +4681,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4529,7 +4761,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4610,7 +4841,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4691,7 +4921,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-1@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4861,9 +5090,7 @@ function (_Component) {
       } else {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "title-box"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "sub-title inactive-color"
-        }, "New Update"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           className: "title h3-md"
         }, "M\u1EDBi c\u1EADp nh\u1EADt (Li\xEAn t\u1EE5c 24/7)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "adonis-carousel",
@@ -5036,9 +5263,7 @@ function (_Component) {
           className: "d-flex flex-row"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "title-box"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "sub-title inactive-color"
-        }, "Top Week"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           className: "title h3-md"
         }, "Top tu\u1EA7n c\xF3 g\xEC hot ?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "button-right ml-auto ml-auto mt-auto mb-4 d-flex"
@@ -5341,7 +5566,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "img-box box-rounded-md"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "/static/assets/images/watch-now/watch-now.jpg",
+          src: "/assets/images/watch-now/watch-now.jpg",
           alt: ""
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "hover-state show"
@@ -5697,7 +5922,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-2.jpg",
+        src: "/assets/images/hot-song/hot-2.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5735,7 +5960,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-1.jpg",
+        src: "/assets/images/hot-song/hot-1.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5773,7 +5998,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-3.jpg",
+        src: "/assets/images/hot-song/hot-3.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5811,7 +6036,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-4.jpg",
+        src: "/assets/images/hot-song/hot-4.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5849,7 +6074,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-5.jpg",
+        src: "/assets/images/hot-song/hot-5.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5887,7 +6112,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-6.jpg",
+        src: "/assets/images/hot-song/hot-6.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5925,7 +6150,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-7.jpg",
+        src: "/assets/images/hot-song/hot-7.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -5963,7 +6188,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-8.jpg",
+        src: "/assets/images/hot-song/hot-8.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6001,7 +6226,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-8.jpg",
+        src: "/assets/images/hot-song/hot-8.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6039,7 +6264,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-9.jpg",
+        src: "/assets/images/hot-song/hot-9.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6077,7 +6302,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-10.jpg",
+        src: "/assets/images/hot-song/hot-10.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6115,7 +6340,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-11.jpg",
+        src: "/assets/images/hot-song/hot-11.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6153,7 +6378,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-12.jpg",
+        src: "/assets/images/hot-song/hot-12.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6191,7 +6416,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-1.jpg",
+        src: "/assets/images/hot-song/hot-1.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6229,7 +6454,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-14.jpg",
+        src: "/assets/images/hot-song/hot-14.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6267,7 +6492,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-15.jpg",
+        src: "/assets/images/hot-song/hot-15.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6305,7 +6530,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-1.jpg",
+        src: "/assets/images/hot-song/hot-1.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6343,7 +6568,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-3.jpg",
+        src: "/assets/images/hot-song/hot-3.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6381,7 +6606,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-2.jpg",
+        src: "/assets/images/hot-song/hot-2.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6419,7 +6644,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-4.jpg",
+        src: "/assets/images/hot-song/hot-4.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6457,7 +6682,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-5.jpg",
+        src: "/assets/images/hot-song/hot-5.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6495,7 +6720,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-1.jpg",
+        src: "/assets/images/hot-song/hot-1.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6533,7 +6758,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-2.jpg",
+        src: "/assets/images/hot-song/hot-2.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6571,7 +6796,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-4.jpg",
+        src: "/assets/images/hot-song/hot-4.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6609,7 +6834,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-5.jpg",
+        src: "/assets/images/hot-song/hot-5.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6647,7 +6872,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "img-box img-box-sm box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/assets/images/hot-song/hot-4.jpg",
+        src: "/assets/images/hot-song/hot-4.jpg",
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "des"
@@ -6695,7 +6920,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-44.jpg",
+        src: "/assets/images/new-releases/new-releases-44.jpg",
         "data-2x": "assets/images/new-releases/new-releases-44@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6733,7 +6958,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-43.jpg",
+        src: "/assets/images/new-releases/new-releases-43.jpg",
         "data-2x": "assets/images/new-releases/new-releases-43@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6771,7 +6996,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-42.jpg",
+        src: "/assets/images/new-releases/new-releases-42.jpg",
         "data-2x": "assets/images/new-releases/new-releases-42@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6809,7 +7034,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-41.jpg",
+        src: "/assets/images/new-releases/new-releases-41.jpg",
         "data-2x": "assets/images/new-releases/new-releases-41@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6847,7 +7072,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-40.jpg",
+        src: "/assets/images/new-releases/new-releases-40.jpg",
         "data-2x": "assets/images/new-releases/new-releases-40@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6885,7 +7110,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-39.jpg",
+        src: "/assets/images/new-releases/new-releases-39.jpg",
         "data-2x": "assets/images/new-releases/new-releases-39@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6923,7 +7148,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-38.jpg",
+        src: "/assets/images/new-releases/new-releases-38.jpg",
         "data-2x": "assets/images/new-releases/new-releases-38@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6961,7 +7186,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-37.jpg",
+        src: "/assets/images/new-releases/new-releases-37.jpg",
         "data-2x": "assets/images/new-releases/new-releases-37@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6999,7 +7224,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-36.jpg",
+        src: "/assets/images/new-releases/new-releases-36.jpg",
         "data-2x": "assets/images/new-releases/new-releases-36@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7037,7 +7262,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-35.jpg",
+        src: "/assets/images/new-releases/new-releases-35.jpg",
         "data-2x": "assets/images/new-releases/new-releases-35@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7075,7 +7300,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-34.jpg",
+        src: "/assets/images/new-releases/new-releases-34.jpg",
         "data-2x": "assets/images/new-releases/new-releases-34@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7113,7 +7338,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-33.jpg",
+        src: "/assets/images/new-releases/new-releases-33.jpg",
         "data-2x": "assets/images/new-releases/new-releases-33@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7151,7 +7376,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-32.jpg",
+        src: "/assets/images/new-releases/new-releases-32.jpg",
         "data-2x": "assets/images/new-releases/new-releases-32@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7189,7 +7414,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-31.jpg",
+        src: "/assets/images/new-releases/new-releases-31.jpg",
         "data-2x": "assets/images/new-releases/new-releases-31@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7227,7 +7452,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-30.jpg",
+        src: "/assets/images/new-releases/new-releases-30.jpg",
         "data-2x": "assets/images/new-releases/new-releases-30@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7265,7 +7490,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-29.jpg",
+        src: "/assets/images/new-releases/new-releases-29.jpg",
         "data-2x": "assets/images/new-releases/new-releases-29@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7303,7 +7528,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-28.jpg",
+        src: "/assets/images/new-releases/new-releases-28.jpg",
         "data-2x": "assets/images/new-releases/new-releases-28@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7341,7 +7566,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-27.jpg",
+        src: "/assets/images/new-releases/new-releases-27.jpg",
         "data-2x": "assets/images/new-releases/new-releases-27@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7379,7 +7604,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-26.jpg",
+        src: "/assets/images/new-releases/new-releases-26.jpg",
         "data-2x": "assets/images/new-releases/new-releases-26@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7417,7 +7642,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-25.jpg",
+        src: "/assets/images/new-releases/new-releases-25.jpg",
         "data-2x": "assets/images/new-releases/new-releases-25@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7455,7 +7680,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-24.jpg",
+        src: "/assets/images/new-releases/new-releases-24.jpg",
         "data-2x": "assets/images/new-releases/new-releases-24@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7493,7 +7718,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-23.jpg",
+        src: "/assets/images/new-releases/new-releases-23.jpg",
         "data-2x": "assets/images/new-releases/new-releases-23@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7531,7 +7756,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-22.jpg",
+        src: "/assets/images/new-releases/new-releases-22.jpg",
         "data-2x": "assets/images/new-releases/new-releases-22@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7569,7 +7794,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-21.jpg",
+        src: "/assets/images/new-releases/new-releases-21.jpg",
         "data-2x": "assets/images/new-releases/new-releases-21@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7607,7 +7832,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-20.jpg",
+        src: "/assets/images/new-releases/new-releases-20.jpg",
         "data-2x": "assets/images/new-releases/new-releases-20@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7645,7 +7870,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-19.jpg",
+        src: "/assets/images/new-releases/new-releases-19.jpg",
         "data-2x": "assets/images/new-releases/new-releases-19@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7683,7 +7908,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-18.jpg",
+        src: "/assets/images/new-releases/new-releases-18.jpg",
         "data-2x": "assets/images/new-releases/new-releases-18@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -7721,7 +7946,7 @@ function (_Component) {
         className: "img-box box-rounded-sm"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "retina",
-        src: "/static/assets/images/new-releases/new-releases-17.jpg",
+        src: "/assets/images/new-releases/new-releases-17.jpg",
         "data-2x": "assets/images/new-releases/new-releases-17@2x.jpg",
         alt: ""
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -8149,16 +8374,16 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./components/Tabs/Tab_Menu.js":
-/*!*************************************!*\
-  !*** ./components/Tabs/Tab_Menu.js ***!
-  \*************************************/
+/***/ "./components/Tabs/Tab_Menu_Home.js":
+/*!******************************************!*\
+  !*** ./components/Tabs/Tab_Menu_Home.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tab_Menu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tab_Menu_Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -8181,18 +8406,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Tab_Menu =
+var Tab_Menu_Home =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Tab_Menu, _Component);
+  _inherits(Tab_Menu_Home, _Component);
 
-  function Tab_Menu() {
-    _classCallCheck(this, Tab_Menu);
+  function Tab_Menu_Home() {
+    _classCallCheck(this, Tab_Menu_Home);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Tab_Menu).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Tab_Menu_Home).apply(this, arguments));
   }
 
-  _createClass(Tab_Menu, [{
+  _createClass(Tab_Menu_Home, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -8202,13 +8427,13 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabs tab-style-1 scroll-x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "nav nav-border js-parent adonis-tabbed-nav moving-border"
+        className: "nav nav-border"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item active"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link active m-item m-item-block",
+        className: "nav-link active",
         "data-toggle": "tab",
-        href: "#home"
+        href: "/"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-3x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8230,9 +8455,9 @@ function (_Component) {
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link m-item m-item-block",
+        className: "nav-link",
         "data-toggle": "tab",
-        href: "#cenima"
+        href: "/cenima"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-4x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8256,9 +8481,9 @@ function (_Component) {
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Chi\u1EBFu r\u1EA1p - Phim l\u1EBB"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link m-item m-item-block",
+        className: "nav-link",
         "data-toggle": "tab",
-        href: "#romance"
+        href: "/romance"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-1x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8280,9 +8505,9 @@ function (_Component) {
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "T\xECnh C\u1EA3m - Ng\xF4n T\xECnh"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link adonis-ajax-load m-item m-item-block",
+        className: "nav-link adonis-ajax-load",
         "data-toggle": "tab",
-        href: "#anime"
+        href: "/anime"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-3x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8304,9 +8529,9 @@ function (_Component) {
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Th\u1EBF gi\u1EDBi Anime"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link adonis-ajax-load m-item m-item-block",
+        className: "nav-link adonis-ajax-load",
         "data-toggle": "tab",
-        href: "#comedy"
+        href: "/comedy"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-3x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8327,9 +8552,9 @@ function (_Component) {
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "X\xE3 Stress - H\xE0i h\u01B0\u1EDBc"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "menu-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link adonis-ajax-load m-item m-item-block",
+        className: "nav-link adonis-ajax-load",
         "data-toggle": "tab",
-        href: "#news"
+        href: "/news"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "adonis-icon pr-3 icon-3x"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -8354,7 +8579,7 @@ function (_Component) {
     }
   }]);
 
-  return Tab_Menu;
+  return Tab_Menu_Home;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
@@ -8526,7 +8751,7 @@ function __get_Projection(title, episodes, coverImage, key, contentImages, categ
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
@@ -8534,7 +8759,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Search/Search_Box */ "./components/Search/Search_Box.js");
 /* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
 /* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var _components_Tabs_Tab_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu */ "./components/Tabs/Tab_Menu.js");
+/* harmony import */ var _components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu_Home */ "./components/Tabs/Tab_Menu_Home.js");
 /* harmony import */ var _views_MainHome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/MainHome */ "./views/MainHome.js");
 /* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
 /* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
@@ -8577,18 +8802,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Index =
+var Home =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Index, _Component);
+  _inherits(Home, _Component);
 
-  function Index() {
-    _classCallCheck(this, Index);
+  function Home() {
+    _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Index).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Home).apply(this, arguments));
   }
 
-  _createClass(Index, [{
+  _createClass(Home, [{
     key: "render",
     value: function render() {
       var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["default"])(this.props.data);
@@ -8607,17 +8832,17 @@ function (_Component) {
         className: "master-container-fluid"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "pt-4 pt-lg-5"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "tabs-content overflow-h"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainHome__WEBPACK_IMPORTED_MODULE_6__["default"], null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
     }
   }]);
 
-  return Index;
+  return Home;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 
-Index.getInitialProps =
+Home.getInitialProps =
 /*#__PURE__*/
 _asyncToGenerator(
 /*#__PURE__*/
@@ -8705,7 +8930,7 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
 /*!************************!*\
   !*** ./store/store.js ***!
   \************************/
-/*! exports provided: storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5, storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5, storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2, storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome, storeMainNews_1, storeMainNews_2, storeMainNews_3, storeMainNews_4, storeMainComedy, storeMainRomance_1, storeMainRomance_2, storeMainRomance_3, storeMainRomance_4, storeMainRomance_5, storeMainRomance_6, storeMainRomance_7, storeMainRomance_8, storeMainRomance_9, storeMainRomance_10, storeCarouselCenima, storeNewUpdateCenima, storeRecommendCenima_1, storeRecommendCenima_2, storeRecommendCenima_3, storeRecommendCenima_4, storeRecommendCenima_5, storeRecommendCenima_6, storeRecommendCenima_7, storeRecommendCenima_8, storeRecommendCenima_9, storeRecommendCenima_10, storeTopViewsCenima, storeTopViewsAnime, storeNewUpdateAnime, storeRecommendAnime_1, storeRecommendAnime_2, storeRecommendAnime_3, storeRecommendAnime_4, storeRecommendAnime_5, storeRecommendAnime_6, default */
+/*! exports provided: storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5, storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5, storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2, storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome, storeMainNews_1, storeMainNews_2, storeMainNews_3, storeMainNews_4, storeMainNews_5, storeMainNews_6, storeMainNews_7, storeMainNews_8, storeMainNews_9, storeMainNews_10, storeMainComedy, storeMainRomance_1, storeMainRomance_2, storeMainRomance_3, storeMainRomance_4, storeMainRomance_5, storeMainRomance_6, storeMainRomance_7, storeMainRomance_8, storeMainRomance_9, storeMainRomance_10, storeCarouselCenima, storeNewUpdateCenima, storeRecommendCenima_1, storeRecommendCenima_2, storeRecommendCenima_3, storeRecommendCenima_4, storeRecommendCenima_5, storeRecommendCenima_6, storeRecommendCenima_7, storeRecommendCenima_8, storeRecommendCenima_9, storeRecommendCenima_10, storeTopViewsCenima, storeCarouselAnime, storeTopViewsAnime, storeNewUpdateAnime, storeRecommendAnime_1, storeRecommendAnime_2, storeRecommendAnime_3, storeRecommendAnime_4, storeRecommendAnime_5, storeRecommendAnime_6, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8740,6 +8965,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_2", function() { return storeMainNews_2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_3", function() { return storeMainNews_3; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_4", function() { return storeMainNews_4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_5", function() { return storeMainNews_5; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_6", function() { return storeMainNews_6; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_7", function() { return storeMainNews_7; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_8", function() { return storeMainNews_8; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_9", function() { return storeMainNews_9; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainNews_10", function() { return storeMainNews_10; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainComedy", function() { return storeMainComedy; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainRomance_1", function() { return storeMainRomance_1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMainRomance_2", function() { return storeMainRomance_2; });
@@ -8764,6 +8995,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendCenima_9", function() { return storeRecommendCenima_9; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendCenima_10", function() { return storeRecommendCenima_10; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeTopViewsCenima", function() { return storeTopViewsCenima; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeCarouselAnime", function() { return storeCarouselAnime; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeTopViewsAnime", function() { return storeTopViewsAnime; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeNewUpdateAnime", function() { return storeNewUpdateAnime; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendAnime_1", function() { return storeRecommendAnime_1; });
@@ -8959,6 +9191,42 @@ var storeMainNews_4 = function storeMainNews_4(data) {
     data: data
   };
 };
+var storeMainNews_5 = function storeMainNews_5(data) {
+  return {
+    type: "STORE_MAIN_NEWS_5",
+    data: data
+  };
+};
+var storeMainNews_6 = function storeMainNews_6(data) {
+  return {
+    type: "STORE_MAIN_NEWS_6",
+    data: data
+  };
+};
+var storeMainNews_7 = function storeMainNews_7(data) {
+  return {
+    type: "STORE_MAIN_NEWS_7",
+    data: data
+  };
+};
+var storeMainNews_8 = function storeMainNews_8(data) {
+  return {
+    type: "STORE_MAIN_NEWS_8",
+    data: data
+  };
+};
+var storeMainNews_9 = function storeMainNews_9(data) {
+  return {
+    type: "STORE_MAIN_NEWS_9",
+    data: data
+  };
+};
+var storeMainNews_10 = function storeMainNews_10(data) {
+  return {
+    type: "STORE_MAIN_NEWS_10",
+    data: data
+  };
+};
 var storeMainComedy = function storeMainComedy(data) {
   return {
     type: "STORE_MAIN_COMEDY",
@@ -9109,6 +9377,12 @@ var storeTopViewsCenima = function storeTopViewsCenima(data) {
 //////////////////////////// ANIME /////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 
+var storeCarouselAnime = function storeCarouselAnime(data) {
+  return {
+    type: "STORE_CAROUSEL_ANIME",
+    data: data
+  };
+};
 var storeTopViewsAnime = function storeTopViewsAnime(data) {
   return {
     type: "STORE_TOP_VIEWS_ANIME",
@@ -9837,6 +10111,84 @@ var mainNews_4_Reducer = function mainNews_4_Reducer() {
   }
 };
 
+var mainNews_5_Reducer = function mainNews_5_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_5":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
+var mainNews_6_Reducer = function mainNews_6_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_6":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
+var mainNews_7_Reducer = function mainNews_7_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_7":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
+var mainNews_8_Reducer = function mainNews_8_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_8":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
+var mainNews_9_Reducer = function mainNews_9_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_9":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
+var mainNews_10_Reducer = function mainNews_10_Reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MAIN_NEWS_10":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
+
 var mainComedy_Reducer = function mainComedy_Reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var action = arguments.length > 1 ? arguments[1] : undefined;
@@ -9865,6 +10217,19 @@ var topViews_Cenima_Reducer = function topViews_Cenima_Reducer() {
 /////////////////////////// ANIME //////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+
+var carouselAnimeReducer = function carouselAnimeReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_CAROUSEL_ANIME":
+      return action.data;
+
+    default:
+      return state;
+  }
+};
 
 var topViews_Anime_Reducer = function topViews_Anime_Reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
@@ -10013,6 +10378,12 @@ var reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   mainNews_2: mainNews_2_Reducer,
   mainNews_3: mainNews_3_Reducer,
   mainNews_4: mainNews_4_Reducer,
+  mainNews_5: mainNews_5_Reducer,
+  mainNews_6: mainNews_6_Reducer,
+  mainNews_7: mainNews_7_Reducer,
+  mainNews_8: mainNews_8_Reducer,
+  mainNews_9: mainNews_9_Reducer,
+  mainNews_10: mainNews_10_Reducer,
   mainComedy: mainComedy_Reducer,
   topViews_Cenima: topViews_Cenima_Reducer,
   main_Romance_1: main_Romance_1_Reducer,
@@ -10032,7 +10403,8 @@ var reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   recommend_Anime_4: recommend_Anime_4_Reducer,
   recommend_Anime_5: recommend_Anime_5_Reducer,
   recommend_Anime_6: recommend_Anime_6_Reducer,
-  topViews_Anime: topViews_Anime_Reducer
+  topViews_Anime: topViews_Anime_Reducer,
+  carousel_Anime: carouselAnimeReducer
 }); ////////////////////////////////////////////////////////////////////////////////////////
 
 /* harmony default export */ __webpack_exports__["default"] = (function (initialState) {
@@ -10136,7 +10508,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!*****************************!*\
   !*** multi ./pages/Home.js ***!
   \*****************************/

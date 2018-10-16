@@ -153,6 +153,36 @@ export const storeMainNews_4 = ( data ) => ( {
     data
 });
 
+export const storeMainNews_5 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_5",
+    data
+});
+
+export const storeMainNews_6 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_6",
+    data
+});
+
+export const storeMainNews_7 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_7",
+    data
+});
+
+export const storeMainNews_8 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_8",
+    data
+});
+
+export const storeMainNews_9 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_9",
+    data
+});
+
+export const storeMainNews_10 = ( data ) => ( {
+    type: "STORE_MAIN_NEWS_10",
+    data
+});
+
 export const storeMainComedy = ( data ) => ( {
     type: "STORE_MAIN_COMEDY",
     data
@@ -281,6 +311,11 @@ export const storeTopViewsCenima = ( data ) => ( {
 ////////////////////////////////////////////////////////////////////////////
 //////////////////////////// ANIME /////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
+
+export const storeCarouselAnime = ( data ) => ( {
+    type: "STORE_CAROUSEL_ANIME",
+    data
+});
 
 export const storeTopViewsAnime = ( data ) => ( {
     type: "STORE_TOP_VIEWS_ANIME",
@@ -743,6 +778,54 @@ const mainNews_4_Reducer = ( state = [ ], action ) => {
     }
 }
 
+const mainNews_5_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_5":
+            return action.data;
+        default: return state;
+    }
+}
+
+const mainNews_6_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_6":
+            return action.data;
+        default: return state;
+    }
+}
+
+const mainNews_7_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_7":
+            return action.data;
+        default: return state;
+    }
+}
+
+const mainNews_8_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_8":
+            return action.data;
+        default: return state;
+    }
+}
+
+const mainNews_9_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_9":
+            return action.data;
+        default: return state;
+    }
+}
+
+const mainNews_10_Reducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MAIN_NEWS_10":
+            return action.data;
+        default: return state;
+    }
+}
+
 const mainComedy_Reducer = ( state = [ ], action ) => {
     switch ( action.type ) {
         case "STORE_MAIN_COMEDY":
@@ -762,6 +845,14 @@ const topViews_Cenima_Reducer = ( state = [ ], action ) => {
 ////////////////////////////////////////////////////////////////////////
 /////////////////////////// ANIME //////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
+
+const carouselAnimeReducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_CAROUSEL_ANIME":
+            return action.data;
+        default: return state;
+    }
+}
 
 const topViews_Anime_Reducer = ( state = [ ], action ) => {
     switch ( action.type ) {
@@ -871,6 +962,12 @@ const reducer = combineReducers( {
     mainNews_2: mainNews_2_Reducer,
     mainNews_3: mainNews_3_Reducer,
     mainNews_4: mainNews_4_Reducer,
+    mainNews_5: mainNews_5_Reducer,
+    mainNews_6: mainNews_6_Reducer,
+    mainNews_7: mainNews_7_Reducer,
+    mainNews_8: mainNews_8_Reducer,
+    mainNews_9: mainNews_9_Reducer,
+    mainNews_10: mainNews_10_Reducer,
     mainComedy: mainComedy_Reducer,
     topViews_Cenima: topViews_Cenima_Reducer,
     main_Romance_1: main_Romance_1_Reducer,
@@ -891,6 +988,7 @@ const reducer = combineReducers( {
     recommend_Anime_5: recommend_Anime_5_Reducer,
     recommend_Anime_6: recommend_Anime_6_Reducer,
     topViews_Anime: topViews_Anime_Reducer,
+    carousel_Anime: carouselAnimeReducer,
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////

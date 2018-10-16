@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { url } from '../variables/general'
 import { connect } from 'react-redux'
+import moment from 'moment'
+import { url } from '../variables/general'
 
 
 class MainRomance extends Component {
@@ -36,7 +37,7 @@ class MainRomance extends Component {
         }
         else {
             return (
-                <div id="romance" className="inactive-hide" ><main id="main">
+                <div id="romance" className="inactive-hide active" ><main id="main">
                     <div className="title-box text-center mb-5">
                         <h6 className="sub-title inactive-color">Tâm Lý/Tình Cảm</h6>
                         <h2 className="title">Lãng mạn, ngọt ngào phải chăng là đã yêu ?</h2>
@@ -54,7 +55,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -71,7 +72,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -88,7 +89,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -105,7 +106,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -122,7 +123,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -139,7 +140,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -156,7 +157,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -173,7 +174,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -190,7 +191,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>
@@ -207,7 +208,7 @@ class MainRomance extends Component {
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
                                                 <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
-                                                <p> Oct 6th, 2017 by <a href="#"><em>Jon Snow</em></a></p>
+                                                <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
                                         </article>
                                     </div>

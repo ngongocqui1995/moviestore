@@ -39,7 +39,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-2.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-2.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Country girl shake it for me</a></h6>
@@ -57,7 +57,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-1.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-1.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">The Separation</a></h6>
@@ -75,7 +75,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-3.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-3.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Stirring of a fool</a></h6>
@@ -93,7 +93,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-4.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-4.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -111,7 +111,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-5.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-5.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Let You Down</a></h6>
@@ -129,7 +129,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-6.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-6.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -147,7 +147,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-7.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-7.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">O Come, All Ye Faithful</a></h6>
@@ -165,7 +165,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-8.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-8.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Fetty Wap Ft Monty</a></h6>
@@ -183,7 +183,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-8.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-8.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Fetty Wap Ft Monty</a></h6>
@@ -201,7 +201,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-9.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-9.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Do You Hear What I Hear</a></h6>
@@ -219,7 +219,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-10.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-10.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Look What You Made Me Do</a></h6>
@@ -237,7 +237,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-11.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-11.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Carol of the Bells</a></h6>
@@ -255,7 +255,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-12.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-12.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Carol of the Bells</a></h6>
@@ -273,7 +273,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-1.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-1.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">You're A Mean One, Mr. Grinch</a></h6>
@@ -291,7 +291,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-14.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-14.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Joy To The World</a></h6>
@@ -309,7 +309,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-15.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-15.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Something Just Like This</a></h6>
@@ -327,7 +327,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-1.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-1.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">The Separation</a></h6>
@@ -345,7 +345,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-3.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-3.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Stirring of a fool</a></h6>
@@ -363,7 +363,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-2.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-2.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Country girl shake it for me</a></h6>
@@ -381,7 +381,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-4.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-4.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -399,7 +399,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-5.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-5.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Let You Down</a></h6>
@@ -417,7 +417,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-1.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-1.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">The Separation</a></h6>
@@ -435,7 +435,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-2.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-2.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Country girl shake it for me</a></h6>
@@ -453,7 +453,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-4.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-4.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -471,7 +471,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-5.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-5.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Let You Down</a></h6>
@@ -489,7 +489,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="img-box-horizontal music-img-box h-g-bg">
                                             <div className="img-box img-box-sm box-rounded-sm">
-                                                <img src="/static/assets/images/hot-song/hot-4.jpg" alt="" />
+                                                <img src="/assets/images/hot-song/hot-4.jpg" alt="" />
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -511,7 +511,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-44.jpg" data-2x="assets/images/new-releases/new-releases-44@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-44.jpg" data-2x="assets/images/new-releases/new-releases-44@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -528,7 +528,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-43.jpg" data-2x="assets/images/new-releases/new-releases-43@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-43.jpg" data-2x="assets/images/new-releases/new-releases-43@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -545,7 +545,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-42.jpg" data-2x="assets/images/new-releases/new-releases-42@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-42.jpg" data-2x="assets/images/new-releases/new-releases-42@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -562,7 +562,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-41.jpg" data-2x="assets/images/new-releases/new-releases-41@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-41.jpg" data-2x="assets/images/new-releases/new-releases-41@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -579,7 +579,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-40.jpg" data-2x="assets/images/new-releases/new-releases-40@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-40.jpg" data-2x="assets/images/new-releases/new-releases-40@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -596,7 +596,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-39.jpg" data-2x="assets/images/new-releases/new-releases-39@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-39.jpg" data-2x="assets/images/new-releases/new-releases-39@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -613,7 +613,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-38.jpg" data-2x="assets/images/new-releases/new-releases-38@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-38.jpg" data-2x="assets/images/new-releases/new-releases-38@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -630,7 +630,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-37.jpg" data-2x="assets/images/new-releases/new-releases-37@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-37.jpg" data-2x="assets/images/new-releases/new-releases-37@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -647,7 +647,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-36.jpg" data-2x="assets/images/new-releases/new-releases-36@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-36.jpg" data-2x="assets/images/new-releases/new-releases-36@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -664,7 +664,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-35.jpg" data-2x="assets/images/new-releases/new-releases-35@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-35.jpg" data-2x="assets/images/new-releases/new-releases-35@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -681,7 +681,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-34.jpg" data-2x="assets/images/new-releases/new-releases-34@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-34.jpg" data-2x="assets/images/new-releases/new-releases-34@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -698,7 +698,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-33.jpg" data-2x="assets/images/new-releases/new-releases-33@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-33.jpg" data-2x="assets/images/new-releases/new-releases-33@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -715,7 +715,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-32.jpg" data-2x="assets/images/new-releases/new-releases-32@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-32.jpg" data-2x="assets/images/new-releases/new-releases-32@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -732,7 +732,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-31.jpg" data-2x="assets/images/new-releases/new-releases-31@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-31.jpg" data-2x="assets/images/new-releases/new-releases-31@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -749,7 +749,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-30.jpg" data-2x="assets/images/new-releases/new-releases-30@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-30.jpg" data-2x="assets/images/new-releases/new-releases-30@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -766,7 +766,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-29.jpg" data-2x="assets/images/new-releases/new-releases-29@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-29.jpg" data-2x="assets/images/new-releases/new-releases-29@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -783,7 +783,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-28.jpg" data-2x="assets/images/new-releases/new-releases-28@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-28.jpg" data-2x="assets/images/new-releases/new-releases-28@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -800,7 +800,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-27.jpg" data-2x="assets/images/new-releases/new-releases-27@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-27.jpg" data-2x="assets/images/new-releases/new-releases-27@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -817,7 +817,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-26.jpg" data-2x="assets/images/new-releases/new-releases-26@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-26.jpg" data-2x="assets/images/new-releases/new-releases-26@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -834,7 +834,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-25.jpg" data-2x="assets/images/new-releases/new-releases-25@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-25.jpg" data-2x="assets/images/new-releases/new-releases-25@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -851,7 +851,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-24.jpg" data-2x="assets/images/new-releases/new-releases-24@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-24.jpg" data-2x="assets/images/new-releases/new-releases-24@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -868,7 +868,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-23.jpg" data-2x="assets/images/new-releases/new-releases-23@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-23.jpg" data-2x="assets/images/new-releases/new-releases-23@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -885,7 +885,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-22.jpg" data-2x="assets/images/new-releases/new-releases-22@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-22.jpg" data-2x="assets/images/new-releases/new-releases-22@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -902,7 +902,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-21.jpg" data-2x="assets/images/new-releases/new-releases-21@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-21.jpg" data-2x="assets/images/new-releases/new-releases-21@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -919,7 +919,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-20.jpg" data-2x="assets/images/new-releases/new-releases-20@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-20.jpg" data-2x="assets/images/new-releases/new-releases-20@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -936,7 +936,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-19.jpg" data-2x="assets/images/new-releases/new-releases-19@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-19.jpg" data-2x="assets/images/new-releases/new-releases-19@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -953,7 +953,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-18.jpg" data-2x="assets/images/new-releases/new-releases-18@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-18.jpg" data-2x="assets/images/new-releases/new-releases-18@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -970,7 +970,7 @@ export default class Search_Box extends Component {
                                     <div className="col-auto">
                                         <div className="music-img-box mb-e-30 mb-e-lg-40">
                                             <div className="img-box box-rounded-sm">
-                                                <img className="retina" src="/static/assets/images/new-releases/new-releases-17.jpg" data-2x="assets/images/new-releases/new-releases-17@2x.jpg" alt="" />
+                                                <img className="retina" src="/assets/images/new-releases/new-releases-17.jpg" data-2x="assets/images/new-releases/new-releases-17@2x.jpg" alt="" />
                                                 <div className="hover-state">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>

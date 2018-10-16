@@ -7,7 +7,7 @@ import NewUpdate_Cenima from '../components/Cenima/NewUpdate_Cenima';
 export default class MainCenima extends Component {
   render() {
     return (
-      <div id="cenima" className="inactive-hide">
+      <div id="cenima" className="inactive-hide active">
         <CarouselTop_Cenima/>
         <NewUpdate_Cenima/>
         <TopViews_Cenima/>

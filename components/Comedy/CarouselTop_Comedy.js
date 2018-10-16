@@ -32,7 +32,8 @@ class CarouselTop_Comedy extends Component {
                                                     <img className="resize1" style={{ height: 380 }} src={url + prop.imageMain || ""} data-2x="assets/images/store/store-featured-01@2x.jpg" alt="" />
                                                     <div className="absolute-info">
                                                         <div className="absolute-bottom-left pl-e-20 pb-e-20">
-                                                            <span className="adonis-highlight-dark">Featured</span>
+                                                        <span className="adonis-highlight-dark">{prop.title}</span>
+                                                        <span className="adonis-highlight-dark">{`Tập ${prop.episodes || ""}`}</span>
                                                         </div>
                                                     </div>
                                                 </a>

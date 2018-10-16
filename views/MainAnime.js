@@ -7,7 +7,7 @@ import NewUpdate_Anime from '../components/Anime/NewUpdate_Anime';
 export default class MainAnime extends Component {
   render() {
     return (
-      <div id="anime" className="inactive-hide">
+      <div id="anime" className="inactive-hide active">
         <CarouselTop_Anime />
         <Recommend_Anime/>
         <TopViews_Anime/>

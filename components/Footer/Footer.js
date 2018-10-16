@@ -69,7 +69,7 @@ export default class Footer extends Component {
                                         <div className="footer-album-list music-img-box-cont-sm">
                                             <div className="img-box-horizontal music-img-box img-box-horizontal-style-2">
                                                 <div className="img-box img-box-sm box-rounded-sm">
-                                                    <img src="/static/assets/images/hot-song/hot-11.jpg" alt="" />
+                                                    <img src="/assets/images/hot-song/hot-11.jpg" alt="" />
                                                 </div>
                                                 <div className="des">
                                                     <h6 className="title"><a href="#">Do You Hear What I Hear</a></h6>
@@ -85,7 +85,7 @@ export default class Footer extends Component {
                                             </div>
                                             <div className="img-box-horizontal music-img-box img-box-horizontal-style-2">
                                                 <div className="img-box img-box-sm box-rounded-sm">
-                                                    <img src="/static/assets/images/hot-song/hot-9.jpg" alt="" />
+                                                    <img src="/assets/images/hot-song/hot-9.jpg" alt="" />
                                                 </div>
                                                 <div className="des">
                                                     <h6 className="title"><a href="#">O Come, All Ye Faithful</a></h6>
@@ -101,7 +101,7 @@ export default class Footer extends Component {
                                             </div>
                                             <div className="img-box-horizontal music-img-box img-box-horizontal-style-2">
                                                 <div className="img-box img-box-sm box-rounded-sm">
-                                                    <img src="/static/assets/images/hot-song/hot-8.jpg" alt="" />
+                                                    <img src="/assets/images/hot-song/hot-8.jpg" alt="" />
                                                 </div>
                                                 <div className="des">
                                                     <h6 className="title"><a href="#">Nothings into Somethings</a></h6>
@@ -123,14 +123,14 @@ export default class Footer extends Component {
                                         <h5 className="widget-title">Go Moblie</h5>
                                         <div className="mobile-apps">
                                             <ul className="list-inline d-inline-flex mb-4">
-                                                <li className="mr-2"><img src="/static/assets/images/brand-logo/apple-logo.png" alt="" /></li>
-                                                <li><img src="/static/assets/images/brand-logo/google-apps.png" alt="" /></li>
+                                                <li className="mr-2"><img src="/assets/images/brand-logo/apple-logo.png" alt="" /></li>
+                                                <li><img src="/assets/images/brand-logo/google-apps.png" alt="" /></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="widget">
                                         <label className="pr-4">Language</label>
-                                        <img src="/static/assets/images/brand-logo/lang-flag.png" alt="" />
+                                        <img src="/assets/images/brand-logo/lang-flag.png" alt="" />
                                     </div>
                                 </div>
                             </div>

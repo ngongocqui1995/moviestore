@@ -40,7 +40,6 @@ class NewDay extends Component {
                 <section>
                     <div className="d-flex">
                         <div className="title-box">
-                            <h6 className="sub-title inactive-color">Today</h6>
                             <h2 className="title h3-md">Có thể bạn thích ?</h2>
                         </div>
                         <div className="button-right ml-auto ml-auto d-flex align-items-end">
@@ -56,7 +55,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -98,7 +97,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -139,7 +138,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -180,7 +179,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -221,7 +220,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -262,7 +261,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -303,7 +302,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -344,7 +343,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -385,7 +384,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -426,7 +425,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box mb-e-30 mb-e-md-40">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>

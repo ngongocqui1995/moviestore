@@ -113,7 +113,7 @@ export default class Header extends Component {
                                     <h5>Notification</h5>
                                     <div className="media notification">
                                         <div className="user-thumb mr-3 rounded-thumb">
-                                            <img src="/static/assets/images/browse/browse-overview-6.jpg" alt="" />
+                                            <img src="/assets/images/browse/browse-overview-6.jpg" alt="" />
                                         </div>
                                         <div className="notification-desc">
                                             <p>New Album from <a href="#" className="active-color">Brenda Lee</a></p>
@@ -124,7 +124,7 @@ export default class Header extends Component {
                                     </div>
                                     <div className="media notification">
                                         <div className="user-thumb mr-3 rounded-thumb">
-                                            <img src="/static/assets/images/playlists/playlist-15.jpg" alt="" />
+                                            <img src="/assets/images/playlists/playlist-15.jpg" alt="" />
                                         </div>
                                         <div className="notification-desc">
                                             <p>New Album from <a href="#" className="active-color">Adm Smith</a></p>
@@ -135,7 +135,7 @@ export default class Header extends Component {
                                     </div>
                                     <div className="media notification">
                                         <div className="user-thumb mr-3 rounded-thumb">
-                                            <img src="/static/assets/images/browse/browse-overview-5.jpg" alt="" />
+                                            <img src="/assets/images/browse/browse-overview-5.jpg" alt="" />
                                         </div>
                                         <div className="notification-desc">
                                             <p>New Album from <a href="#" className="active-color">Brenda Lee</a></p>
@@ -149,17 +149,17 @@ export default class Header extends Component {
                             <div className="nav-item position-relative">
                                 <a className="nav-link dropdown-toggle w-nowrap pr-0" href="#" id="dropdownUserSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div className="flex-row d-inline-flex">
-                                        <div className="user"><img className="rounded-circle" src="/static/assets/images/user-thumb-1.jpg" alt="" /></div>
+                                        <div className="user"><img className="rounded-circle" src="/assets/images/user-thumb-1.jpg" alt="" /></div>
                                         <span className="ml-2 mt-2 fs-1 d-none d-lg-block">Jont Henrry</span>
                                     </div>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right user-settings-dropdown clearfix" aria-labelledby="dropdownUserSettings">
                                     <div className="settings-top">
                                         <div className="user-cover-image">
-                                            <img src="/static/assets/images/user/cover.jpg" alt="" />
+                                            <img src="/assets/images/user/cover.jpg" alt="" />
                                         </div>
                                         <div className="user-profile-image rounded-circle">
-                                            <img src="/static/assets/images/browse/browse-overview-6.jpg" alt="" />
+                                            <img src="/assets/images/browse/browse-overview-6.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="settings-bottom">

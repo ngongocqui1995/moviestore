@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
-import Tab_Menu from '../components/Tabs/Tab_Menu';
+import Tab_Menu_Home from '../components/Tabs/Tab_Menu_Home';
 import MainHome from '../views/MainHome';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
 import fetchData from '../api/api'
@@ -16,7 +16,7 @@ import createStore from "../store/store"
 import { Provider } from 'react-redux'
 
 
-export default class Index extends Component {
+export default class Home extends Component {
   render() {
     var store = createStore(this.props.data)
     return (
@@ -29,9 +29,8 @@ export default class Index extends Component {
               <div id="site-content-inner">
                 <main id="main">
                   <div className="master-container-fluid">
-
                     <div className="pt-4 pt-lg-5"></div>
-                    <Tab_Menu/>
+                    <Tab_Menu_Home/>
                     <div className="tabs-content overflow-h">
                       <MainHome/>
                     </div>
@@ -40,7 +39,6 @@ export default class Index extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>
@@ -49,7 +47,7 @@ export default class Index extends Component {
   }
 }
 
-Index.getInitialProps = async function () {
+Home.getInitialProps = async function () {
   var store = createStore()
 
   const carouselMainHome = fetchData.__get_Data_Carousel_Main_Home()
