@@ -42,7 +42,7 @@ class Recommend_Anime extends Component {
                                             </div>
                                             <div className="des">
                                                 <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">Rachel Platten</a></p>
+                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
                                                 <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>

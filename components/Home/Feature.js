@@ -7,8 +7,7 @@ class Feature extends Component {
     constructor(datas) {
         super(datas)
         this.state = {
-            data_1: [],
-            data_2: []
+            data: [],
         }
     }
 
@@ -19,8 +18,8 @@ class Feature extends Component {
     }
 
     render() {
-        const { data_1, data_2 } = this.props
-        if(!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0)
+        const { data } = this.props
+        if(!data || data.length === 0)
         {
             return <div className="text-center"> Loading fail ...</div>
         } 
@@ -40,7 +39,7 @@ class Feature extends Component {
                         <div className="gutter-30">
                             <div className="owl-carousel owl-theme-adonis">
                                 {
-                                    !data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
+                                    !data || data.length === 0 ? "" : data.map((prop, key) => (
                                         <div key={key} className="item">
                                             <div className="music-img-box">
                                                 <div className="img-box box-rounded-md">
@@ -55,28 +54,7 @@ class Feature extends Component {
                                                     </div>
                                                 </div>
                                                 <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                                {
-                                    !data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) => (
-                                        <div key={key} className="item">
-                                            <div className="music-img-box">
-                                                <div className="img-box box-rounded-md">
-                                                    <img className="resize2" src={url + prop.imageMain || ""}  alt="" />
-                                                    <div className="hover-state">
-                                                        <div className="absolute-bottom-left pl-e-20 pb-e-20">
-                                                            <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
-                                                        </div>
-                                                        <div className="absolute-top-right pr-e-20 pt-e-20">
-                                                            <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                         </div>
                                     ))
@@ -94,8 +72,7 @@ class Feature extends Component {
 
 function mapStateToProps(state) {
     return {
-        data_1: state.feature_Main_Home_1,
-        data_2: state.feature_Main_Home_2
+        data: state.feature_Main_Home,
     };
 }
 

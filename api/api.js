@@ -81,20 +81,9 @@ export default class {
     return data
   }
 
-  static async __get_Feature_Main_Home_1() {
+  static async __get_Feature_Main_Home() {
     const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
-        "indexPage": 1,
-        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-    })
-    const data = res.data
-    return data
-  }
-
-  static async __get_Feature_Main_Home_2() {
-    const res = await axios.post(`${url}v1/collection/limit`, {
-        "limit": 5,
+        "limit": 10,
         "indexPage": 1,
         "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

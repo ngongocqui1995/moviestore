@@ -40,7 +40,7 @@ class TopViews_Anime extends Component {
                                                     </div>
                                                 </div>
                                                 <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                         </div>
                                     ))

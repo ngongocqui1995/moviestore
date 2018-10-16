@@ -38,13 +38,8 @@ export const storeCommonMovies_6 = ( data ) => ( {
     data
 });
 
-export const storeFeatureMainHome_1 = ( data ) => ( {
+export const storeFeatureMainHome = ( data ) => ( {
     type: "STORE_FEATURE_MAIN_HOME_1",
-    data
-});
-
-export const storeFeatureMainHome_2 = ( data ) => ( {
-    type: "STORE_FEATURE_MAIN_HOME_2",
     data
 });
 
@@ -384,17 +379,9 @@ const commonMovies_6_Reducer = ( state = [ ], action ) => {
     }
 }
 
-const feature_Main_Home_1_Reducer = ( state = [ ], action ) => {
+const feature_Main_Home_Reducer = ( state = [ ], action ) => {
     switch ( action.type ) {
         case "STORE_FEATURE_MAIN_HOME_1":
-            return action.data;
-        default: return state;
-    }
-}
-
-const feature_Main_Home_2_Reducer = ( state = [ ], action ) => {
-    switch ( action.type ) {
-        case "STORE_FEATURE_MAIN_HOME_2":
             return action.data;
         default: return state;
     }
@@ -849,8 +836,7 @@ const reducer = combineReducers( {
     commonMovies_4: commonMovies_4_Reducer,
     commonMovies_5: commonMovies_5_Reducer,
     commonMovies_6: commonMovies_6_Reducer,
-    feature_Main_Home_1: feature_Main_Home_1_Reducer,
-    feature_Main_Home_2: feature_Main_Home_2_Reducer,
+    feature_Main_Home: feature_Main_Home_Reducer,
     newDay_1: newDay_1_Reducer,
     newDay_2: newDay_2_Reducer,
     newDay_3: newDay_3_Reducer,

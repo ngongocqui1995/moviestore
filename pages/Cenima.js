@@ -14,7 +14,7 @@ import SvgCustom from '../components/SVG/SvgCustom';
 import fetchData from '../api/api'
 import {
   storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5,
-  storeCommonMovies_6, storeFeatureMainHome_1, storeFeatureMainHome_2, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5,
+  storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5,
   storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2,
   storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome, storeCarouselCenima, storeNewUpdateCenima,
   storeRecommendCenima_1, storeRecommendCenima_2, storeRecommendCenima_3, storeRecommendCenima_4, storeRecommendCenima_5, storeRecommendCenima_6,
@@ -52,7 +52,6 @@ export default class Index extends Component {
                       <MainComedy/>
                       <MainNews/>
                     </div>
-
                   </div>
                 </main>
               </div>
@@ -77,8 +76,7 @@ Index.getInitialProps = async function () {
   const commonMovies_4 = fetchData.__get_Common_Movies_4()
   const commonMovies_5 = fetchData.__get_Common_Movies_5()
   const commonMovies_6 = fetchData.__get_Common_Movies_6()
-  const featureMainHome_1 = fetchData.__get_Feature_Main_Home_1()
-  const featureMainHome_2 = fetchData.__get_Feature_Main_Home_2()
+  const featureMainHome = fetchData.__get_Feature_Main_Home()
   const newDay_1 = fetchData.__get_New_Day_1()
   const newDay_2 = fetchData.__get_New_Day_2()
   const newDay_3 = fetchData.__get_New_Day_3()
@@ -137,7 +135,7 @@ Index.getInitialProps = async function () {
   await Promise.all([
     mainRomance_1, mainRomance_2, mainRomance_3, mainRomance_4, mainRomance_5, mainRomance_6, mainRomance_7, mainRomance_8,
     mainRomance_9, mainRomance_10, carouselMainHome, commonMovies_1, commonMovies_2, commonMovies_3, commonMovies_4, commonMovies_5, 
-    commonMovies_6, featureMainHome_1, featureMainHome_2, newDay_1, newDay_2, newDay_3, newDay_4, newDay_5, newDay_6, newDay_7, newDay_8, 
+    commonMovies_6, featureMainHome, newDay_1, newDay_2, newDay_3, newDay_4, newDay_5, newDay_6, newDay_7, newDay_8, 
     newDay_9, newDay_10, newUpdateMainHome, topWeek_1, topWeek_2, topWeek_3, topWeek_4, topWeek_5, topWeek_6, trendsMainHome, carouselCenima,
     newUpdateCenima, recommendCenima_1, recommendCenima_2, recommendCenima_3, recommendCenima_4, recommendCenima_5, recommendCenima_6,
     recommendCenima_7, recommendCenima_8, recommendCenima_9, recommendCenima_10, mainNews_1, mainNews_2, mainNews_3, mainNews_4, 
@@ -162,52 +160,51 @@ Index.getInitialProps = async function () {
     store.dispatch(storeCommonMovies_4(result[14]))
     store.dispatch(storeCommonMovies_5(result[15]))
     store.dispatch(storeCommonMovies_6(result[16]))
-    store.dispatch(storeFeatureMainHome_1(result[17]))
-    store.dispatch(storeFeatureMainHome_2(result[18]))
-    store.dispatch(storeNewDay_1(result[19]))
-    store.dispatch(storeNewDay_2(result[20]))
-    store.dispatch(storeNewDay_3(result[21]))
-    store.dispatch(storeNewDay_4(result[22]))
-    store.dispatch(storeNewDay_5(result[23]))
-    store.dispatch(storeNewDay_6(result[24]))
-    store.dispatch(storeNewDay_7(result[25]))
-    store.dispatch(storeNewDay_8(result[26]))
-    store.dispatch(storeNewDay_9(result[27]))
-    store.dispatch(storeNewDay_10(result[28]))
-    store.dispatch(storeNewUpdateMainHome(result[29]))
-    store.dispatch(storeTopWeek_1(result[30]))
-    store.dispatch(storeTopWeek_2(result[31]))
-    store.dispatch(storeTopWeek_3(result[32]))
-    store.dispatch(storeTopWeek_4(result[33]))
-    store.dispatch(storeTopWeek_5(result[34]))
-    store.dispatch(storeTopWeek_6(result[35]))
-    store.dispatch(storeTrendsMainHome(result[36]))
-    store.dispatch(storeCarouselCenima(result[37]))
-    store.dispatch(storeNewUpdateCenima(result[38]))
-    store.dispatch(storeRecommendCenima_1(result[39]))
-    store.dispatch(storeRecommendCenima_2(result[40]))
-    store.dispatch(storeRecommendCenima_3(result[41]))
-    store.dispatch(storeRecommendCenima_4(result[42]))
-    store.dispatch(storeRecommendCenima_5(result[43]))
-    store.dispatch(storeRecommendCenima_6(result[44]))
-    store.dispatch(storeRecommendCenima_7(result[45]))
-    store.dispatch(storeRecommendCenima_8(result[46]))
-    store.dispatch(storeRecommendCenima_9(result[47]))
-    store.dispatch(storeRecommendCenima_10(result[48]))
-    store.dispatch(storeMainNews_1(result[49]))
-    store.dispatch(storeMainNews_2(result[50]))
-    store.dispatch(storeMainNews_3(result[51]))
-    store.dispatch(storeMainNews_4(result[52]))
-    store.dispatch(storeTopViewsCenima(result[53]))
-    store.dispatch(storeMainComedy(result[54]))
-    store.dispatch(storeNewUpdateAnime(result[55]))
-    store.dispatch(storeRecommendAnime_1(result[56]))
-    store.dispatch(storeRecommendAnime_2(result[57]))
-    store.dispatch(storeRecommendAnime_3(result[58]))
-    store.dispatch(storeRecommendAnime_4(result[59]))
-    store.dispatch(storeRecommendAnime_5(result[60]))
-    store.dispatch(storeRecommendAnime_6(result[61]))
-    store.dispatch(storeTopViewsAnime(result[62]))
+    store.dispatch(storeFeatureMainHome(result[17]))
+    store.dispatch(storeNewDay_1(result[18]))
+    store.dispatch(storeNewDay_2(result[19]))
+    store.dispatch(storeNewDay_3(result[20]))
+    store.dispatch(storeNewDay_4(result[21]))
+    store.dispatch(storeNewDay_5(result[22]))
+    store.dispatch(storeNewDay_6(result[23]))
+    store.dispatch(storeNewDay_7(result[24]))
+    store.dispatch(storeNewDay_8(result[25]))
+    store.dispatch(storeNewDay_9(result[26]))
+    store.dispatch(storeNewDay_10(result[27]))
+    store.dispatch(storeNewUpdateMainHome(result[28]))
+    store.dispatch(storeTopWeek_1(result[29]))
+    store.dispatch(storeTopWeek_2(result[30]))
+    store.dispatch(storeTopWeek_3(result[31]))
+    store.dispatch(storeTopWeek_4(result[32]))
+    store.dispatch(storeTopWeek_5(result[33]))
+    store.dispatch(storeTopWeek_6(result[34]))
+    store.dispatch(storeTrendsMainHome(result[35]))
+    store.dispatch(storeCarouselCenima(result[36]))
+    store.dispatch(storeNewUpdateCenima(result[37]))
+    store.dispatch(storeRecommendCenima_1(result[38]))
+    store.dispatch(storeRecommendCenima_2(result[39]))
+    store.dispatch(storeRecommendCenima_3(result[40]))
+    store.dispatch(storeRecommendCenima_4(result[41]))
+    store.dispatch(storeRecommendCenima_5(result[42]))
+    store.dispatch(storeRecommendCenima_6(result[43]))
+    store.dispatch(storeRecommendCenima_7(result[44]))
+    store.dispatch(storeRecommendCenima_8(result[45]))
+    store.dispatch(storeRecommendCenima_9(result[46]))
+    store.dispatch(storeRecommendCenima_10(result[47]))
+    store.dispatch(storeMainNews_1(result[48]))
+    store.dispatch(storeMainNews_2(result[49]))
+    store.dispatch(storeMainNews_3(result[50]))
+    store.dispatch(storeMainNews_4(result[51]))
+    store.dispatch(storeTopViewsCenima(result[52]))
+    store.dispatch(storeMainComedy(result[53]))
+    store.dispatch(storeNewUpdateAnime(result[54]))
+    store.dispatch(storeRecommendAnime_1(result[55]))
+    store.dispatch(storeRecommendAnime_2(result[56]))
+    store.dispatch(storeRecommendAnime_3(result[57]))
+    store.dispatch(storeRecommendAnime_4(result[58]))
+    store.dispatch(storeRecommendAnime_5(result[59]))
+    store.dispatch(storeRecommendAnime_6(result[60]))
+    store.dispatch(storeTopViewsAnime(result[61]))
   })
   .catch((err) => {
     console.log(err)

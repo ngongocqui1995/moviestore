@@ -66,8 +66,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -84,8 +84,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -108,8 +108,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -126,8 +126,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -149,8 +149,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -167,8 +167,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -190,8 +190,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -208,8 +208,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -231,8 +231,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -249,8 +249,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -272,8 +272,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -290,8 +290,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -313,8 +313,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -331,8 +331,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -354,8 +354,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -372,8 +372,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -395,8 +395,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -413,8 +413,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -436,8 +436,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#"></a></p>
                                                 </div>
                                             )
                                         } else {
@@ -454,8 +454,8 @@ class NewDay extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">Vestibulum nibh lorem ipsum</a></h6>
-                                                    <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }

@@ -18,7 +18,7 @@ app.prepare()
   })
 
   server.get('/', (req, res) => {
-    const actualPage = '/index'
+    const actualPage = '/Home'
     app.render(req, res, actualPage)
   })
 

@@ -44,7 +44,7 @@ class NewUpdate_Anime extends Component {
                                                     </div>
                                                 </div>
                                                 <h6 className="title"><a href="#">{data[0].title}</a></h6>
-                                                <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                         </div>
                                     ))

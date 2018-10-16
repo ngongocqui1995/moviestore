@@ -13,7 +13,7 @@ class NewUpdate extends Component {
     componentDidUpdate(){
         $(".adonis-carousel").each(function () {
             adonisObj.carousel($(this));
-          });
+        });
     }
 
     render() {
@@ -49,8 +49,8 @@ class NewUpdate extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <h6 className="title"><a href="#">{data[0].title}</a></h6>
-                                                <p className="sub-title category"><a href="#">Adonis Music Pop</a></p>
+                                                <h6 className="title"><a href="#">{prop.title}</a></h6>
+                                                <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                         </div>
                                     ))
