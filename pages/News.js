@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
+import HeaderNews from '../components/Header/HeaderNews';
 import Header from '../components/Header/Header';
 import Tab_Menu_News from '../components/Tabs/Tab_Menu_News';
 import MainNews from '../views/MainNews';
@@ -23,6 +24,7 @@ export default class News extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderNews/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">
@@ -38,7 +40,6 @@ export default class News extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>

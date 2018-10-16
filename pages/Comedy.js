@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import HeaderComedy from '../components/Header/HeaderComedy';
 import Tab_Menu_Comedy from '../components/Tabs/Tab_Menu_Comedy';
 import MainComedy from '../views/MainComedy';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
@@ -22,11 +23,11 @@ export default class Comedy extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderComedy/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">
                   <div className="master-container-fluid">
-
                     <div className="pt-4 pt-lg-5"></div>
                     <Tab_Menu_Comedy/>
                     <div className="tabs-content overflow-h">
@@ -37,7 +38,6 @@ export default class Comedy extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>

@@ -4344,7 +4344,7 @@ Temp-styles.............Few temporary styles
   
   .adonis-news-articles .news-box {
     position: relative; }
-    .adonis-news-articles .news-box .img-box img {
+    .adonis-news-articles .news-box img {
       width: 100%; }
     .adonis-news-articles .news-box .info-box {
       padding: 0.5rem 0; }
@@ -5033,7 +5033,7 @@ Temp-styles.............Few temporary styles
       margin-bottom: 13px;
       overflow: hidden;
       position: relative; }
-      .music-img-box .img-box img {
+      .music-img-box img {
         width: 100%; }
     .music-img-box .adonis-price {
       color: #b08cf9; }

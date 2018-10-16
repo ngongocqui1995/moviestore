@@ -9,12 +9,12 @@ class CarouselTop_Anime extends Component {
         <section>
             <div className="adonis-carousel js-effect adonis-animate" data-animation="slideUp" data-animation-item=".item" data-dots="yes" data-auto-width="yes" data-responsive-width="0:100%|600:50%|900:33.33%">
                 <div className="gutter-30">
-                    <div className="owl-carousel owl-theme-adonis">
+                    <div className="owl-carousel owl-theme-adonis" style={{cursor: "grab"}}>
                         {
                             !data || data.length === 0 ? "" : data.map((prop, key) => (
                                 <div key={key} className="item">
                                     <div className="img-box-text-over lg box-rounded-lg">
-                                        <a href="#">
+                                        <a href={`/detail/${prop.key}`}>
                                             <img className="resize1" style={{ height: 380 }} src={url + prop.imageMain || ""} alt="" />
                                             <div className="absolute-info">
                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">

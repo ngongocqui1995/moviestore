@@ -10,24 +10,18 @@ class CarouselTop extends Component {
             isLoading: false
         }
     }
-
-    componentDidUpdate(){
-        $(".adonis-carousel").each(function () {
-            adonisObj.carousel($(this));
-          });
-    }
     
     render() {
         const { data } = this.props
         return (
             <div className="adonis-carousel mb-3" data-auto-width="yes" data-loop="yes" data-center="yes" data-dots="yes" data-responsive-width="0:70%|600:580px">
                 <div className="gutter-30">
-                    <div className="owl-carousel owl-theme-adonis">
+                    <div className="owl-carousel owl-theme-adonis" style={{cursor: "grab"}}>
                         {
                             !data || data.length === 0 ? "" : data.map((prop, key) => (
                                 <div key={key} className="item">
                                     <div className="img-box-text-over lg box-rounded-lg">
-                                        <a href="#">
+                                        <a href={`/detail/${prop.key}`}>
                                             <img className="resize1" style={{ height: 380 }} src={url + prop.imageMain || ""} alt="" />
                                             <div className="absolute-info">
                                                 <div className="absolute-bottom-left pl-e-20 pb-e-20">

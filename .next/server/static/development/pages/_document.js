@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -284,7 +284,7 @@ function (_Document) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************!*\
   !*** multi ./pages/_document.js ***!
   \**********************************/

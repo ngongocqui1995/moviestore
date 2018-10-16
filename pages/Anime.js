@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import HeaderAnime from '../components/Header/HeaderAnime';
 import Tab_Menu_Anime from '../components/Tabs/Tab_Menu_Anime';
 import MainAnime from '../views/MainAnime';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
@@ -23,11 +24,11 @@ export default class Anime extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderAnime/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">
                   <div className="master-container-fluid">
-
                     <div className="pt-4 pt-lg-5"></div>
                     <Tab_Menu_Anime/>
                     <div className="tabs-content overflow-h">
@@ -38,7 +39,6 @@ export default class Anime extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>

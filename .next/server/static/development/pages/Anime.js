@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2626,7 +2626,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "gutter-30"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "owl-carousel owl-theme-adonis"
+        className: "owl-carousel owl-theme-adonis",
+        style: {
+          cursor: "grab"
+        }
       }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: key,
@@ -2634,7 +2637,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "img-box-text-over lg box-rounded-lg"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "#"
+          href: "/detail/".concat(prop.key)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "resize1",
           style: {
@@ -2749,7 +2752,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -2764,7 +2770,6 @@ function (_Component) {
             },
             className: "retina",
             src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-            "data-2x": "assets/images/videos/videos-1@2x.jpg",
             alt: ""
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state"
@@ -2772,9 +2777,11 @@ function (_Component) {
             className: "absolute-bottom-left pl-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-bottom-right pr-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "mr-2"
@@ -2797,11 +2804,11 @@ function (_Component) {
           }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, data[0].title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title category"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))));
         })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pb-e-10 pb-e-lg-30"
@@ -2917,7 +2924,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "item"
         }, !data_1 || data_1.length === 0 ? "" : data_1.map(function (prop, key) {
@@ -2937,18 +2947,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -2981,18 +2993,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3025,18 +3039,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3069,18 +3085,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3113,18 +3131,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3157,18 +3177,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3284,7 +3306,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -3303,9 +3328,11 @@ function (_Component) {
             className: "absolute-bottom-left pl-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-top-right pr-e-20 pt-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer dropdown-menu-toggle"
@@ -3319,11 +3346,11 @@ function (_Component) {
           }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title category"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))));
         })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pt-e-20 pt-e-lg-40"
@@ -4199,6 +4226,80 @@ function (_Component) {
   }]);
 
   return Header;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./components/Header/HeaderAnime.js":
+/*!******************************************!*\
+  !*** ./components/Header/HeaderAnime.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HeaderAnime; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var HeaderAnime =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(HeaderAnime, _Component);
+
+  function HeaderAnime() {
+    _classCallCheck(this, HeaderAnime);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HeaderAnime).apply(this, arguments));
+  }
+
+  _createClass(HeaderAnime, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Hay Day TV | Anime | Phim Anime"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        charSet: "UTF-8"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "description",
+        content: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "author",
+        content: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "theme-color",
+        content: "#ffffff"
+      }));
+    }
+  }]);
+
+  return HeaderAnime;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
@@ -7186,13 +7287,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Search/Search_Box */ "./components/Search/Search_Box.js");
 /* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
 /* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var _components_Tabs_Tab_Menu_Anime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu_Anime */ "./components/Tabs/Tab_Menu_Anime.js");
-/* harmony import */ var _views_MainAnime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/MainAnime */ "./views/MainAnime.js");
-/* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
-/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
-/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_Header_HeaderAnime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header/HeaderAnime */ "./components/Header/HeaderAnime.js");
+/* harmony import */ var _components_Tabs_Tab_Menu_Anime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu_Anime */ "./components/Tabs/Tab_Menu_Anime.js");
+/* harmony import */ var _views_MainAnime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/MainAnime */ "./views/MainAnime.js");
+/* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_11__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -7229,6 +7331,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Anime =
 /*#__PURE__*/
 function (_Component) {
@@ -7243,13 +7346,13 @@ function (_Component) {
   _createClass(Anime, [{
     key: "render",
     value: function render() {
-      var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["default"])(this.props.data);
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_10__["Provider"], {
+      var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["default"])(this.props.data);
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_11__["Provider"], {
         store: store
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "wrap",
         className: "light main-wrap clearfix"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_HeaderAnime__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "site-content"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "site-content-inner"
@@ -7259,9 +7362,9 @@ function (_Component) {
         className: "master-container-fluid"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "pt-4 pt-lg-5"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu_Anime__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu_Anime__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "tabs-content overflow-h"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainAnime__WEBPACK_IMPORTED_MODULE_6__["default"], null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainAnime__WEBPACK_IMPORTED_MODULE_7__["default"], null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
     }
   }]);
 
@@ -7279,27 +7382,27 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          store = Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["default"])();
-          newUpdateAnime = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Update_Anime();
-          carouselAnime = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Data_Carousel_Anime();
-          recommendAnime_1 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_1();
-          recommendAnime_2 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_2();
-          recommendAnime_3 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_3();
-          recommendAnime_4 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_4();
-          recommendAnime_5 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_5();
-          recommendAnime_6 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Recommend_Anime_6();
-          topViewsAnime = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Views_Anime();
+          store = Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["default"])();
+          newUpdateAnime = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Update_Anime();
+          carouselAnime = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Data_Carousel_Anime();
+          recommendAnime_1 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_1();
+          recommendAnime_2 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_2();
+          recommendAnime_3 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_3();
+          recommendAnime_4 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_4();
+          recommendAnime_5 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_5();
+          recommendAnime_6 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Recommend_Anime_6();
+          topViewsAnime = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Views_Anime();
           _context.next = 12;
           return Promise.all([newUpdateAnime, recommendAnime_1, recommendAnime_2, recommendAnime_3, recommendAnime_4, recommendAnime_5, recommendAnime_6, topViewsAnime, carouselAnime]).then(function (result) {
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewUpdateAnime"])(result[0]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_1"])(result[1]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_2"])(result[2]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_3"])(result[3]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_4"])(result[4]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_5"])(result[5]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeRecommendAnime_6"])(result[6]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopViewsAnime"])(result[7]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCarouselAnime"])(result[8]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewUpdateAnime"])(result[0]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_1"])(result[1]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_2"])(result[2]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_3"])(result[3]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_4"])(result[4]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_5"])(result[5]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeRecommendAnime_6"])(result[6]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopViewsAnime"])(result[7]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCarouselAnime"])(result[8]));
           }).catch(function (err) {
             console.log(err);
           });
@@ -8889,7 +8992,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/Anime.js ***!
   \******************************/
@@ -8931,6 +9034,17 @@ module.exports = require("axios");
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-fetch");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

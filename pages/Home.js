@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import HeaderHome from '../components/Header/HeaderHome';
 import Tab_Menu_Home from '../components/Tabs/Tab_Menu_Home';
 import MainHome from '../views/MainHome';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
@@ -25,6 +26,7 @@ export default class Home extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderHome/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">

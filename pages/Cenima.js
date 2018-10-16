@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import HeaderCenima from '../components/Header/HeaderCenima';
 import Tab_Menu_Cenima from '../components/Tabs/Tab_Menu_Cenima';
 import MainCenima from '../views/MainCenima';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
@@ -24,6 +25,7 @@ export default class Cenima extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderCenima/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">
@@ -38,7 +40,6 @@ export default class Cenima extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>

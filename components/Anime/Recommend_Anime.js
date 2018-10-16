@@ -33,7 +33,7 @@ class Recommend_Anime extends Component {
                     </div>
                     <div className="adonis-carousel music-img-box-cont-sm viewport-animate  auto-fit-columns" data-auto-fit-items=".item" data-item-parent=".owl-carousel" data-item-width="336" data-item-max-width="630" data-animation="slideUp" data-animation-item=".item" data-auto-width="yes" data-loop="no" data-dots="yes">
                         <div className="gutter-30">
-                            <div className="owl-carousel owl-theme-adonis">
+                            <div className="owl-carousel owl-theme-adonis" style={{cursor: "grab"}}>
                                 <div className="item">
                                     {!data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
                                         <div key={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow">
@@ -41,11 +41,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
@@ -62,11 +62,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
@@ -82,11 +82,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
@@ -102,11 +102,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
@@ -122,11 +122,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>
@@ -142,11 +142,11 @@ class Recommend_Anime extends Component {
                                                 <img style={{ height: 50 }} src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="des">
-                                                <h6 className="title"><a href="#">{prop.title || ""}</a></h6>
-                                                <p className="sub-title"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h6>
+                                                <p className="sub-title"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                             <div className="hover-state d-flex justify-content-between align-items-center">
-                                                <span className="pointer play-btn-dark box-rounded-sm"><i className="play-icon"></i></span>
+                                                <span className="pointer play-btn-dark box-rounded-sm"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 <div className="d-flex align-items-center">
                                                     <span className="adonis-icon text-light pointer mr-2 icon-2x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-heart-blank"></use></svg></span>
                                                     <span className="pointer dropdown-menu-toggle"><span className="icon-dot-nav-horizontal text-light"></span></span>

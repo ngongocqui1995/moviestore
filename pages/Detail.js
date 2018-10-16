@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
 import SideBarLeft from '../components/SideBar/SideBarLeft';
 import Header from '../components/Header/Header';
+import fetchData from '../api/api'
+import {
+  storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5,
+  storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5,
+  storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2,
+  storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome
+} from '../store/store'
+import createStore from "../store/store"
 
 export default class Detail extends Component {
     render() {
         return (
             <div id="wrap" className="light main-wrap clearfix">
-                <SideBarLeft />
-                <Header />
+                <SideBarLeft/>
+                <Header/>
                 <div id="site-content">
                     <div id="site-content-inner">
                         <div className="album-wrap">
                             <div className="container">
-                                <div className="album-spacer"></div>
+                                <div className="img-box-text-over lg box-rounded-lg">
+                                    <img className="resize1" src={"/assets/images/single/single-2.jpg"} style={{width: "100%", height: 300, marginBottom: 20}} alt="" />
+                                </div>
                                 <div className="row">
                                     <div className="col-md-3 flex-column-sidebar-md text-center text-md-left">
                                         <div className="album-image">
@@ -442,4 +452,11 @@ export default class Detail extends Component {
             </div>
         )
     }
+}
+
+Detail.getInitialProps = async function (context) {
+    var store = createStore()
+    let metaKey = context.query.metaKey
+
+    return { data: store.getState() }
 }

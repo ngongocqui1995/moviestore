@@ -49,7 +49,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -66,7 +66,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -83,7 +83,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -100,7 +100,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -117,7 +117,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -134,7 +134,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -151,7 +151,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -168,7 +168,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -185,7 +185,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
@@ -202,7 +202,7 @@ class MainRomance extends Component {
                                     <div key={key} className="col-sm-6 col-md-4 col-lg-3 masonry-item mb-4">
                                         <article className="news-box">
                                             <div className="box-rounded-sm img-box">
-                                                <img src={url + prop.imageMain || ""} alt="" />
+                                                <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
                                                 <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>

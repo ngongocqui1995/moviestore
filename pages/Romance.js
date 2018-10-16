@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search/Search_Box';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import HeaderRomance from '../components/Header/HeaderRomance';
 import Tab_Menu_Romance from '../components/Tabs/Tab_Menu_Romance';
 import MainRomance from '../views/MainRomance';
 import SideBarLeft from '../components/SideBar/SideBarLeft';
@@ -23,11 +24,11 @@ export default class Romance extends Component {
           <div id="wrap" className="light main-wrap clearfix">
             <SideBarLeft/>
             <Header/>
+            <HeaderRomance/>
             <div id="site-content">
               <div id="site-content-inner">
                 <main id="main">
                   <div className="master-container-fluid">
-
                     <div className="pt-4 pt-lg-5"></div>
                     <Tab_Menu_Romance/>
                     <div className="tabs-content overflow-h">
@@ -38,7 +39,6 @@ export default class Romance extends Component {
               </div>
             </div>
             <Footer />
-
           </div>
           <Search />
         </div>

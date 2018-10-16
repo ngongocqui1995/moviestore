@@ -11,12 +11,6 @@ class Feature extends Component {
         }
     }
 
-    componentDidUpdate(){
-        $(".adonis-carousel").each(function () {
-            adonisObj.carousel($(this));
-          });
-    }
-
     render() {
         const { data } = this.props
         if(!data || data.length === 0)
@@ -36,7 +30,7 @@ class Feature extends Component {
                     </div>
                     <div className="adonis-carousel" data-animation-item=".owl-item.active" data-dots="yes" data-auto-width="yes" data-responsive-width="0:100%|300:50%|560:33%|820:25%|980:20%|1240:16.66%">
                         <div className="gutter-30">
-                            <div className="owl-carousel owl-theme-adonis">
+                            <div className="owl-carousel owl-theme-adonis" style={{cursor: "grab"}}>
                                 {
                                     !data || data.length === 0 ? "" : data.map((prop, key) => (
                                         <div key={key} className="item">
@@ -45,15 +39,15 @@ class Feature extends Component {
                                                     <img className="resize2" src={url + prop.imageMain || ""}  alt="" />
                                                     <div className="hover-state">
                                                         <div className="absolute-bottom-left pl-e-20 pb-e-20">
-                                                            <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                            <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                         </div>
                                                         <div className="absolute-top-right pr-e-20 pt-e-20">
                                                             <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                             </div>
                                         </div>
                                     ))

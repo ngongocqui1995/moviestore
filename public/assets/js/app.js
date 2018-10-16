@@ -90,14 +90,14 @@ jQuery(document).ready(function ($) {
   adonisObj.addPlayPreloader = function (el) {
     el.css('position', 'relative');
     $('.section-loader').html('<div class="preloader-overlay"></div><div class="loader-icon"><div class="tab-loader">' + adonisObj.preloaderPlayHtml + '</div></div>');
-    $('.section-loader:first').fadeIn('fast', function () {
+    $('.section-loader:first').fadeOut('fast', function () {
       el.css('position', '');
     });
   }
 
   adonisObj.addSectionPreloader = function (el) {
     el.css('position', 'relative').append('<div class="preloader section-loader text-center"><div class="preloader-overlay"></div><div class="d-inline-block"> ' + adonisObj.preloaderPlayHtml + '</div></div>');
-    el.find('.preloader:first').fadeIn('fast');
+    el.find('.preloader:first').fadeOut('fast');
   }
 
   adonisObj.removeSectionPreloader = function (el) {
@@ -846,7 +846,7 @@ jQuery(document).ready(function ($) {
         callback: function (data) {
 
           _el.css('position', 'relative').append('<div class="preloader section-loader text-center"><div class="preloader-overlay"></div><div class="d-inline-block"> ' + adonisObj.preloaderPlayHtml + '</div></div>');
-          _el.find('.preloader:first').fadeIn('fast', function () {
+          _el.find('.preloader:first').fadeOut('fast', function () {
             _el.removeClass(_selector);
             var ContentURL = _el.attr('data-content'),
               ajaxResponse;
@@ -865,7 +865,6 @@ jQuery(document).ready(function ($) {
                     _el.find('.preloader').remove();
                   });
                 }, 200);
-
               });
             }).fail(function (jqXHR, textStatus) {
               return false;
@@ -925,7 +924,7 @@ jQuery(document).ready(function ($) {
       }
       _parent.addClass('site-content-loading').find('.section-loader').append('<div class="loader-icon top-50-vh">' + adonisObj.preloaderPlayHtml + '</div>');
 
-      $('.section-loader:first').fadeIn('fast', function () {
+      $('.section-loader:first').fadeOut('fast', function () {
         ajaxLoading(_state.url);
       });
     }
@@ -1125,7 +1124,7 @@ jQuery(document).ready(function ($) {
 
         adonisObj.activateTabNav(_this, _target);
 
-        $('.tab-preloader:first').fadeIn('fast', function () {
+        $('.tab-preloader:first').fadeOut('fast', function () {
           _target.css('position', '');
           var ContentURL = _this.attr('data-content');
           if (!ContentURL) return;

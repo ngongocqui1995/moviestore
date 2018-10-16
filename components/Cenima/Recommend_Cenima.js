@@ -40,7 +40,7 @@ class Recommend_Cenima extends Component {
                     </div>
                     <div className="adonis-carousel music-img-box-cont-sm" data-animation-item=".item" data-dots="yes" data-auto-width="yes" data-responsive-width="0:50%|400:33.33%|600:25%|800:20%|1000:16.667%|1200:14.285%|1400:12.5%|1600:10%">
                         <div className="gutter-30">
-                            <div className="owl-carousel owl-theme-adonis">
+                            <div className="owl-carousel owl-theme-adonis" style={{cursor: "grab"}}>
                                 <div className="item">
                                     {!data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => {
                                         if (key === 0) {
@@ -50,15 +50,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -68,15 +68,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -92,15 +92,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -110,15 +110,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -133,15 +133,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -151,15 +151,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -174,15 +174,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -192,15 +192,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -215,15 +215,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -233,15 +233,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -256,15 +256,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -274,15 +274,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -297,15 +297,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -315,15 +315,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -338,15 +338,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -356,15 +356,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -379,15 +379,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -397,15 +397,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }
@@ -420,15 +420,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-1@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         } else {
@@ -438,15 +438,15 @@ class Recommend_Cenima extends Component {
                                                         <img style={{ height: 145 }} className="retina" src={url + prop.imageMain || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
-                                                                <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
+                                                                <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                             </div>
                                                             <div className="absolute-top-right pr-e-15 pt-e-15">
                                                                 <span className="pointer dropdown-menu-toggle"><span className="adonis-icon icon-4x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-horizontal-dots"></use></svg></span></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h6 className="title"><a href="#">{prop.title}</a></h6>
-                                                    <p className="sub-title category"><a href="#">{`Tập ${prop.episodes || ""}`}</a></p>
+                                                    <h6 className="title"><a href={`/detail/${prop.key}`}>{prop.title}</a></h6>
+                                                    <p className="sub-title category"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></p>
                                                 </div>
                                             )
                                         }

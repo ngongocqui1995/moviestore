@@ -44,9 +44,12 @@ app.prepare()
     app.render(req, res, actualPage)
   })
 
-  server.get('/detail', (req, res) => {
+  server.get('/detail/:metaKey', (req, res) => {
+    const query = { 
+      metaKey: req.params.metaKey 
+    }
     const actualPage = '/Detail'
-    app.render(req, res, actualPage)
+    app.render(req, res, actualPage, query)
   })
 
   server.get('*', (req, res) => {

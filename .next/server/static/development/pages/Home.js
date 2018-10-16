@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3425,6 +3425,80 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./components/Header/HeaderHome.js":
+/*!*****************************************!*\
+  !*** ./components/Header/HeaderHome.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HeaderHome; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var HeaderHome =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(HeaderHome, _Component);
+
+  function HeaderHome() {
+    _classCallCheck(this, HeaderHome);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HeaderHome).apply(this, arguments));
+  }
+
+  _createClass(HeaderHome, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Hay Day TV | Home | Trang Ch\u1EE7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        charSet: "UTF-8"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "description",
+        content: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "author",
+        content: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "theme-color",
+        content: "#ffffff"
+      }));
+    }
+  }]);
+
+  return HeaderHome;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./components/Home/CarouselTop.js":
 /*!****************************************!*\
   !*** ./components/Home/CarouselTop.js ***!
@@ -3480,13 +3554,6 @@ function (_Component) {
   }
 
   _createClass(CarouselTop, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var data = this.props.data;
@@ -3500,7 +3567,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "gutter-30"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "owl-carousel owl-theme-adonis"
+        className: "owl-carousel owl-theme-adonis",
+        style: {
+          cursor: "grab"
+        }
       }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: key,
@@ -3508,7 +3578,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "img-box-text-over lg box-rounded-lg"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "#"
+          href: "/detail/".concat(prop.key)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "resize1",
           style: {
@@ -3601,13 +3671,6 @@ function (_Component) {
   }
 
   _createClass(CommonMovies, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -3642,7 +3705,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "item"
         }, !data_1 || data_1.length === 0 ? "" : data_1.map(function (prop, key) {
@@ -3659,18 +3725,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "Rachel Platten"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3700,18 +3768,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3741,18 +3811,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3782,18 +3854,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3823,18 +3897,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3864,18 +3940,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -3968,13 +4046,6 @@ function (_Component) {
   }
 
   _createClass(Feature, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var data = this.props.data;
@@ -4011,7 +4082,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -4030,9 +4104,11 @@ function (_Component) {
             className: "absolute-bottom-left pl-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-top-right pr-e-20 pt-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer dropdown-menu-toggle"
@@ -4046,11 +4122,11 @@ function (_Component) {
           }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title category"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))));
         })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pt-e-20 pt-e-lg-40"
@@ -4135,13 +4211,6 @@ function (_Component) {
   }
 
   _createClass(NewDay, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -4188,7 +4257,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "item"
         }, !data_1 || data_1.length === 0 ? "" : data_1.map(function (prop, key) {
@@ -4208,9 +4280,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4224,11 +4298,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4246,9 +4320,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4262,11 +4338,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4288,9 +4364,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4304,11 +4382,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4326,9 +4404,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4342,11 +4422,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4368,9 +4448,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4384,11 +4466,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4406,9 +4488,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4422,11 +4506,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4448,9 +4532,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4464,11 +4550,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4486,9 +4572,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4502,11 +4590,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4528,9 +4616,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4544,11 +4634,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4566,9 +4656,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4582,11 +4674,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4608,9 +4700,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4624,11 +4718,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4646,9 +4740,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4662,11 +4758,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4688,9 +4784,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4704,11 +4802,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4726,9 +4824,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4742,11 +4842,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4768,9 +4868,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4784,11 +4886,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4806,9 +4908,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4822,11 +4926,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4848,9 +4952,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4864,11 +4970,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4886,9 +4992,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4902,11 +5010,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4928,9 +5036,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4944,11 +5054,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             })));
           } else {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4966,9 +5076,11 @@ function (_Component) {
               className: "absolute-bottom-left pl-e-15 pb-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer play-btn-dark round-btn"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              href: "/detail/".concat(prop.key)
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
               className: "play-icon"
-            }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "absolute-top-right pr-e-15 pt-e-15"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
               className: "pointer dropdown-menu-toggle"
@@ -4982,11 +5094,11 @@ function (_Component) {
             }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
               className: "title"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               className: "sub-title category"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-              href: "#"
+              href: "/detail/".concat(prop.key)
             }, "T\u1EADp ".concat(prop.episodes || ""))));
           }
         }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -5072,13 +5184,6 @@ function (_Component) {
   }
 
   _createClass(NewUpdate, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var data = this.props.data;
@@ -5103,7 +5208,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -5125,9 +5233,11 @@ function (_Component) {
             className: "absolute-bottom-left pl-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-bottom-right pr-e-20 pb-e-20"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "mr-2"
@@ -5150,11 +5260,11 @@ function (_Component) {
           }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title category"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))));
         })))));
       }
@@ -5198,13 +5308,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -5221,34 +5331,100 @@ function (_Component) {
     _classCallCheck(this, TopWeek);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(TopWeek).call(this, props));
+    if (_this.props.data_1.length > 0) var infomartionVideo = _this.props.data_1[0];
     _this.state = {
-      data_1: [],
-      data_2: [],
-      data_3: [],
-      data_4: [],
-      data_5: [],
-      data_6: []
+      data_1: _this.props.data_1,
+      data_2: _this.props.data_2,
+      data_3: _this.props.data_3,
+      data_4: _this.props.data_4,
+      data_5: _this.props.data_5,
+      data_6: _this.props.data_6,
+      infomartionVideo: [infomartionVideo],
+      infomartionVideoDefault: []
     };
+    _this.setInfomartionVideo = _this.setInfomartionVideo.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.setInfomartionVideoDefault = _this.setInfomartionVideoDefault.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.getInfomartionOneVideoInData = _this.getInfomartionOneVideoInData.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(TopWeek, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
+    key: "setInfomartionVideo",
+    value: function setInfomartionVideo(event) {
+      var indexData = Number(event.currentTarget.id);
+      var indexArray = Number(event.currentTarget.dataset.id);
+      var value = this.getInfomartionOneVideoInData(indexData, indexArray);
+      this.setState({
+        infomartionVideo: [value]
       });
+    }
+  }, {
+    key: "setInfomartionVideoDefault",
+    value: function setInfomartionVideoDefault(event) {
+      var indexData = Number(event.currentTarget.id);
+      var indexArray = Number(event.currentTarget.dataset.id);
+      var value = this.getInfomartionOneVideoInData(indexData, indexArray);
+      this.setState({
+        infomartionVideoDefault: [value]
+      });
+    }
+  }, {
+    key: "getInfomartionOneVideoInData",
+    value: function getInfomartionOneVideoInData(indexData, indexArray) {
+      if (indexData === 1) {
+        return this.state.data_1[indexArray];
+      }
+
+      if (indexData === 2) {
+        return this.state.data_2[indexArray];
+      }
+
+      if (indexData === 3) {
+        return this.state.data_3[indexArray];
+      }
+
+      if (indexData === 4) {
+        return this.state.data_4[indexArray];
+      }
+
+      if (indexData === 5) {
+        return this.state.data_5[indexArray];
+      }
+
+      if (indexData === 6) {
+        return this.state.data_6[indexArray];
+      }
+
+      if (indexData === 7) {
+        return this.state.data_7[indexArray];
+      }
+
+      if (indexData === 8) {
+        return this.state.data_8[indexArray];
+      }
+
+      if (indexData === 9) {
+        return this.state.data_9[indexArray];
+      }
+
+      if (indexData === 10) {
+        return this.state.data_10[indexArray];
+      }
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          data_1 = _this$props.data_1,
-          data_2 = _this$props.data_2,
-          data_3 = _this$props.data_3,
-          data_4 = _this$props.data_4,
-          data_5 = _this$props.data_5,
-          data_6 = _this$props.data_6;
+      var _this2 = this;
+
+      var _this$state = this.state,
+          data_1 = _this$state.data_1,
+          data_2 = _this$state.data_2,
+          data_3 = _this$state.data_3,
+          data_4 = _this$state.data_4,
+          data_5 = _this$state.data_5,
+          data_6 = _this$state.data_6,
+          infomartionVideo = _this$state.infomartionVideo,
+          infomartionVideoDefault = _this$state.infomartionVideoDefault;
 
       if (!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || !data_4 || data_4.length === 0 || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -5269,7 +5445,7 @@ function (_Component) {
           className: "button-right ml-auto ml-auto mt-auto mb-4 d-flex"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           href: "#"
-        }, "See all ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "Xem th\xEAm", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "adonis-icon pl-1 icon-arrow icon-1x"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
           xmlns: "http://www.w3.org/2000/svg",
@@ -5286,13 +5462,20 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "item"
         }, !data_1 || data_1.length === 0 ? "" : data_1.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "1",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5306,18 +5489,21 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            "data-id": key,
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5336,7 +5522,11 @@ function (_Component) {
         }, !data_2 || data_2.length === 0 ? "" : data_2.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "2",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5350,18 +5540,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5380,7 +5572,11 @@ function (_Component) {
         }, !data_3 || data_3.length === 0 ? "" : data_3.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "3",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5394,18 +5590,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5424,7 +5622,11 @@ function (_Component) {
         }, !data_4 || data_4.length === 0 ? "" : data_4.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "4",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5438,18 +5640,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5468,7 +5672,11 @@ function (_Component) {
         }, !data_5 || data_5.length === 0 ? "" : data_5.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "5",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5482,18 +5690,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5512,7 +5722,11 @@ function (_Component) {
         }, !data_6 || data_6.length === 0 ? "" : data_6.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
-            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow"
+            id: "6",
+            "data-id": key,
+            className: "img-box-horizontal music-img-box h-g-bg h-d-shadow",
+            onMouseEnter: _this2.setInfomartionVideo,
+            onClick: _this2.setInfomartionVideoDefault
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "img-box img-box-sm box-rounded-sm"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -5526,18 +5740,20 @@ function (_Component) {
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title fs-2"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state d-flex justify-content-between align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark box-rounded-sm"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "d-flex align-items-center"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "adonis-icon text-light pointer mr-2 icon-2x"
@@ -5557,42 +5773,83 @@ function (_Component) {
           className: "col-xxl-5 col-lg-4"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "title pb-e-15"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "title inactive-color"
-        }, "Video Today"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           className: "title h3-md"
-        }, "Watch Now")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "music-img-box"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "img-box box-rounded-md"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "/assets/images/watch-now/watch-now.jpg",
-          alt: ""
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "hover-state show"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "absolute-top pl-e-15 pr-e-15 pt-e-15 pl-e-md-30 pr-e-md-30 pt-e-md-30"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "album-name text-light"
-        }, "Album:  Life Changes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: ""
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "#"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-          className: "album-title text-light"
-        }, "The Ones That Like Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "#"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-          className: "artist-name text-light"
-        }, "David Jame"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "ml-auto"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-          className: "pointer play-btn-dark play-btn-dark round-btn"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-          className: "play-icon"
-        })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, "Xem Ngay")), infomartionVideoDefault.length > 0 ? infomartionVideoDefault.map(function (prop, key) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            key: key,
+            className: "music-img-box"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-box box-rounded-md"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
+            style: {
+              height: 316
+            },
+            alt: ""
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "hover-state show"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: ""
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+            className: "album-title text-light"
+          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+            className: "artist-name text-light"
+          }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ml-auto"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "pointer play-btn-dark play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: "play-icon"
+          }))))))));
+        }) : infomartionVideo.map(function (prop, key) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            key: key,
+            className: "music-img-box"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-box box-rounded-md"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
+            style: {
+              height: 316
+            },
+            alt: ""
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "hover-state show"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: ""
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+            className: "album-title text-light"
+          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+            className: "artist-name text-light"
+          }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ml-auto"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "pointer play-btn-dark play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: "play-icon"
+          }))))))));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pt-e-30 pt-e-lg-40"
         }))));
       }
@@ -5671,13 +5928,6 @@ function (_Component) {
   }
 
   _createClass(Trends, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      $(".adonis-carousel").each(function () {
-        adonisObj.carousel($(this));
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var data = this.props.data;
@@ -5702,7 +5952,10 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "gutter-30"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "owl-carousel owl-theme-adonis"
+          className: "owl-carousel owl-theme-adonis",
+          style: {
+            cursor: "grab"
+          }
         }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -5736,9 +5989,11 @@ function (_Component) {
             className: "absolute-bottom-left pl-e-30 pb-e-30"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark round-btn"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-top-right pr-e-30 pt-e-30"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer dropdown-menu-toggle"
@@ -5752,11 +6007,11 @@ function (_Component) {
           }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             className: "sub-title category"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "#"
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))));
         })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pb-e-15 pb-e-lg-40"
@@ -8759,13 +9014,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Search/Search_Box */ "./components/Search/Search_Box.js");
 /* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
 /* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var _components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu_Home */ "./components/Tabs/Tab_Menu_Home.js");
-/* harmony import */ var _views_MainHome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/MainHome */ "./views/MainHome.js");
-/* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
-/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
-/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_Header_HeaderHome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header/HeaderHome */ "./components/Header/HeaderHome.js");
+/* harmony import */ var _components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Tabs/Tab_Menu_Home */ "./components/Tabs/Tab_Menu_Home.js");
+/* harmony import */ var _views_MainHome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/MainHome */ "./views/MainHome.js");
+/* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_11__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -8802,6 +9058,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Home =
 /*#__PURE__*/
 function (_Component) {
@@ -8816,13 +9073,13 @@ function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["default"])(this.props.data);
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_10__["Provider"], {
+      var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["default"])(this.props.data);
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_11__["Provider"], {
         store: store
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "wrap",
         className: "light main-wrap clearfix"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_HeaderHome__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "site-content"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "site-content-inner"
@@ -8832,9 +9089,9 @@ function (_Component) {
         className: "master-container-fluid"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "pt-4 pt-lg-5"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tabs_Tab_Menu_Home__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "tabs-content overflow-h"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainHome__WEBPACK_IMPORTED_MODULE_6__["default"], null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainHome__WEBPACK_IMPORTED_MODULE_7__["default"], null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Search_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
     }
   }]);
 
@@ -8852,61 +9109,61 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          store = Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["default"])();
-          carouselMainHome = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Data_Carousel_Main_Home();
-          featureMainHome = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Feature_Main_Home();
-          newUpdateMainHome = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Update_Main_Home();
-          trendsMainHome = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Trends_Main_Home();
-          commonMovies_1 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_1();
-          commonMovies_2 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_2();
-          commonMovies_3 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_3();
-          commonMovies_4 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_4();
-          commonMovies_5 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_5();
-          commonMovies_6 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Common_Movies_6();
-          topWeek_1 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_1();
-          topWeek_2 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_2();
-          topWeek_3 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_3();
-          topWeek_4 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_4();
-          topWeek_5 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_5();
-          topWeek_6 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_Top_Week_6();
-          newDay_1 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_1();
-          newDay_2 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_2();
-          newDay_3 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_3();
-          newDay_4 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_4();
-          newDay_5 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_5();
-          newDay_6 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_6();
-          newDay_7 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_7();
-          newDay_8 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_8();
-          newDay_9 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_9();
-          newDay_10 = _api_api__WEBPACK_IMPORTED_MODULE_8__["default"].__get_New_Day_10();
+          store = Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["default"])();
+          carouselMainHome = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Data_Carousel_Main_Home();
+          featureMainHome = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Feature_Main_Home();
+          newUpdateMainHome = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Update_Main_Home();
+          trendsMainHome = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Trends_Main_Home();
+          commonMovies_1 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_1();
+          commonMovies_2 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_2();
+          commonMovies_3 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_3();
+          commonMovies_4 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_4();
+          commonMovies_5 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_5();
+          commonMovies_6 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Common_Movies_6();
+          topWeek_1 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_1();
+          topWeek_2 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_2();
+          topWeek_3 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_3();
+          topWeek_4 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_4();
+          topWeek_5 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_5();
+          topWeek_6 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_Top_Week_6();
+          newDay_1 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_1();
+          newDay_2 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_2();
+          newDay_3 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_3();
+          newDay_4 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_4();
+          newDay_5 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_5();
+          newDay_6 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_6();
+          newDay_7 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_7();
+          newDay_8 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_8();
+          newDay_9 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_9();
+          newDay_10 = _api_api__WEBPACK_IMPORTED_MODULE_9__["default"].__get_New_Day_10();
           _context.next = 29;
           return Promise.all([carouselMainHome, featureMainHome, newUpdateMainHome, trendsMainHome, commonMovies_1, commonMovies_2, commonMovies_3, commonMovies_4, commonMovies_5, commonMovies_6, topWeek_1, topWeek_2, topWeek_3, topWeek_4, topWeek_5, topWeek_6, newDay_1, newDay_2, newDay_3, newDay_4, newDay_5, newDay_6, newDay_7, newDay_8, newDay_9, newDay_10]).then(function (result) {
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCarouselMainHome"])(result[0]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeFeatureMainHome"])(result[1]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewUpdateMainHome"])(result[2]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTrendsMainHome"])(result[3]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_1"])(result[4]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_2"])(result[5]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_3"])(result[6]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_4"])(result[7]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_5"])(result[8]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeCommonMovies_6"])(result[9]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_1"])(result[10]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_2"])(result[11]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_3"])(result[12]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_4"])(result[13]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_5"])(result[14]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeTopWeek_6"])(result[15]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_1"])(result[16]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_2"])(result[17]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_3"])(result[18]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_4"])(result[19]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_5"])(result[20]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_6"])(result[21]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_7"])(result[22]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_8"])(result[23]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_9"])(result[24]));
-            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_9__["storeNewDay_10"])(result[25]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCarouselMainHome"])(result[0]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeFeatureMainHome"])(result[1]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewUpdateMainHome"])(result[2]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTrendsMainHome"])(result[3]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_1"])(result[4]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_2"])(result[5]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_3"])(result[6]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_4"])(result[7]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_5"])(result[8]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeCommonMovies_6"])(result[9]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_1"])(result[10]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_2"])(result[11]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_3"])(result[12]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_4"])(result[13]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_5"])(result[14]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeTopWeek_6"])(result[15]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_1"])(result[16]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_2"])(result[17]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_3"])(result[18]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_4"])(result[19]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_5"])(result[20]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_6"])(result[21]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_7"])(result[22]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_8"])(result[23]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_9"])(result[24]));
+            store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_10__["storeNewDay_10"])(result[25]));
           }).catch(function (err) {
             console.log(err);
           });
@@ -10508,7 +10765,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/Home.js ***!
   \*****************************/
@@ -10550,6 +10807,17 @@ module.exports = require("axios");
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-fetch");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

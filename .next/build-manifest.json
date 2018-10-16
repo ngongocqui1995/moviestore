@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/Anime": [
+    "/Romance": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -20,6 +20,22 @@
       "static/runtime/main.js"
     ],
     "/Detail": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Cenima": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Anime": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Comedy": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/News": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
