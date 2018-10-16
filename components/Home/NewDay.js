@@ -74,7 +74,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -116,7 +116,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -157,7 +157,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -198,7 +198,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -239,7 +239,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -280,7 +280,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -321,7 +321,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -362,7 +362,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -403,7 +403,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
@@ -444,7 +444,7 @@ class NewDay extends Component {
                                             return (
                                                 <div key={key} className="music-img-box">
                                                     <div className="img-box box-rounded-md img-box-md">
-                                                        <img className="retina" src={url + prop.imageMain  || ""} data-2x="/static/assets/images/playlists/playlist-11@2x.jpg" alt="" />
+                                                        <img className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                         <div className="hover-state">
                                                             <div className="absolute-bottom-left pl-e-15 pb-e-15">
                                                                 <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>

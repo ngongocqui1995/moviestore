@@ -29,7 +29,7 @@ class CarouselTop extends Component {
                                     <div className="radio">
                                         <div className="img-box-text-over lg box-rounded-lg">
                                             <a href="#">
-                                                <img className="resize1" style={{ height: 380 }} src={url + prop.imageMain || ""} data-2x="assets/images/store/store-featured-01@2x.jpg" alt="" />
+                                                <img className="resize1" style={{ height: 380 }} src={url + prop.imageMain || ""} alt="" />
                                                 <div className="absolute-info">
                                                     <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                         <span className="adonis-highlight-dark">{prop.title}</span>

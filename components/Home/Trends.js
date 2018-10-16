@@ -37,7 +37,7 @@ class Trends extends Component {
                                         <div key={key} className="item">
                                             <div  className="music-img-box">
                                                 <div className="img-box">
-                                                    <img style={{height:300}}className="retina box-rounded-lg" src={ url + prop.imageMain || ""} data-2x="assets/images/radios/radio-browse-01@2x.jpg" alt="" />
+                                                    <img style={{height:300}}className="retina box-rounded-lg" src={ url + prop.imageMain || ""} alt="" />
                                                     <div className="absolute-info">
                                                         <div className="absolute-center">
                                                             <h4 className="fs-10 m-0 text-light text-center"><span className="font-weight-bold">Chichi</span></h4>

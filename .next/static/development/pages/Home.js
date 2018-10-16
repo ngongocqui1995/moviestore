@@ -3178,7 +3178,6 @@ function (_Component) {
             height: 380
           },
           src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-          "data-2x": "assets/images/store/store-featured-01@2x.jpg",
           alt: ""
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "absolute-info"
@@ -3905,7 +3904,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -3987,7 +3985,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4069,7 +4066,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4151,7 +4147,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4233,7 +4228,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4315,7 +4309,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4397,7 +4390,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4479,7 +4471,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4561,7 +4552,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4643,7 +4633,6 @@ function (_Component) {
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
               className: "retina",
               src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-              "data-2x": "/static/assets/images/playlists/playlist-11@2x.jpg",
               alt: ""
             }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "hover-state"
@@ -4804,7 +4793,6 @@ function (_Component) {
             },
             className: "retina",
             src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-            "data-2x": "assets/images/videos/videos-1@2x.jpg",
             alt: ""
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "hover-state"
@@ -5404,7 +5392,6 @@ function (_Component) {
             },
             className: "retina box-rounded-lg",
             src: _variables_general__WEBPACK_IMPORTED_MODULE_1__["url"] + prop.imageMain || "",
-            "data-2x": "assets/images/radios/radio-browse-01@2x.jpg",
             alt: ""
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "absolute-info"

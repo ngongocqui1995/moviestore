@@ -38,7 +38,7 @@ class NewUpdate extends Component {
                                         <div key={key} className="item">
                                             <div className="music-img-box">
                                                 <div className="img-box box-rounded-md">
-                                                    <img style={{ height: 218 }} className="retina" src={url + prop.imageMain  || ""} data-2x="assets/images/videos/videos-1@2x.jpg" alt="" />
+                                                    <img style={{ height: 218 }} className="retina" src={url + prop.imageMain  || ""} alt="" />
                                                     <div className="hover-state">
                                                         <div className="absolute-bottom-left pl-e-20 pb-e-20">
                                                             <span className="pointer play-btn-dark round-btn"><i className="play-icon"></i></span>
