@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_a17c1094421d3eae9dd5.js"
+    "static/development/dll/dll_4a2ab6ce0cb456fbfead.js"
   ],
   "pages": {
     "/_app": [
@@ -11,31 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/Romance": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/Home": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/Detail": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/Cenima": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/Anime": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/Comedy": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/News": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

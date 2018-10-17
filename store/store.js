@@ -357,6 +357,15 @@ export const storeRecommendAnime_6 = ( data ) => ( {
     data
 });
 
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////// DETAIL ////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+export const storeMovieInformation = ( data ) => ( {
+    type: "STORE_MOVIE_INFORMATION",
+    data
+});
+
 /////////////////////////// REDUCER ////////////////////////////////////////
 const carouselMainHomeReducer = ( state = [ ], action ) => {
     switch ( action.type ) {
@@ -918,6 +927,17 @@ const recommend_Anime_6_Reducer = ( state = [ ], action ) => {
     }
 }
 
+/////////////////////////////////////////////////////////////////////
+///////////////////////////// MOVIE /////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+const movieInformationReducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_MOVIE_INFORMATION":
+            return action.data;
+        default: return state;
+    }
+}
 
 const reducer = combineReducers( {                                                   
     carousel_Main_Home: carouselMainHomeReducer,
@@ -989,6 +1009,7 @@ const reducer = combineReducers( {
     recommend_Anime_6: recommend_Anime_6_Reducer,
     topViews_Anime: topViews_Anime_Reducer,
     carousel_Anime: carouselAnimeReducer,
+    movieInformation: movieInformationReducer,
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////

@@ -1,143 +1,152 @@
 function __get_Projection(title, episodes, coverImage, key, contentImages,
-categories, fansub, countries, startMusicName, finishMusicName, videos, _id,
-part,episodesCurrent, content, releaseYear, otherTitle, view, rank, group, 
+categories, fansub, countries, startMusicName, finishMusicName, videos, 
+_id, part,episodesCurrent, content, releaseYear, otherTitle, view, rank, group, 
 indexGroup, producer, imageMain, followers, filmActor, filmDirector, keyClass,
 page, status, author, linkTrailer, createdAt, updatedAt, __v){
+
     let projection = {}
-    if(Number(title) === 0){
-        projection.title = 0
+
+    if(Number(videos) === 1){
+        projection = {
+            "videos.episodes.img": 1,
+            "videos.episodes.key": 1,
+            "videos.episodes.numberEpisodes": 1,
+            "videos.episodes.timeASet": 1,
+            "videos.episodes.title": 1,
+            "videos.episodes.url": 1,
+        }
     }
 
-    if(Number(episodes) === 0){
-        projection.episodes = 0
+    if(Number(title) === 1){
+        projection.title = 1
     }
 
-    if(Number(coverImage) === 0){
-        projection.coverImage = 0
+    if(Number(episodes) === 1){
+        projection.episodes = 1
     }
 
-    if(Number(key) === 0){
-        projection.key = 0
+    if(Number(coverImage) === 1){
+        projection.coverImage = 1
     }
 
-    if(Number(contentImages) === 0){
-        projection.contentImages = 0
+    if(Number(key) === 1){
+        projection.key = 1
     }
 
-    if(Number(categories) === 0){
-        projection.categories = 0
+    if(Number(contentImages) === 1){
+        projection.contentImages = 1
     }
 
-    if(Number(fansub) === 0){
-        projection.fansub = 0
+    if(Number(categories) === 1){
+        projection.categories = 1
     }
 
-    if(Number(countries) === 0){
-        projection.countries = 0
+    if(Number(fansub) === 1){
+        projection.fansub = 1
     }
 
-    if(Number(startMusicName) === 0){
-        projection.startMusicName = 0
+    if(Number(countries) === 1){
+        projection.countries = 1
     }
 
-    if(Number(finishMusicName) === 0){
-        projection.finishMusicName = 0
+    if(Number(startMusicName) === 1){
+        projection.startMusicName = 1
     }
 
-    if(Number(videos) === 0){
-        projection.videos = 0
+    if(Number(finishMusicName) === 1){
+        projection.finishMusicName = 1
     }
 
     if(Number(_id) === 0){
         projection._id = 0
     }
 
-    if(Number(part) === 0){
-        projection.part = 0
+    if(Number(part) === 1){
+        projection.part = 1
     }
 
-    if(Number(episodesCurrent) === 0){
-        projection.episodesCurrent = 0
+    if(Number(episodesCurrent) === 1){
+        projection.episodesCurrent = 1
     }
 
-    if(Number(content) === 0){
-        projection.content = 0
+    if(Number(content) === 1){
+        projection.content = 1
     }
 
-    if(Number(releaseYear) === 0){
-        projection.releaseYear = 0
+    if(Number(releaseYear) === 1){
+        projection.releaseYear = 1
     }
 
-    if(Number(otherTitle) === 0){
-        projection.otherTitle = 0
+    if(Number(otherTitle) === 1){
+        projection.otherTitle = 1
     }
 
-    if(Number(view) === 0){
-        projection.view = 0
+    if(Number(view) === 1){
+        projection.view = 1
     }
 
-    if(Number(rank) === 0){
-        projection.rank = 0
+    if(Number(rank) === 1){
+        projection.rank = 1
     }
 
-    if(Number(group) === 0){
-        projection.group = 0
+    if(Number(group) === 1){
+        projection.group = 1
     }
 
-    if(Number(indexGroup) === 0){
-        projection.indexGroup = 0
+    if(Number(indexGroup) === 1){
+        projection.indexGroup = 1
     }
 
-    if(Number(producer) === 0){
-        projection.producer = 0
+    if(Number(producer) === 1){
+        projection.producer = 1
     }
 
-    if(Number(imageMain) === 0){
-        projection.imageMain = 0
+    if(Number(imageMain) === 1){
+        projection.imageMain = 1
     }
 
-    if(Number(followers) === 0){
-        projection.followers = 0
+    if(Number(followers) === 1){
+        projection.followers = 1
     }
 
-    if(Number(filmActor) === 0){
-        projection.filmActor = 0
+    if(Number(filmActor) === 1){
+        projection.filmActor = 1
     }
 
-    if(Number(filmDirector) === 0){
-        projection.filmDirector = 0
+    if(Number(filmDirector) === 1){
+        projection.filmDirector = 1
     }
 
-    if(Number(keyClass) === 0){
-        projection.keyClass = 0
+    if(Number(keyClass) === 1){
+        projection.keyClass = 1
     }
 
-    if(Number(page) === 0){
-        projection.page = 0
+    if(Number(page) === 1){
+        projection.page = 1
     }
 
-    if(Number(status) === 0){
-        projection.status = 0
+    if(Number(status) === 1){
+        projection.status = 1
     }
 
-    if(Number(author) === 0){
-        projection.author = 0
+    if(Number(author) === 1){
+        projection.author = 1
     }
 
-    if(Number(linkTrailer) === 0){
-        projection.linkTrailer = 0
+    if(Number(linkTrailer) === 1){
+        projection.linkTrailer = 1
     }
 
-    if(Number(createdAt) === 0){
-        projection.createdAt = 0
+    if(Number(createdAt) === 1){
+        projection.createdAt = 1
     }
 
-    if(Number(updatedAt) === 0){
-        projection.updatedAt = 0
+    if(Number(updatedAt) === 1){
+        projection.updatedAt = 1
     }
 
-    if(Number(__v) === 0){
-        projection.__v = 0
+    if(Number(__v) === 1){
+        projection.__v = 1
     }
 
     return projection

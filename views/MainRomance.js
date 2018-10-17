@@ -52,8 +52,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -69,8 +69,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -86,8 +86,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -103,8 +103,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -120,8 +120,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -137,8 +137,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -154,8 +154,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -171,8 +171,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -188,8 +188,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>
@@ -205,8 +205,8 @@ class MainRomance extends Component {
                                                 <a href={`/detail/${prop.key}`}><img src={url + prop.imageMain || ""} alt="" /></a>
                                             </div>
                                             <div className="info-box">
-                                                <p className="mb-2"><a href="#" className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
-                                                <h3 className="title"><a href="#">{prop.title || ""}</a> </h3>
+                                                <p className="mb-2"><a href={`/detail/${prop.key}`} className="color-active fs-1">Tập {prop.episodes || ""}</a></p>
+                                                <h3 className="title"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a> </h3>
                                                 <p className="excerpt">{prop.content || ""}</p>
                                                 <p>{`Phát hành ngày ${moment(prop.createdAt).format("DD-MM-YYYY")}`}</p>
                                             </div>

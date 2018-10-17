@@ -19,6 +19,7 @@ export default class CustomDocument extends Document {
             <link href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet"/>
             <link href="/assets/css/adonis.css" rel="stylesheet"/>
             <link href="/assets/css/responsive.css" rel="stylesheet"/>
+            <link href="/assets/css/video-js.css" rel="stylesheet"/>
 
             <script defer={true} src="/assets/vendors/jquery/jquery.min.js"></script>
             <script defer={true} src="/assets/vendors/bootstrap/js/popper.min.js"></script>
@@ -33,13 +34,14 @@ export default class CustomDocument extends Document {
             <script defer={true} src="/assets/vendors/history/jquery.history.js"></script>
             <script defer={true} src="/assets/js/bootstrap-hover-menu.js"></script>
             <script defer={true} src="/assets/js/dropdown-menu.js"></script>
-            
             <script defer={true} src="/assets/js/bootstrap-hover-menu.js"></script>
             <script defer={true} src="/assets/js/player.js"></script>
             <script defer={true} src="/assets/js/viewport.js"></script>
             <script defer={true} src="/assets/js/effects.js"></script>
             <script defer={true} src="/assets/js/dropdown-menu.js"></script>
             <script defer={true} src="/assets/js/app.js"></script>
+            <script defer={true} src="/assets/js/videojs-ie8.min.js"></script>
+            <script defer={true} src="/assets/js/video.js"></script>
         </Head>
         <body>
           <Main />

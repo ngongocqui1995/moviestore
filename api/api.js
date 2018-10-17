@@ -769,4 +769,18 @@ export default class {
     const data = res.data
     return data
   }
+
+  ///////////////////////////////////////////////////////////////////////
+  //////////////////////////// API DETAIL ///////////////////////////////
+  ///////////////////////////////////////////////////////////////////////
+
+  static async __get_Movie_Information(metaKey) {
+    const res = await axios.post(`${url}v1/collection/metaKey`, {
+        "metaKey": metaKey,
+        "projection": __get_Projection(1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 
+          0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0)
+    })
+    const data = res.data
+    return data
+  }
 }

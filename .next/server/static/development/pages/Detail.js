@@ -2555,11 +2555,742 @@ function () {
       return function __get_Top_Views_Anime() {
         return _get_Top_Views_Anime.apply(this, arguments);
       };
+    }() ///////////////////////////////////////////////////////////////////////
+    //////////////////////////// API DETAIL ///////////////////////////////
+    ///////////////////////////////////////////////////////////////////////
+
+  }, {
+    key: "__get_Movie_Information",
+    value: function () {
+      var _get_Movie_Information = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee70(metaKey) {
+        var res, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee70$(_context70) {
+          while (1) {
+            switch (_context70.prev = _context70.next) {
+              case 0:
+                _context70.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(_variables_general__WEBPACK_IMPORTED_MODULE_3__["url"], "v1/collection/metaKey"), {
+                  "metaKey": metaKey,
+                  "projection": Object(_config_database__WEBPACK_IMPORTED_MODULE_4__["__get_Projection"])(1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0)
+                });
+
+              case 2:
+                res = _context70.sent;
+                data = res.data;
+                return _context70.abrupt("return", data);
+
+              case 5:
+              case "end":
+                return _context70.stop();
+            }
+          }
+        }, _callee70, this);
+      }));
+
+      return function __get_Movie_Information(_x) {
+        return _get_Movie_Information.apply(this, arguments);
+      };
     }()
   }]);
 
   return _default;
 }();
+
+
+
+/***/ }),
+
+/***/ "./components/Detail/MovieInformation.js":
+/*!***********************************************!*\
+  !*** ./components/Detail/MovieInformation.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _variables_general__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../variables/general */ "./variables/general.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var MovieInformation =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(MovieInformation, _Component);
+
+  function MovieInformation(props) {
+    var _this;
+
+    _classCallCheck(this, MovieInformation);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(MovieInformation).call(this, props));
+    _this.state = {
+      data: _this.props.data,
+      categories: [],
+      countries: [],
+      fansub: [],
+      isLoading: false
+    };
+    return _this;
+  }
+
+  _createClass(MovieInformation, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var data = this.state.data;
+
+      if (data.length > 0) {
+        var categories = data[0].categories;
+        var countries = data[0].countries;
+        var fansub = data[0].fansub;
+        this.setState({
+          categories: categories,
+          countries: countries,
+          fansub: fansub
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          data = _this$state.data,
+          categories = _this$state.categories,
+          countries = _this$state.countries,
+          fansub = _this$state.fansub;
+      console.log(data);
+      console.log(categories);
+
+      if (!data || data.length === 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "text-center"
+        }, "Loading fail ...");
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "movie-detail"
+        }, !data || data.length === 0 ? "" : data.map(function (prop, key) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            key: key
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-box-text-over lg box-rounded-lg"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "resize1",
+            src: _variables_general__WEBPACK_IMPORTED_MODULE_2__["url"] + prop.coverImage || "",
+            style: {
+              width: "100%",
+              height: 300,
+              marginBottom: 20
+            },
+            alt: ""
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "row"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "col-md-3 flex-column-sidebar-md text-center text-md-left"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "album-image"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "music-img-box d-inline-block"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-box"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "retina box-rounded-md",
+            src: _variables_general__WEBPACK_IMPORTED_MODULE_2__["url"] + prop.imageMain || "",
+            alt: ""
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "absolute-info"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            className: "btn btn-60-60 btn-primary absolute-center adonis-album-button round-btn text-light",
+            "data-album-id": "1",
+            role: "button",
+            tabIndex: "0"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "adonis-icon icon-play icon-2x"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+            id: "icon-brand-play",
+            viewBox: "0 0 27 32",
+            width: "100%",
+            height: "100%"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+            d: "M2.594 0.275c-0.257-0.166-0.571-0.265-0.908-0.265-0.932 0-1.688 0.756-1.688 1.688 0 0.028 0.001 0.055 0.002 0.082l-0-0.004v13.246l16.702-6.219zM26.030 14.49l-4.184-2.541-21.846 8.102v10.154c-0.001 0.024-0.002 0.051-0.002 0.079 0 0.927 0.752 1.679 1.679 1.679 0.319 0 0.617-0.089 0.871-0.243l-0.007 0.004c1.501-0.888 22.21-13.433 23.489-14.214 0.52-0.316 0.863-0.88 0.863-1.524s-0.342-1.207-0.855-1.519l-0.008-0.004z"
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "adonis-icon icon-pause icon-2x"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+            version: "1.1",
+            xmlns: "http://www.w3.org/2000/svg",
+            height: "20",
+            viewBox: "0 0 29 32"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+            d: "M19.2 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+            d: "M1.6 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"
+          }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "pb-4 d-inline-block album-likes"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "adonis-icon pr-2 icon-2x"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            version: "1.1"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+            xlinkHref: "#icon-heart-blank"
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "pr-2"
+          }, "L\u01B0\u1EE3t Xem: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "adonis-icon pr-2 icon-1x"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            version: "1.1"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+            xlinkHref: "#icon-brand-play"
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, prop.view)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "detail",
+            style: {
+              marginBottom: 25
+            }
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Th\xF4ng Tin"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\xEAn Phim: ".concat(prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, prop.releaseYear !== "" ? "N\u0103m ph\xE1t h\xE0nh ".concat(prop.releaseYear) : ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, categories.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Th\u1EC3 Lo\u1EA1i:", categories.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              style: {
+                marginLeft: 10
+              },
+              href: "#",
+              key: key
+            }, prop.title);
+          })) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, countries.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qu\u1ED1c Gia:", countries.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              style: {
+                marginLeft: 10
+              },
+              key: key
+            }, prop.title);
+          })) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, fansub.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nh\xF3m d\u1ECBch:", fansub.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+              style: {
+                marginLeft: 10
+              },
+              key: key
+            }, prop.title);
+          })) : null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "N\u1ED9i Dung"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, prop.content)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "pt-e-20 pt-e-lg-40"
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "col-md-9 flex-column-content-md pl-e-xl-40"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "album-top-box text-center text-md-left"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+            id: "my-video",
+            className: "video-js vjs-big-play-centered",
+            autoPlay: true,
+            controls: true,
+            preload: true,
+            style: {
+              width: "100%",
+              height: 264
+            },
+            poster: "MY_VIDEO_POSTER.jpg",
+            "data-setup": "{}"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+            src: "https://scontent-nrt1-1.xx.fbcdn.net/v/t66.18014-6/10000000_1993990167330982_8710407114440623929_n.mp4?_nc_cat=106&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-nrt1-1.xx&oh=5a25d9a81c4e8474bd50ec60011d2f30&oe=5C894EFD",
+            type: "video/mp4"
+          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+            className: "adonis-album-list pt-e-30"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "item-number h6 inactive-color"
+          }, "#"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "item-title h6 inactive-color"
+          }, "Phim"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "item-duration h6 inactive-color"
+          }, "Th\u1EDDi Gian"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+            className: "adonis-album-list pb-5",
+            style: {
+              overflow: "auto",
+              height: 300
+            }
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null), prop.videos && prop.videos.length > 0 ? prop.videos[0].episodes.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+              key: key,
+              className: "item hover-bg-item"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-number"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-hide"
+            }, key + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-show adonis-icon icon-1x"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+              xmlns: "http://www.w3.org/2000/svg",
+              version: "1.1"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+              xlinkHref: "#icon-brand-play"
+            })), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-title"
+            }, prop.title, prop.numberEpisodes !== "" ? " t\u1EADp ".concat(prop.numberEpisodes) : ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-duration"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-hide hover-lg-show"
+            }, prop.timeASet)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "hover-bg gradient-adonis"
+            }));
+          }) : null))));
+        }));
+      }
+    }
+  }]);
+
+  return MovieInformation;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+function mapStateToProps(state) {
+  return {
+    data: state.movieInformation
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(MovieInformation));
+
+/***/ }),
+
+/***/ "./components/Detail/RelatedMovie.js":
+/*!*******************************************!*\
+  !*** ./components/Detail/RelatedMovie.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RelatedMovie; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var RelatedMovie =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(RelatedMovie, _Component);
+
+  function RelatedMovie() {
+    _classCallCheck(this, RelatedMovie);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(RelatedMovie).apply(this, arguments));
+  }
+
+  _createClass(RelatedMovie, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "more-items"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pt-e-20 pt-e-lg-40"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "title-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "title h3-md"
+      }, "More By Danielle Bradbery")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "adonis-carousel auto-fit-columns",
+        "data-auto-width": "no",
+        "data-item-parent": ".owl-carousel",
+        "data-auto-fit-items": ".item",
+        "data-dots": "yes",
+        "data-items-responsive": "0:1|400:2|600:3|900:4|1200:5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "gutter-30"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "owl-carousel owl-theme-adonis"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-1.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-1@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-2.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-2@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-3.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-3@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-4.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-4@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-5.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-5@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-6.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-6@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-7.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-7@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-8.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-8@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item hover-bg-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "music-img-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img-box box-rounded-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "retina",
+        src: "/assets/images/new-releases/new-releases-9.jpg",
+        "data-2x": "/assets/images/new-releases/new-releases-9@2x.jpg",
+        alt: ""
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hover-state"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-bottom-left pl-e-20 pb-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer play-btn-dark round-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "play-icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "absolute-top-right pr-e-20 pt-e-20"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pointer dropdown-menu-toggle"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "adonis-icon icon-4x"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        version: "1.1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+        xlinkHref: "#icon-horizontal-dots"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title category"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#"
+      }, "Adonis Music Pop"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pt-e-5 pt-e-lg-10"
+      }));
+    }
+  }]);
+
+  return RelatedMovie;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
@@ -3470,140 +4201,147 @@ __webpack_require__.r(__webpack_exports__);
 function __get_Projection(title, episodes, coverImage, key, contentImages, categories, fansub, countries, startMusicName, finishMusicName, videos, _id, part, episodesCurrent, content, releaseYear, otherTitle, view, rank, group, indexGroup, producer, imageMain, followers, filmActor, filmDirector, keyClass, page, status, author, linkTrailer, createdAt, updatedAt, __v) {
   var projection = {};
 
-  if (Number(title) === 0) {
-    projection.title = 0;
+  if (Number(videos) === 1) {
+    projection = {
+      "videos.episodes.img": 1,
+      "videos.episodes.key": 1,
+      "videos.episodes.numberEpisodes": 1,
+      "videos.episodes.timeASet": 1,
+      "videos.episodes.title": 1,
+      "videos.episodes.url": 1
+    };
   }
 
-  if (Number(episodes) === 0) {
-    projection.episodes = 0;
+  if (Number(title) === 1) {
+    projection.title = 1;
   }
 
-  if (Number(coverImage) === 0) {
-    projection.coverImage = 0;
+  if (Number(episodes) === 1) {
+    projection.episodes = 1;
   }
 
-  if (Number(key) === 0) {
-    projection.key = 0;
+  if (Number(coverImage) === 1) {
+    projection.coverImage = 1;
   }
 
-  if (Number(contentImages) === 0) {
-    projection.contentImages = 0;
+  if (Number(key) === 1) {
+    projection.key = 1;
   }
 
-  if (Number(categories) === 0) {
-    projection.categories = 0;
+  if (Number(contentImages) === 1) {
+    projection.contentImages = 1;
   }
 
-  if (Number(fansub) === 0) {
-    projection.fansub = 0;
+  if (Number(categories) === 1) {
+    projection.categories = 1;
   }
 
-  if (Number(countries) === 0) {
-    projection.countries = 0;
+  if (Number(fansub) === 1) {
+    projection.fansub = 1;
   }
 
-  if (Number(startMusicName) === 0) {
-    projection.startMusicName = 0;
+  if (Number(countries) === 1) {
+    projection.countries = 1;
   }
 
-  if (Number(finishMusicName) === 0) {
-    projection.finishMusicName = 0;
+  if (Number(startMusicName) === 1) {
+    projection.startMusicName = 1;
   }
 
-  if (Number(videos) === 0) {
-    projection.videos = 0;
+  if (Number(finishMusicName) === 1) {
+    projection.finishMusicName = 1;
   }
 
   if (Number(_id) === 0) {
     projection._id = 0;
   }
 
-  if (Number(part) === 0) {
-    projection.part = 0;
+  if (Number(part) === 1) {
+    projection.part = 1;
   }
 
-  if (Number(episodesCurrent) === 0) {
-    projection.episodesCurrent = 0;
+  if (Number(episodesCurrent) === 1) {
+    projection.episodesCurrent = 1;
   }
 
-  if (Number(content) === 0) {
-    projection.content = 0;
+  if (Number(content) === 1) {
+    projection.content = 1;
   }
 
-  if (Number(releaseYear) === 0) {
-    projection.releaseYear = 0;
+  if (Number(releaseYear) === 1) {
+    projection.releaseYear = 1;
   }
 
-  if (Number(otherTitle) === 0) {
-    projection.otherTitle = 0;
+  if (Number(otherTitle) === 1) {
+    projection.otherTitle = 1;
   }
 
-  if (Number(view) === 0) {
-    projection.view = 0;
+  if (Number(view) === 1) {
+    projection.view = 1;
   }
 
-  if (Number(rank) === 0) {
-    projection.rank = 0;
+  if (Number(rank) === 1) {
+    projection.rank = 1;
   }
 
-  if (Number(group) === 0) {
-    projection.group = 0;
+  if (Number(group) === 1) {
+    projection.group = 1;
   }
 
-  if (Number(indexGroup) === 0) {
-    projection.indexGroup = 0;
+  if (Number(indexGroup) === 1) {
+    projection.indexGroup = 1;
   }
 
-  if (Number(producer) === 0) {
-    projection.producer = 0;
+  if (Number(producer) === 1) {
+    projection.producer = 1;
   }
 
-  if (Number(imageMain) === 0) {
-    projection.imageMain = 0;
+  if (Number(imageMain) === 1) {
+    projection.imageMain = 1;
   }
 
-  if (Number(followers) === 0) {
-    projection.followers = 0;
+  if (Number(followers) === 1) {
+    projection.followers = 1;
   }
 
-  if (Number(filmActor) === 0) {
-    projection.filmActor = 0;
+  if (Number(filmActor) === 1) {
+    projection.filmActor = 1;
   }
 
-  if (Number(filmDirector) === 0) {
-    projection.filmDirector = 0;
+  if (Number(filmDirector) === 1) {
+    projection.filmDirector = 1;
   }
 
-  if (Number(keyClass) === 0) {
-    projection.keyClass = 0;
+  if (Number(keyClass) === 1) {
+    projection.keyClass = 1;
   }
 
-  if (Number(page) === 0) {
-    projection.page = 0;
+  if (Number(page) === 1) {
+    projection.page = 1;
   }
 
-  if (Number(status) === 0) {
-    projection.status = 0;
+  if (Number(status) === 1) {
+    projection.status = 1;
   }
 
-  if (Number(author) === 0) {
-    projection.author = 0;
+  if (Number(author) === 1) {
+    projection.author = 1;
   }
 
-  if (Number(linkTrailer) === 0) {
-    projection.linkTrailer = 0;
+  if (Number(linkTrailer) === 1) {
+    projection.linkTrailer = 1;
   }
 
-  if (Number(createdAt) === 0) {
-    projection.createdAt = 0;
+  if (Number(createdAt) === 1) {
+    projection.createdAt = 1;
   }
 
-  if (Number(updatedAt) === 0) {
-    projection.updatedAt = 0;
+  if (Number(updatedAt) === 1) {
+    projection.updatedAt = 1;
   }
 
-  if (Number(__v) === 0) {
-    projection.__v = 0;
+  if (Number(__v) === 1) {
+    projection.__v = 1;
   }
 
   return projection;
@@ -3630,7 +4368,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SideBar/SideBarLeft */ "./components/SideBar/SideBarLeft.js");
 /* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
 /* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/api */ "./api/api.js");
-/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
+/* harmony import */ var _views_MainDetail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../views/MainDetail */ "./views/MainDetail.js");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store/store */ "./store/store.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_7__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -3662,6 +4403,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var Detail =
 /*#__PURE__*/
 function (_Component) {
@@ -3676,7 +4419,10 @@ function (_Component) {
   _createClass(Detail, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_6__["default"])(this.props.data);
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+        store: store
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "wrap",
         className: "light main-wrap clearfix"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_SideBar_SideBarLeft__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -3685,1084 +4431,7 @@ function (_Component) {
         id: "site-content-inner"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "album-wrap"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box-text-over lg box-rounded-lg"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "resize1",
-        src: "/assets/images/single/single-2.jpg",
-        style: {
-          width: "100%",
-          height: 300,
-          marginBottom: 20
-        },
-        alt: ""
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-md-3 flex-column-sidebar-md text-center text-md-left"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "album-image"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box d-inline-block"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina box-rounded-md",
-        src: "/assets/images/single/single-2.jpg",
-        "data-2x": "/assets/images/single/single-2@2x.jpg",
-        alt: ""
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-info"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "btn btn-60-60 btn-primary absolute-center adonis-album-button round-btn text-light",
-        "data-album-id": "1",
-        role: "button",
-        tabindex: "0"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-play icon-2x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        id: "icon-brand-play",
-        viewBox: "0 0 27 32",
-        width: "100%",
-        height: "100%"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
-        d: "M2.594 0.275c-0.257-0.166-0.571-0.265-0.908-0.265-0.932 0-1.688 0.756-1.688 1.688 0 0.028 0.001 0.055 0.002 0.082l-0-0.004v13.246l16.702-6.219zM26.030 14.49l-4.184-2.541-21.846 8.102v10.154c-0.001 0.024-0.002 0.051-0.002 0.079 0 0.927 0.752 1.679 1.679 1.679 0.319 0 0.617-0.089 0.871-0.243l-0.007 0.004c1.501-0.888 22.21-13.433 23.489-14.214 0.52-0.316 0.863-0.88 0.863-1.524s-0.342-1.207-0.855-1.519l-0.008-0.004z"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-pause icon-2x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        version: "1.1",
-        xmlns: "http://www.w3.org/2000/svg",
-        height: "20",
-        viewBox: "0 0 29 32"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
-        d: "M19.2 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
-        d: "M1.6 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "pb-4 d-inline-block album-likes"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon pr-2 icon-2x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pr-2"
-      }, "1256"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon pr-2 icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "125K")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "about"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "About this album"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "pt-e-20 pt-e-lg-40"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-md-9 flex-column-content-md pl-e-xl-40"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "album-top-box text-center text-md-left"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "inactive-color"
-      }, "ALBUM"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-        className: "album-title"
-      }, "The Ones That Like Me"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "mb-2"
-      }, "By: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Danielle Bradberry"), "  classNameical"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "separator mb-4 mt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "separator-md"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "mb-2"
-      }, "14 Songs - 30 minutes"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "mb-2"
-      }, "Released on November 12, 2017")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "adonis-album-list pb-5 pt-e-30"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number h6 inactive-color"
-      }, "#"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title h6 inactive-color"
-      }, "Song"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre h6 inactive-color"
-      }, "Genre"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration h6 inactive-color"
-      }, "Time"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon h6 inactive-color icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "01"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Begining To See The Light"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "14:13")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1245"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "02"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Ugly Christmas Sweater"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "10:14")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1010"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "03"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Feliz Navidad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "11:08")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1110"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "04"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "What are You Doing New Year's Eve?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "14:13")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1245"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "05"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Mashmallow World"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "12:14")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1245"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "06"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Hard Candy Christmas"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "13:15")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1325"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "07"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Baby, It's Cold Outside"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "16:16")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1980"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "08"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "The Man With The Bag"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "18:14")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1745"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "09"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "What I'm Thankful for"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "19:26")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1428"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "10"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "What I've Done - One More Light Live"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "14:13")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1563"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-number"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "11"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-show adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-brand-play"
-      })), " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-title"
-      }, "Talking to Myself - One More Light Live"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-genre"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide hover-lg-show"
-      }, "classNameical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-duration"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "17:16")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "hover-hide"
-      }, "1536"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-show d-flex flex-nowrap hover-tools"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-1x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-heart-blank"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon icon-3x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-plus"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "ml-3 adonis-icon pointer dropdown-menu-toggle"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-bg gradient-adonis"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "mb-2"
-      }, "Released on November 12, 2017"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "mb-2"
-      }, "\xA9 2018 Adonis Inc."))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "more-items"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "pt-e-20 pt-e-lg-40"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "title-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-        className: "title h3-md"
-      }, "More By Danielle Bradbery")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "adonis-carousel auto-fit-columns",
-        "data-auto-width": "no",
-        "data-item-parent": ".owl-carousel",
-        "data-auto-fit-items": ".item",
-        "data-dots": "yes",
-        "data-items-responsive": "0:1|400:2|600:3|900:4|1200:5"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "gutter-30"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "owl-carousel owl-theme-adonis"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-1.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-1@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-2.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-2@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-3.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-3@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-4.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-4@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-5.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-5@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-6.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-6@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-7.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-7@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-8.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-8@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "item hover-bg-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "music-img-box"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "img-box box-rounded-sm"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        className: "retina",
-        src: "/assets/images/new-releases/new-releases-9.jpg",
-        "data-2x": "/assets/images/new-releases/new-releases-9@2x.jpg",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hover-state"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-bottom-left pl-e-20 pb-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer play-btn-dark round-btn"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "play-icon"
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "absolute-top-right pr-e-20 pt-e-20"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "pointer dropdown-menu-toggle"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "adonis-icon icon-4x"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        version: "1.1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("use", {
-        xlinkHref: "#icon-horizontal-dots"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Vestibulum nibh lorem ipsum")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-        className: "sub-title category"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, "Adonis Music Pop"))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "pt-e-5 pt-e-lg-10"
-      })))))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_views_MainDetail__WEBPACK_IMPORTED_MODULE_5__["default"], null))))));
     }
   }]);
 
@@ -4777,18 +4446,28 @@ function () {
   var _ref = _asyncToGenerator(
   /*#__PURE__*/
   _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
-    var store, metaKey;
+    var store, metaKey, keyEpisodes, movieInformation;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])();
+            store = Object(_store_store__WEBPACK_IMPORTED_MODULE_6__["default"])();
             metaKey = context.query.metaKey;
+            keyEpisodes = context.query.keyEpisodes;
+            movieInformation = _api_api__WEBPACK_IMPORTED_MODULE_4__["default"].__get_Movie_Information(metaKey);
+            _context.next = 6;
+            return Promise.all([movieInformation]).then(function (result) {
+              store.dispatch(Object(_store_store__WEBPACK_IMPORTED_MODULE_6__["storeMovieInformation"])(result[0]));
+            }).catch(function (err) {
+              console.log(err);
+            });
+
+          case 6:
             return _context.abrupt("return", {
               data: store.getState()
             });
 
-          case 3:
+          case 7:
           case "end":
             return _context.stop();
         }
@@ -4807,7 +4486,7 @@ function () {
 /*!************************!*\
   !*** ./store/store.js ***!
   \************************/
-/*! exports provided: storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5, storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5, storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2, storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome, storeMainNews_1, storeMainNews_2, storeMainNews_3, storeMainNews_4, storeMainNews_5, storeMainNews_6, storeMainNews_7, storeMainNews_8, storeMainNews_9, storeMainNews_10, storeMainComedy, storeMainRomance_1, storeMainRomance_2, storeMainRomance_3, storeMainRomance_4, storeMainRomance_5, storeMainRomance_6, storeMainRomance_7, storeMainRomance_8, storeMainRomance_9, storeMainRomance_10, storeCarouselCenima, storeNewUpdateCenima, storeRecommendCenima_1, storeRecommendCenima_2, storeRecommendCenima_3, storeRecommendCenima_4, storeRecommendCenima_5, storeRecommendCenima_6, storeRecommendCenima_7, storeRecommendCenima_8, storeRecommendCenima_9, storeRecommendCenima_10, storeTopViewsCenima, storeCarouselAnime, storeTopViewsAnime, storeNewUpdateAnime, storeRecommendAnime_1, storeRecommendAnime_2, storeRecommendAnime_3, storeRecommendAnime_4, storeRecommendAnime_5, storeRecommendAnime_6, default */
+/*! exports provided: storeCarouselMainHome, storeCommonMovies_1, storeCommonMovies_2, storeCommonMovies_3, storeCommonMovies_4, storeCommonMovies_5, storeCommonMovies_6, storeFeatureMainHome, storeNewDay_1, storeNewDay_2, storeNewDay_3, storeNewDay_4, storeNewDay_5, storeNewDay_6, storeNewDay_7, storeNewDay_8, storeNewDay_9, storeNewDay_10, storeNewUpdateMainHome, storeTopWeek_1, storeTopWeek_2, storeTopWeek_3, storeTopWeek_4, storeTopWeek_5, storeTopWeek_6, storeTrendsMainHome, storeMainNews_1, storeMainNews_2, storeMainNews_3, storeMainNews_4, storeMainNews_5, storeMainNews_6, storeMainNews_7, storeMainNews_8, storeMainNews_9, storeMainNews_10, storeMainComedy, storeMainRomance_1, storeMainRomance_2, storeMainRomance_3, storeMainRomance_4, storeMainRomance_5, storeMainRomance_6, storeMainRomance_7, storeMainRomance_8, storeMainRomance_9, storeMainRomance_10, storeCarouselCenima, storeNewUpdateCenima, storeRecommendCenima_1, storeRecommendCenima_2, storeRecommendCenima_3, storeRecommendCenima_4, storeRecommendCenima_5, storeRecommendCenima_6, storeRecommendCenima_7, storeRecommendCenima_8, storeRecommendCenima_9, storeRecommendCenima_10, storeTopViewsCenima, storeCarouselAnime, storeTopViewsAnime, storeNewUpdateAnime, storeRecommendAnime_1, storeRecommendAnime_2, storeRecommendAnime_3, storeRecommendAnime_4, storeRecommendAnime_5, storeRecommendAnime_6, storeMovieInformation, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4881,6 +4560,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendAnime_4", function() { return storeRecommendAnime_4; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendAnime_5", function() { return storeRecommendAnime_5; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeRecommendAnime_6", function() { return storeRecommendAnime_6; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeMovieInformation", function() { return storeMovieInformation; });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
@@ -5305,6 +4985,15 @@ var storeRecommendAnime_5 = function storeRecommendAnime_5(data) {
 var storeRecommendAnime_6 = function storeRecommendAnime_6(data) {
   return {
     type: "STORE_RECOMMEND_ANIME_6",
+    data: data
+  };
+}; ////////////////////////////////////////////////////////////////////////////
+//////////////////////////// DETAIL ////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+var storeMovieInformation = function storeMovieInformation(data) {
+  return {
+    type: "STORE_MOVIE_INFORMATION",
     data: data
   };
 }; /////////////////////////// REDUCER ////////////////////////////////////////
@@ -6210,6 +5899,22 @@ var recommend_Anime_6_Reducer = function recommend_Anime_6_Reducer() {
     default:
       return state;
   }
+}; /////////////////////////////////////////////////////////////////////
+///////////////////////////// MOVIE /////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+
+var movieInformationReducer = function movieInformationReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "STORE_MOVIE_INFORMATION":
+      return action.data;
+
+    default:
+      return state;
+  }
 };
 
 var reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
@@ -6281,7 +5986,8 @@ var reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   recommend_Anime_5: recommend_Anime_5_Reducer,
   recommend_Anime_6: recommend_Anime_6_Reducer,
   topViews_Anime: topViews_Anime_Reducer,
-  carousel_Anime: carouselAnimeReducer
+  carousel_Anime: carouselAnimeReducer,
+  movieInformation: movieInformationReducer
 }); ////////////////////////////////////////////////////////////////////////////////////////
 
 /* harmony default export */ __webpack_exports__["default"] = (function (initialState) {
@@ -6301,6 +6007,69 @@ var reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "url", function() { return url; });
 var url = "http://localhost:4098/";
+
+
+/***/ }),
+
+/***/ "./views/MainDetail.js":
+/*!*****************************!*\
+  !*** ./views/MainDetail.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MainDetail; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Detail_MovieInformation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Detail/MovieInformation */ "./components/Detail/MovieInformation.js");
+/* harmony import */ var _components_Detail_RelatedMovie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Detail/RelatedMovie */ "./components/Detail/RelatedMovie.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var MainDetail =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(MainDetail, _Component);
+
+  function MainDetail() {
+    _classCallCheck(this, MainDetail);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(MainDetail).apply(this, arguments));
+  }
+
+  _createClass(MainDetail, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Detail_MovieInformation__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Detail_RelatedMovie__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    }
+  }]);
+
+  return MainDetail;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
 
 
 /***/ }),
@@ -6350,6 +6119,17 @@ module.exports = require("isomorphic-fetch");
 
 /***/ }),
 
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -6358,6 +6138,17 @@ module.exports = require("isomorphic-fetch");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
 
 /***/ }),
 

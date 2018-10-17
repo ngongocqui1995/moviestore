@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 class TopWeek extends Component {
     constructor(props) {
         super(props)
-        if(this.props.data_1.length > 0) var infomartionVideo = this.props.data_1[0]
+        if(this.props.data_1.length > 0) var informationMovie = this.props.data_1[0]
         this.state = {
             data_1: this.props.data_1,
             data_2: this.props.data_2,
@@ -14,33 +14,33 @@ class TopWeek extends Component {
             data_4: this.props.data_4,
             data_5: this.props.data_5,
             data_6: this.props.data_6,
-            infomartionVideo: [infomartionVideo],
-            infomartionVideoDefault: []
+            informationMovie: [informationMovie],
+            informationMovieDefault: []
         }
-        this.setInfomartionVideo = this.setInfomartionVideo.bind(this)
-        this.setInfomartionVideoDefault = this.setInfomartionVideoDefault.bind(this)
-        this.getInfomartionOneVideoInData = this.getInfomartionOneVideoInData.bind(this)
+        this.setInformationMovie = this.setInformationMovie.bind(this)
+        this.setInformationMovieDefault = this.setInformationMovieDefault.bind(this)
+        this.getInformationOneMovieInData = this.getInformationOneMovieInData.bind(this)
     }
 
-    setInfomartionVideo(event){
+    setInformationMovie(event){
         let indexData = Number(event.currentTarget.id)
         let indexArray = Number(event.currentTarget.dataset.id)
         
-        let value = this.getInfomartionOneVideoInData(indexData, indexArray)
+        let value = this.getInformationOneMovieInData(indexData, indexArray)
 
-        this.setState({infomartionVideo: [value]})
+        this.setState({informationMovie: [value]})
     }
 
-    setInfomartionVideoDefault(event){
+    setInformationMovieDefault(event){
         let indexData = Number(event.currentTarget.id)
         let indexArray = Number(event.currentTarget.dataset.id)
         
-        let value = this.getInfomartionOneVideoInData(indexData, indexArray)
+        let value = this.getInformationOneMovieInData(indexData, indexArray)
 
-        this.setState({infomartionVideoDefault: [value]})
+        this.setState({informationMovieDefault: [value]})
     }
 
-    getInfomartionOneVideoInData(indexData, indexArray){
+    getInformationOneMovieInData(indexData, indexArray){
         if(indexData === 1){
             return this.state.data_1[indexArray]
         }
@@ -74,7 +74,7 @@ class TopWeek extends Component {
     }
 
     render() {
-        const { data_1, data_2, data_3, data_4, data_5, data_6, infomartionVideo, infomartionVideoDefault } = this.state
+        const { data_1, data_2, data_3, data_4, data_5, data_6, informationMovie, informationMovieDefault } = this.state
 
         if (!data_1 || data_1.length === 0 || !data_2 || data_2.length === 0 || !data_3 || data_3.length === 0 || 
             !data_4 || data_4.length === 0 || !data_5 || data_5.length === 0 || !data_6 || data_6.length === 0) {
@@ -98,7 +98,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_1 || data_1.length === 0 ? "" : data_1.map((prop, key) => (
-                                                    <div key={key} id="1" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="1" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -120,7 +120,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_2 || data_2.length === 0 ? "" : data_2.map((prop, key) =>  (
-                                                    <div key={key} id="2" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="2" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -142,7 +142,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_3 || data_3.length === 0 ? "" : data_3.map((prop, key) => (
-                                                    <div key={key} id="3" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="3" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -164,7 +164,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_4 || data_4.length === 0 ? "" : data_4.map((prop, key) => (
-                                                    <div key={key} id="4" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="4" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -186,7 +186,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_5 || data_5.length === 0 ? "" : data_5.map((prop, key) => (
-                                                    <div key={key} id="5" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="5" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -208,7 +208,7 @@ class TopWeek extends Component {
                                         <div className="item">
                                             {
                                                 !data_6 || data_6.length === 0 ? "" : data_6.map((prop, key) => (
-                                                    <div key={key} id="6" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInfomartionVideo} onClick={this.setInfomartionVideoDefault}>
+                                                    <div key={key} id="6" data-id={key} className="img-box-horizontal music-img-box h-g-bg h-d-shadow" onMouseEnter={this.setInformationMovie} onClick={this.setInformationMovieDefault}>
                                                         <div className="img-box img-box-sm box-rounded-sm">
                                                             <img style={{ height: 50 }} src={url + prop.imageMain  || ""} alt="" />
                                                         </div>
@@ -237,7 +237,7 @@ class TopWeek extends Component {
                                 <h2 className="title h3-md">Xem Ngay</h2>
                             </div>
                             {
-                                infomartionVideoDefault.length > 0 ? infomartionVideoDefault.map((prop, key) => (
+                                informationMovieDefault.length > 0 ? informationMovieDefault.map((prop, key) => (
                                     <div key={key} className="music-img-box">
                                         <div className="img-box box-rounded-md">
                                             <img src={url + prop.imageMain  || ""} style={{ height: 316 }} alt=""/>
@@ -255,7 +255,7 @@ class TopWeek extends Component {
                                         </div>
                                     </div>
                                 )) : 
-                                infomartionVideo.map((prop, key) => (
+                                informationMovie.map((prop, key) => (
                                     <div key={key} className="music-img-box">
                                         <div className="img-box box-rounded-md">
                                             <img src={url + prop.imageMain  || ""} style={{ height: 316 }} alt=""/>

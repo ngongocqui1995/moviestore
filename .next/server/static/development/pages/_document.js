@@ -188,6 +188,9 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         href: "/assets/css/responsive.css",
         rel: "stylesheet"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        href: "/assets/css/video-js.css",
+        rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
         src: "/assets/vendors/jquery/jquery.min.js"
@@ -245,6 +248,12 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         defer: true,
         src: "/assets/js/app.js"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+        defer: true,
+        src: "/assets/js/videojs-ie8.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+        defer: true,
+        src: "/assets/js/video.js"
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));
     }
   }], [{

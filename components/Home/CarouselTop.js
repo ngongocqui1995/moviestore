@@ -6,13 +6,13 @@ class CarouselTop extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: [],
+            data: this.props.data,
             isLoading: false
         }
     }
     
     render() {
-        const { data } = this.props
+        const { data } = this.state
         return (
             <div className="adonis-carousel mb-3" data-auto-width="yes" data-loop="yes" data-center="yes" data-dots="yes" data-responsive-width="0:70%|600:580px">
                 <div className="gutter-30">

@@ -7,17 +7,16 @@ class NewUpdate_Anime extends Component {
     constructor(datas) {
         super(datas)
         this.state = {
-            data: []
+            data: this.props.data
         }
     }
 
     render() {
-        const { data } = this.props
+        const { data } = this.state
         if(!data || data.length === 0)
         {
             return <div className="text-center">Loading fail ...</div>
-        }
-        else
+        }else
         {
             return (
                 <section>

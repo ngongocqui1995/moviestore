@@ -46,7 +46,8 @@ app.prepare()
 
   server.get('/detail/:metaKey', (req, res) => {
     const query = { 
-      metaKey: req.params.metaKey 
+      metaKey: req.params.metaKey,
+      keyEpisodes: req.query.episodes
     }
     const actualPage = '/Detail'
     app.render(req, res, actualPage, query)
