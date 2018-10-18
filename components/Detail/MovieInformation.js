@@ -32,7 +32,6 @@ class MovieInformation extends Component {
   render() {
     let { data, categories, countries, fansub } = this.state
     console.log(data)
-    console.log(categories)
     if(!data || data.length === 0){
         return <div className="text-center">Loading fail ...</div>
     }else{
@@ -52,12 +51,11 @@ class MovieInformation extends Component {
                                                 <img className="retina box-rounded-md" src={url + prop.imageMain || ""} alt="" />
                                             </div>
                                             <div className="absolute-info">
-                                                <a className="btn btn-60-60 btn-primary absolute-center adonis-album-button round-btn text-light" data-album-id="1" role="button" tabIndex="0">
-                                                    <span className="adonis-icon icon-play icon-2x"><svg id="icon-brand-play" viewBox="0 0 27 32" width="100%" height="100%">
+                                                <span className="adonis-icon icon-play icon-2x">
+                                                    <svg id="icon-brand-play" viewBox="0 0 27 32" width="100%" height="100%">
                                                         <path d="M2.594 0.275c-0.257-0.166-0.571-0.265-0.908-0.265-0.932 0-1.688 0.756-1.688 1.688 0 0.028 0.001 0.055 0.002 0.082l-0-0.004v13.246l16.702-6.219zM26.030 14.49l-4.184-2.541-21.846 8.102v10.154c-0.001 0.024-0.002 0.051-0.002 0.079 0 0.927 0.752 1.679 1.679 1.679 0.319 0 0.617-0.089 0.871-0.243l-0.007 0.004c1.501-0.888 22.21-13.433 23.489-14.214 0.52-0.316 0.863-0.88 0.863-1.524s-0.342-1.207-0.855-1.519l-0.008-0.004z"></path>
-                                                    </svg></span>
-                                                    <span className="adonis-icon icon-pause icon-2x"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 29 32"><path d="M19.2 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"></path><path d="M1.6 0h8c0.884 0 1.6 0.716 1.6 1.6v28.8c0 0.884-0.716 1.6-1.6 1.6h-8c-0.884 0-1.6-0.716-1.6-1.6v-28.8c0-0.884 0.716-1.6 1.6-1.6z"></path></svg></span>
-                                                </a>
+                                                    </svg>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -71,43 +69,28 @@ class MovieInformation extends Component {
                                         <h4>Thông Tin</h4>
                                         <p>{`Tên Phim: ${prop.title}`}</p>
                                         <p>{prop.releaseYear !== "" ? `Năm phát hành ${prop.releaseYear}` : ""}</p>
-                                        <p>
+                                        <p>Thể Loại: 
                                             {
-                                                categories.length > 0 ?
-                                                <p>Thể Loại: 
-                                                    {
-                                                        categories.map((prop, key) => (
-                                                            <a style={{marginLeft: 10}} href="#" key={key}>{prop.title}</a>
-                                                        ))
-                                                    }
-                                                </p> : 
-                                                null
+                                                categories.length > 0 ? categories.map((prop, key) => (
+                                                    <a style={{marginLeft: 10}} href="#" key={key}>{prop.title}</a>
+                                                ))
+                                                : null
                                             }
                                         </p>
-                                        <p>
+                                        <p>Quốc Gia:
                                             {
-                                                countries.length > 0 ?
-                                                <p>Quốc Gia:
-                                                    {
-                                                        countries.map((prop, key) => (
-                                                            <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
-                                                        ))
-                                                    }
-                                                </p> : 
-                                                null
+                                                countries.length > 0 ? countries.map((prop, key) => (
+                                                    <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
+                                                ))
+                                                : null
                                             }
                                         </p>
-                                        <p>
+                                        <p>Nhóm dịch:
                                             {
-                                                fansub.length > 0 ?
-                                                <p>Nhóm dịch:
-                                                    {
-                                                        fansub.map((prop, key) => (
-                                                            <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
-                                                        ))
-                                                    }
-                                                </p> : 
-                                                null
+                                                fansub.length > 0 ? fansub.map((prop, key) => (
+                                                    <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
+                                                ))
+                                                : null
                                             }
                                         </p>
                                     </div>
@@ -119,9 +102,9 @@ class MovieInformation extends Component {
                                 </div>
                                 <div className="col-md-9 flex-column-content-md pl-e-xl-40">
                                     <div className="album-top-box text-center text-md-left">
-                                        <video id="my-video" className="video-js vjs-big-play-centered" autoPlay={true} controls preload={true} style={{width: "100%", height: 264}}
+                                        <video id="my-video" className="video-js vjs-big-play-centered" autoPlay={true} controls preload="true" style={{width: "100%", height: 275}}
                                         poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                                            <source src="https://scontent-nrt1-1.xx.fbcdn.net/v/t66.18014-6/10000000_1993990167330982_8710407114440623929_n.mp4?_nc_cat=106&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-nrt1-1.xx&oh=5a25d9a81c4e8474bd50ec60011d2f30&oe=5C894EFD" type='video/mp4'/>
+                                            <source src="https://scontent-nrt1-1.xx.fbcdn.net/v/t66.18014-6/10000000_246516985946901_3673472486675015888_n.mp4?_nc_cat=109&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-nrt1-1.xx&oh=c562ef01207a4f01c409631e725a75a1&oe=5C452866" type='video/mp4'/>
                                         </video>
                                     </div>
 
@@ -132,7 +115,7 @@ class MovieInformation extends Component {
                                             <div className="item-duration h6 inactive-color">Thời Gian</div>
                                         </li>
                                     </ul>
-                                    <ul className="adonis-album-list pb-5" style={{overflow: "auto", height: 300}}>
+                                    <ul className="adonis-album-list pb-5" style={{overflow: "auto", height: 500}}>
                                         <li></li>
                                         {
                                             prop.videos && prop.videos.length > 0 ? prop.videos[0].episodes.map((prop, key) => (
