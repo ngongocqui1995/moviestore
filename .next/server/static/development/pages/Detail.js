@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2618,6 +2618,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _variables_general__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../variables/general */ "./variables/general.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "moment");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Tabs_Tab_Video__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Tabs/Tab_Video */ "./components/Tabs/Tab_Video.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2635,6 +2636,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -2686,7 +2688,6 @@ function (_Component) {
           categories = _this$state.categories,
           countries = _this$state.countries,
           fansub = _this$state.fansub;
-      console.log(data);
 
       if (!data || data.length === 0) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2757,90 +2758,38 @@ function (_Component) {
             style: {
               marginBottom: 25
             }
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Th\xF4ng Tin"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\xEAn Phim: ".concat(prop.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, prop.releaseYear !== "" ? "N\u0103m ph\xE1t h\xE0nh ".concat(prop.releaseYear) : ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Th\u1EC3 Lo\u1EA1i:", categories.length > 0 ? categories.map(function (prop, key) {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Th\xF4ng Tin"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\xEAn Phim: ".concat(prop.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, prop.releaseYear !== "" ? "N\u0103m ph\xE1t h\xE0nh ".concat(prop.releaseYear) : "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, categories.length > 0 ? categories.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              key: key
+            }, "Th\u1EC3 Lo\u1EA1i:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
               style: {
                 marginLeft: 10
               },
-              href: "#",
+              href: "#"
+            }, prop.title));
+          }) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, countries.length > 0 ? countries.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               key: key
-            }, prop.title);
-          }) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qu\u1ED1c Gia:", countries.length > 0 ? countries.map(function (prop, key) {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            }, "Qu\u1ED1c Gia:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
               style: {
                 marginLeft: 10
-              },
+              }
+            }, prop.title));
+          }) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, fansub.length > 0 ? fansub.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
               key: key
-            }, prop.title);
-          }) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nh\xF3m d\u1ECBch:", fansub.length > 0 ? fansub.map(function (prop, key) {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            }, "Nh\xF3m d\u1ECBch:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
               style: {
                 marginLeft: 10
-              },
-              key: key
-            }, prop.title);
+              }
+            }, prop.title));
           }) : null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "content"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "N\u1ED9i Dung"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, prop.content)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "pt-e-20 pt-e-lg-40"
           })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "col-md-9 flex-column-content-md pl-e-xl-40"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "album-top-box text-center text-md-left"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-            id: "my-video",
-            className: "video-js vjs-big-play-centered",
-            autoPlay: true,
-            controls: true,
-            preload: "true",
-            style: {
-              width: "100%",
-              height: 275
-            },
-            poster: "MY_VIDEO_POSTER.jpg",
-            "data-setup": "{}"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-            src: "https://scontent-nrt1-1.xx.fbcdn.net/v/t66.18014-6/10000000_246516985946901_3673472486675015888_n.mp4?_nc_cat=109&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-nrt1-1.xx&oh=c562ef01207a4f01c409631e725a75a1&oe=5C452866",
-            type: "video/mp4"
-          }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-            className: "adonis-album-list pt-e-30"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "item-number h6 inactive-color"
-          }, "#"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "item-title h6 inactive-color"
-          }, "Phim"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "item-duration h6 inactive-color"
-          }, "Th\u1EDDi Gian"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-            className: "adonis-album-list pb-5",
-            style: {
-              overflow: "auto",
-              height: 500
-            }
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null), prop.videos && prop.videos.length > 0 ? prop.videos[0].episodes.map(function (prop, key) {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-              key: key,
-              className: "item hover-bg-item"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-              className: "item-number"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-              className: "hover-hide"
-            }, key + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-              className: "hover-show adonis-icon icon-1x"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-              xmlns: "http://www.w3.org/2000/svg",
-              version: "1.1"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
-              xlinkHref: "#icon-brand-play"
-            })), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-              className: "item-title"
-            }, prop.title, prop.numberEpisodes !== "" ? " t\u1EADp ".concat(prop.numberEpisodes) : ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-              className: "item-duration"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-              className: "hover-hide hover-lg-show"
-            }, prop.timeASet)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-              className: "hover-bg gradient-adonis"
-            }));
-          }) : null))));
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Tabs_Tab_Video__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
         }));
       }
     }
@@ -4171,6 +4120,255 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./components/Tabs/Tab_Video.js":
+/*!**************************************!*\
+  !*** ./components/Tabs/Tab_Video.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _variables_general__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../variables/general */ "./variables/general.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+
+
+
+
+
+var permission = "?authen=exp=1540052097~acl=/R4BehICXpk0/*~hmac=5c8eb39f518e85d5bb061d4f6b5b6886";
+
+var Tab_Video =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Tab_Video, _Component);
+
+  function Tab_Video(props) {
+    var _this;
+
+    _classCallCheck(this, Tab_Video);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tab_Video).call(this, props));
+    _this.state = {
+      activeTab: 0,
+      data: _this.props.data,
+      videos: [],
+      linkVideo: "",
+      imagePoster: ""
+    };
+    _this.toggle = _this.toggle.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.onClickWatchMovie = _this.onClickWatchMovie.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(Tab_Video, [{
+    key: "onClickWatchMovie",
+    value: function onClickWatchMovie(prop) {
+      if (prop.linkVideo !== undefined) {
+        this.playVideo(prop.linkVideo + permission);
+        this.setState({
+          linkVideo: prop.linkVideo + permission
+        });
+      }
+    }
+  }, {
+    key: "playVideo",
+    value: function playVideo(linkVideo) {
+      var video = videojs('my-video');
+      video.src([{
+        src: linkVideo,
+        type: 'video/mp4'
+      }]);
+      video.load();
+      video.play();
+    }
+  }, {
+    key: "toggle",
+    value: function toggle(tab) {
+      if (this.state.activeTab !== tab) {
+        this.setState({
+          activeTab: tab
+        });
+      }
+    }
+  }, {
+    key: "getLinkVideo",
+    value: function getLinkVideo(videos) {
+      var linkVideo = "";
+
+      if (videos.length > 0) {
+        var episodes = videos[0].episodes;
+
+        if (episodes.length > 0) {
+          linkVideo = episodes[0].linkVideo + permission;
+        }
+      }
+
+      return linkVideo;
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var data = this.state.data;
+
+      if (data.length > 0) {
+        var videos = data[0].videos.reverse();
+        var linkVideo = this.getLinkVideo(videos);
+        var imagePoster = data[0].coverImage;
+        this.playVideo(linkVideo);
+        this.setState({
+          videos: videos,
+          imagePoster: imagePoster,
+          linkVideo: linkVideo
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          videos = _this$state.videos,
+          data = _this$state.data,
+          activeTab = _this$state.activeTab,
+          linkVideo = _this$state.linkVideo,
+          imagePoster = _this$state.imagePoster;
+
+      if (!data || data.length === 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "text-center"
+        }, "Loading fail ...");
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: {
+            height: 275
+          }
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+          id: "my-video",
+          className: "video-js vjs-big-play-centered",
+          controls: true,
+          style: {
+            width: "100%",
+            height: "100%"
+          },
+          poster: _variables_general__WEBPACK_IMPORTED_MODULE_4__["url"] + imagePoster || ""
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+          src: linkVideo
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+          tabs: true,
+          style: {
+            cursor: "pointer"
+          }
+        }, !videos || videos.length === 0 ? "" : videos.map(function (prop, key) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
+            key: key
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()({
+              active: activeTab === key
+            }),
+            onClick: function onClick() {
+              _this2.toggle(key);
+            },
+            style: {
+              backgroundColor: activeTab === key ? "#b08cf9" : "#ffffff",
+              margin: 2
+            }
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, prop.title)));
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
+          activeTab: activeTab
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+          className: "adonis-album-list pt-e-30"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-number h6 inactive-color"
+        }, "#"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-title h6 inactive-color"
+        }, "Phim"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-duration h6 inactive-color"
+        }, "Th\u1EDDi Gian"))), !videos || videos.length === 0 ? "" : videos.map(function (prop, key) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabPane"], {
+            key: key,
+            tabId: key,
+            style: {
+              cursor: "pointer"
+            }
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+            className: "adonis-album-list pb-5",
+            style: {
+              overflow: "auto",
+              height: 500
+            }
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null), prop.episodes && prop.episodes.length > 0 ? prop.episodes.map(function (prop, key) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+              key: key,
+              className: "item hover-bg-item",
+              onClick: function onClick() {
+                _this2.onClickWatchMovie(prop);
+              }
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-number"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-hide"
+            }, key + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-show adonis-icon icon-1x"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+              xmlns: "http://www.w3.org/2000/svg",
+              version: "1.1"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+              xlinkHref: "#icon-brand-play"
+            })), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-title"
+            }, prop.title, prop.numberEpisodes !== "" ? " t\u1EADp ".concat(prop.numberEpisodes) : ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "item-duration"
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+              className: "hover-hide hover-lg-show"
+            }, prop.timeASet)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "hover-bg gradient-adonis"
+            }));
+          }) : null));
+        })));
+      }
+    }
+  }]);
+
+  return Tab_Video;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+function mapStateToProps(state) {
+  return {
+    data: state.movieInformation
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps)(Tab_Video));
+
+/***/ }),
+
 /***/ "./config/database.js":
 /*!****************************!*\
   !*** ./config/database.js ***!
@@ -4191,7 +4389,9 @@ function __get_Projection(title, episodes, coverImage, key, contentImages, categ
       "videos.episodes.numberEpisodes": 1,
       "videos.episodes.timeASet": 1,
       "videos.episodes.title": 1,
-      "videos.episodes.url": 1
+      "videos.episodes.url": 1,
+      "videos.episodes.linkVideo": 1,
+      "videos.title": 1
     };
   }
 
@@ -6057,7 +6257,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/Detail.js ***!
   \*******************************/
@@ -6088,6 +6288,17 @@ module.exports = require("@babel/runtime/regenerator");
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
+
+/***/ }),
+
+/***/ "classnames":
+/*!*****************************!*\
+  !*** external "classnames" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("classnames");
 
 /***/ }),
 
@@ -6132,6 +6343,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "reactstrap":
+/*!*****************************!*\
+  !*** external "reactstrap" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("reactstrap");
 
 /***/ }),
 

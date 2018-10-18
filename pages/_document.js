@@ -21,27 +21,27 @@ export default class CustomDocument extends Document {
             <link href="/assets/css/responsive.css" rel="stylesheet"/>
             <link href="/assets/css/video-js.css" rel="stylesheet"/>
 
-            <script defer={true} src="/assets/vendors/jquery/jquery.min.js"></script>
-            <script defer={true} src="/assets/vendors/bootstrap/js/popper.min.js"></script>
-            <script defer={true} src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-            <script defer={true} src="/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-            <script defer={true} src="/assets/vendors/jplayer/jquery.jplayer.min.js"></script>
-            <script defer={true} src="/assets/vendors/jplayer/jplayer.playlist.js"></script>
-            <script defer={true} src="/assets/vendors/owl/js/owl.carousel.min.js"></script>
-            <script defer={true} src="/assets/vendors/anime/anime.min.js"></script>
-            <script defer={true} src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
-            <script defer={true} src="/assets/vendors/masonry/masonry.pkgd.min.js"></script>
-            <script defer={true} src="/assets/vendors/history/jquery.history.js"></script>
-            <script defer={true} src="/assets/js/bootstrap-hover-menu.js"></script>
-            <script defer={true} src="/assets/js/dropdown-menu.js"></script>
-            <script defer={true} src="/assets/js/bootstrap-hover-menu.js"></script>
-            <script defer={true} src="/assets/js/player.js"></script>
-            <script defer={true} src="/assets/js/viewport.js"></script>
-            <script defer={true} src="/assets/js/effects.js"></script>
-            <script defer={true} src="/assets/js/dropdown-menu.js"></script>
-            <script defer={true} src="/assets/js/app.js"></script>
-            <script defer={true} src="/assets/js/videojs-ie8.min.js"></script>
-            <script defer={true} src="/assets/js/video.js"></script>
+            <script src="/assets/vendors/jquery/jquery.min.js"></script>
+            <script src="/assets/vendors/bootstrap/js/popper.min.js"></script>
+            <script src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+            <script src="/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+            <script src="/assets/vendors/jplayer/jquery.jplayer.min.js"></script>
+            <script src="/assets/vendors/jplayer/jplayer.playlist.js"></script>
+            <script src="/assets/vendors/owl/js/owl.carousel.min.js"></script>
+            <script src="/assets/vendors/anime/anime.min.js"></script>
+            <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+            <script src="/assets/vendors/masonry/masonry.pkgd.min.js"></script>
+            <script src="/assets/vendors/history/jquery.history.js"></script>
+            <script src="/assets/js/bootstrap-hover-menu.js"></script>
+            <script src="/assets/js/dropdown-menu.js"></script>
+            <script src="/assets/js/bootstrap-hover-menu.js"></script>
+            <script src="/assets/js/player.js"></script>
+            <script src="/assets/js/viewport.js"></script>
+            <script src="/assets/js/effects.js"></script>
+            <script src="/assets/js/dropdown-menu.js"></script>
+            <script src="/assets/js/app.js"></script>
+            <script src="/assets/js/videojs-ie8.min.js"></script>
+            <script src="/assets/js/video.js"></script>            
         </Head>
         <body>
           <Main />

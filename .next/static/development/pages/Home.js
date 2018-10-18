@@ -5731,25 +5731,23 @@ function (_Component) {
             className: "absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: ""
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
             className: "album-title text-light"
-          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             href: "/detail/".concat(prop.key)
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "artist-name text-light"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "ml-auto"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark play-btn-dark round-btn"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             href: "/detail/".concat(prop.key)
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))))))));
+          })))))));
         }) : informationMovie.map(function (prop, key) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             key: key,
@@ -5768,25 +5766,23 @@ function (_Component) {
             className: "absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: ""
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
             className: "album-title text-light"
-          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             href: "/detail/".concat(prop.key)
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+          }, prop.title || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
             className: "artist-name text-light"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/detail/".concat(prop.key)
           }, "T\u1EADp ".concat(prop.episodes || "")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "ml-auto"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             className: "pointer play-btn-dark play-btn-dark round-btn"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             href: "/detail/".concat(prop.key)
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "/detail/".concat(prop.key)
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "play-icon"
-          }))))))));
+          })))))));
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pt-e-30 pt-e-lg-40"
         }))));
@@ -8798,7 +8794,9 @@ function __get_Projection(title, episodes, coverImage, key, contentImages, categ
       "videos.episodes.numberEpisodes": 1,
       "videos.episodes.timeASet": 1,
       "videos.episodes.title": 1,
-      "videos.episodes.url": 1
+      "videos.episodes.url": 1,
+      "videos.episodes.linkVideo": 1,
+      "videos.title": 1
     };
   }
 
@@ -21540,7 +21538,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/Home.js ***!
   \*****************************/
@@ -21565,5 +21563,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=Home.js.map

@@ -245,11 +245,11 @@ class TopWeek extends Component {
                                         <div className="hover-state show">
                                             <div className="absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex">
                                                 <div className="">
-                                                    <a href={`/detail/${prop.key}`}><h5 className="album-title text-light">{prop.title || ""}</h5></a>
-                                                    <a href={`/detail/${prop.key}`}><h6 className="artist-name text-light">{`Tập ${prop.episodes || ""}`}</h6></a>
+                                                    <h5 className="album-title text-light"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h5>
+                                                    <h6 className="artist-name text-light"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></h6>
                                                 </div>
                                                 <div className="ml-auto">
-                                                    <span className="pointer play-btn-dark play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></a></span>
+                                                    <span className="pointer play-btn-dark play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,11 +263,11 @@ class TopWeek extends Component {
                                         <div className="hover-state show">
                                             <div className="absolute-bottom pl-e-15 pr-e-15 pb-e-md-15  pl-e-md-30 pr-e-30 pb-e-md-30 d-flex">
                                                 <div className="">
-                                                    <a href={`/detail/${prop.key}`}><h5 className="album-title text-light">{prop.title || ""}</h5></a>
-                                                    <a href={`/detail/${prop.key}`}><h6 className="artist-name text-light">{`Tập ${prop.episodes || ""}`}</h6></a>
+                                                    <h5 className="album-title text-light"><a href={`/detail/${prop.key}`}>{prop.title || ""}</a></h5>
+                                                    <h6 className="artist-name text-light"><a href={`/detail/${prop.key}`}>{`Tập ${prop.episodes || ""}`}</a></h6>
                                                 </div>
                                                 <div className="ml-auto">
-                                                    <span className="pointer play-btn-dark play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></a></span>
+                                                    <span className="pointer play-btn-dark play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>
                                                 </div>
                                             </div>
                                         </div>

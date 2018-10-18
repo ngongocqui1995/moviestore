@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { url } from '../../variables/general'
 import moment from 'moment'
+import Tab_Video from '../Tabs/Tab_Video';
 
 class MovieInformation extends Component {
     constructor(props) {
@@ -31,7 +32,6 @@ class MovieInformation extends Component {
 
   render() {
     let { data, categories, countries, fansub } = this.state
-    console.log(data)
     if(!data || data.length === 0){
         return <div className="text-center">Loading fail ...</div>
     }else{
@@ -67,32 +67,38 @@ class MovieInformation extends Component {
                                     </div>
                                     <div className="detail" style={{marginBottom: 25}}>
                                         <h4>Thông Tin</h4>
-                                        <p>{`Tên Phim: ${prop.title}`}</p>
-                                        <p>{prop.releaseYear !== "" ? `Năm phát hành ${prop.releaseYear}` : ""}</p>
-                                        <p>Thể Loại: 
+                                        <span><p>{`Tên Phim: ${prop.title}`}</p></span>
+                                        <span><p>{prop.releaseYear !== "" ? `Năm phát hành ${prop.releaseYear}` : ""}</p></span>
+                                        <span>
                                             {
                                                 categories.length > 0 ? categories.map((prop, key) => (
-                                                    <a style={{marginLeft: 10}} href="#" key={key}>{prop.title}</a>
+                                                    <p key={key}>Thể Loại: 
+                                                        <a style={{marginLeft: 10}} href="#">{prop.title}</a>
+                                                    </p>
                                                 ))
                                                 : null
                                             }
-                                        </p>
-                                        <p>Quốc Gia:
+                                        </span>
+                                        <span>
                                             {
                                                 countries.length > 0 ? countries.map((prop, key) => (
-                                                    <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
+                                                    <p key={key}>Quốc Gia:
+                                                        <a style={{marginLeft: 10}}>{prop.title}</a>
+                                                    </p>
                                                 ))
                                                 : null
                                             }
-                                        </p>
-                                        <p>Nhóm dịch:
+                                        </span>
+                                        <span>
                                             {
                                                 fansub.length > 0 ? fansub.map((prop, key) => (
-                                                    <a style={{marginLeft: 10}} key={key}>{prop.title}</a>
+                                                    <p key={key}>Nhóm dịch:
+                                                        <a style={{marginLeft: 10}}>{prop.title}</a>
+                                                    </p>
                                                 ))
                                                 : null
                                             }
-                                        </p>
+                                        </span>
                                     </div>
                                     <div className="content">
                                         <h4>Nội Dung</h4>
@@ -101,36 +107,9 @@ class MovieInformation extends Component {
                                     <div className="pt-e-20 pt-e-lg-40"></div>
                                 </div>
                                 <div className="col-md-9 flex-column-content-md pl-e-xl-40">
-                                    <div className="album-top-box text-center text-md-left">
-                                        <video id="my-video" className="video-js vjs-big-play-centered" autoPlay={true} controls preload="true" style={{width: "100%", height: 275}}
-                                        poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                                            <source src="https://scontent-nrt1-1.xx.fbcdn.net/v/t66.18014-6/10000000_246516985946901_3673472486675015888_n.mp4?_nc_cat=109&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent-nrt1-1.xx&oh=c562ef01207a4f01c409631e725a75a1&oe=5C452866" type='video/mp4'/>
-                                        </video>
-                                    </div>
 
-                                    <ul className="adonis-album-list pt-e-30">
-                                        <li>
-                                            <div className="item-number h6 inactive-color">#</div>
-                                            <div className="item-title h6 inactive-color">Phim</div>
-                                            <div className="item-duration h6 inactive-color">Thời Gian</div>
-                                        </li>
-                                    </ul>
-                                    <ul className="adonis-album-list pb-5" style={{overflow: "auto", height: 500}}>
-                                        <li></li>
-                                        {
-                                            prop.videos && prop.videos.length > 0 ? prop.videos[0].episodes.map((prop, key) => (
-                                                <li key={key} className="item hover-bg-item">
-                                                    <div className="item-number">
-                                                        <span className="hover-hide">{key+1}</span>
-                                                        <span className="hover-show adonis-icon icon-1x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-brand-play"></use></svg> </span>
-                                                    </div>
-                                                    <div className="item-title">{prop.title}{prop.numberEpisodes !== "" ? ` tập ${prop.numberEpisodes}` : ""}</div>
-                                                    <div className="item-duration"><span className="hover-hide hover-lg-show">{prop.timeASet}</span></div>
-                                                    <div className="hover-bg gradient-adonis"></div>
-                                                </li>
-                                            )) : null
-                                        }
-                                    </ul>
+                                    <Tab_Video/>
+
                                 </div>
                             </div>
                         </div>
