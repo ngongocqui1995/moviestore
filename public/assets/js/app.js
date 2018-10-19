@@ -151,21 +151,21 @@ jQuery(document).ready(function ($) {
    * @returns {boolean}
    * @constructor
    */
-  adonisObj.LoadAjaxURL = function (This) {
-    var ContentURL = This.attr('data-content'),
-      ajaxResponse;
-    if (!ContentURL) return;
-    ajaxResponse = $.ajax({
-      url: ContentURL,
-      context: document.body,
-      async: false
-    }).done(function (response) {
-      // do something
-    }).fail(function (jqXHR, textStatus) {
-      return false;
-    });
-    return ajaxResponse;
-  }
+  // adonisObj.LoadAjaxURL = function (This) {
+  //   var ContentURL = This.attr('data-content'),
+  //     ajaxResponse;
+  //   if (!ContentURL) return;
+  //   ajaxResponse = $.ajax({
+  //     url: ContentURL,
+  //     context: document.body,
+  //     async: false
+  //   }).done(function (response) {
+  //     // do something
+  //   }).fail(function (jqXHR, textStatus) {
+  //     return false;
+  //   });
+  //   return ajaxResponse;
+  // }
 
 
   /**
@@ -836,46 +836,46 @@ jQuery(document).ready(function ($) {
     }
   }
 
-  adonisObj.viewportAjax = function (_el, _selector) {
-    _el.find(_selector).each(function () {
-      var _el = $(this);
-      _el.css('min-height', '125px');
+  // adonisObj.viewportAjax = function (_el, _selector) {
+  //   _el.find(_selector).each(function () {
+  //     var _el = $(this);
+  //     _el.css('min-height', '125px');
 
-      _el.viewPort({
-        offset: '100%',
-        callback: function (data) {
+  //     _el.viewPort({
+  //       offset: '100%',
+  //       callback: function (data) {
 
-          _el.css('position', 'relative').append('<div class="preloader section-loader text-center"><div class="preloader-overlay"></div><div class="d-inline-block"> ' + adonisObj.preloaderPlayHtml + '</div></div>');
-          _el.find('.preloader:first').fadeIn('fast', function () {
-            _el.removeClass(_selector);
-            var ContentURL = _el.attr('data-content'),
-              ajaxResponse;
-            if (!ContentURL) return;
+  //         _el.css('position', 'relative').append('<div class="preloader section-loader text-center"><div class="preloader-overlay"></div><div class="d-inline-block"> ' + adonisObj.preloaderPlayHtml + '</div></div>');
+  //         _el.find('.preloader:first').fadeIn('fast', function () {
+  //           _el.removeClass(_selector);
+  //           var ContentURL = _el.attr('data-content'),
+  //             ajaxResponse;
+  //           if (!ContentURL) return;
 
-            $.ajax({
-              url: ContentURL,
-              context: document.body,
-              async: false
-            }).done(function (response) {
-              _el.append(response); // insert new content
-              _el.imagesLoaded(function () {
-                adonisObj.afterAjaxContent(_el);
-                setTimeout(function () {
-                  _el.find('.preloader').fadeOut('slow', function () {
-                    _el.find('.preloader').remove();
-                  });
-                }, 200);
+  //           $.ajax({
+  //             url: ContentURL,
+  //             context: document.body,
+  //             async: false
+  //           }).done(function (response) {
+  //             _el.append(response); // insert new content
+  //             _el.imagesLoaded(function () {
+  //               adonisObj.afterAjaxContent(_el);
+  //               setTimeout(function () {
+  //                 _el.find('.preloader').fadeOut('slow', function () {
+  //                   _el.find('.preloader').remove();
+  //                 });
+  //               }, 200);
 
-              });
-            }).fail(function (jqXHR, textStatus) {
-              return false;
-            });
-          });
+  //             });
+  //           }).fail(function (jqXHR, textStatus) {
+  //             return false;
+  //           });
+  //         });
 
-        }
-      });
-    });
-  }
+  //       }
+  //     });
+  //   });
+  // }
 
   /**
    * prevent normal page load and uses ajax instead
@@ -916,36 +916,36 @@ jQuery(document).ready(function ($) {
     });
 
     // url change event. triggered when url changes either by click on link or back button
-    window.onstatechange = function () {
-      var _state = History.getState();
-      var _parent = $('#' + _contentID).parent();
-      $('#' + _contentID).css('min-height', $('#' + _contentID).height() + 'px');
-      if (_parent.find('.section-loader').length < 1) {
-        _parent.append('<div class="section-loader preloader"><div class="preloader-overlay"></div></div>');
-      }
-      _parent.addClass('site-content-loading').find('.section-loader').append('<div class="loader-icon top-50-vh">' + adonisObj.preloaderPlayHtml + '</div>');
+    // window.onstatechange = function () {
+    //   var _state = History.getState();
+    //   var _parent = $('#' + _contentID).parent();
+    //   $('#' + _contentID).css('min-height', $('#' + _contentID).height() + 'px');
+    //   if (_parent.find('.section-loader').length < 1) {
+    //     _parent.append('<div class="section-loader preloader"><div class="preloader-overlay"></div></div>');
+    //   }
+    //   _parent.addClass('site-content-loading').find('.section-loader').append('<div class="loader-icon top-50-vh">' + adonisObj.preloaderPlayHtml + '</div>');
 
-      $('.section-loader:first').fadeIn('fast', function () {
-        ajaxLoading(_state.url);
-      });
-    }
+    //   $('.section-loader:first').fadeIn('fast', function () {
+    //     ajaxLoading(_state.url);
+    //   });
+    // }
 
-    function filterlinks(_url) {
-      if (_url == null) return false;
-      if (_url.substr(0, 1) == '#') return false;
-      if (_url.length >= 10 && _url.substr(0, 10).toLowerCase() == 'javascript') return false;
-      if (_url.length < 1) return false;
-      return true;
-    }
+    // function filterlinks(_url) {
+    //   if (_url == null) return false;
+    //   if (_url.substr(0, 1) == '#') return false;
+    //   if (_url.length >= 10 && _url.substr(0, 10).toLowerCase() == 'javascript') return false;
+    //   if (_url.length < 1) return false;
+    //   return true;
+    // }
     /**
      * function to give external url a class
      * @param _el
      */
-    function urlExternal(_el) {
-      _el.find('a').filter(function () {
-        return this.hostname && this.hostname !== location.hostname;
-      }).addClass("external");
-    }
+    // function urlExternal(_el) {
+    //   _el.find('a').filter(function () {
+    //     return this.hostname && this.hostname !== location.hostname;
+    //   }).addClass("external");
+    // }
 
     /**
      * Main ajax loading
@@ -1063,143 +1063,143 @@ jQuery(document).ready(function ($) {
   /* Navigtion moving underline
    * example usage <ul class="moving-border"><li><a class="m-item">
    * */
-  adonisObj.movingBorder = function () {
-    adonisObj.movingBorder.active = function (_el) {
-      if (typeof _el === 'object' && _el.length > 0) {
-        _el.each(function () {
-          var _width = $(this).hasClass('m-item-block') ? $(this).outerWidth() : $(this).width(),
-            _left = $(this).hasClass('m-item-block') ? $(this).parent('li').position().left : parseInt($(this).css('padding-left')) + $(this).parent('li').position().left;
+  // adonisObj.movingBorder = function () {
+  //   adonisObj.movingBorder.active = function (_el) {
+  //     if (typeof _el === 'object' && _el.length > 0) {
+  //       _el.each(function () {
+  //         var _width = $(this).hasClass('m-item-block') ? $(this).outerWidth() : $(this).width(),
+  //           _left = $(this).hasClass('m-item-block') ? $(this).parent('li').position().left : parseInt($(this).css('padding-left')) + $(this).parent('li').position().left;
 
-          $(this).parents('.moving-border').next('.border-hr').css({
-            'width': _width + 'px',
-            'margin-left': _left + 'px',
-          });
-        });
-      }
-    }
+  //         $(this).parents('.moving-border').next('.border-hr').css({
+  //           'width': _width + 'px',
+  //           'margin-left': _left + 'px',
+  //         });
+  //       });
+  //     }
+  //   }
 
-    adonisObj.movingBorder.active($('.moving-border .active .m-item'));
+  //   adonisObj.movingBorder.active($('.moving-border .active .m-item'));
 
-    $(document).on({
-      mouseenter: function (event) {
-        adonisObj.movingBorder.active($(this));
-      },
-      mouseleave: function () {
-        var activeItem = typeof $(this).parents('.moving-border').children('.active').children('a') === 'undefined' ? null : $(this).parents('.moving-border').children('.active').children('a');
-        if (activeItem) {
-          adonisObj.movingBorder.active($(this).parent().siblings('.active').children('a'));
-        }
-      },
-    }, '.moving-border .m-item');
+  //   $(document).on({
+  //     mouseenter: function (event) {
+  //       adonisObj.movingBorder.active($(this));
+  //     },
+  //     mouseleave: function () {
+  //       var activeItem = typeof $(this).parents('.moving-border').children('.active').children('a') === 'undefined' ? null : $(this).parents('.moving-border').children('.active').children('a');
+  //       if (activeItem) {
+  //         adonisObj.movingBorder.active($(this).parent().siblings('.active').children('a'));
+  //       }
+  //     },
+  //   }, '.moving-border .m-item');
 
-  }
+  // }
 
   /* Tabs: Load tabs content via ajax
   * ajax tab
    * */
 
-  adonisObj.ajaxTab = function (_selector) {
-    $(document).on('click', _selector, function (e) {
-      e.preventDefault();
+  // adonisObj.ajaxTab = function (_selector) {
+  //   $(document).on('click', _selector, function (e) {
+  //     e.preventDefault();
 
-      var _this = $(this),
-        _target = $(_this.attr('data-target')),
-        oldActiveMenu = _this.parent().siblings('.active').find('a'),
-        oldTarget = oldActiveMenu.attr('data-target');
+  //     var _this = $(this),
+  //       _target = $(_this.attr('data-target')),
+  //       oldActiveMenu = _this.parent().siblings('.active').find('a'),
+  //       oldTarget = oldActiveMenu.attr('data-target');
 
-      if (_this.parents('.off-canvas').length > 0) {
-        var _offcanvas = _this.parents('.off-canvas'),
-          _offcanvasClose = typeof _offcanvas.attr('data-close-offcanvas-below') !== 'undefined' ? _offcanvas.attr('data-close-offcanvas-below') : '';
-        if ($(window).outerWidth() < parseInt(_offcanvasClose)) {
-          adonisObj.toggleOffCanvas(_offcanvas);
-        }
-      }
-      if (!_this.hasClass('loaded') && _this.attr('data-content')) {
+  //     if (_this.parents('.off-canvas').length > 0) {
+  //       var _offcanvas = _this.parents('.off-canvas'),
+  //         _offcanvasClose = typeof _offcanvas.attr('data-close-offcanvas-below') !== 'undefined' ? _offcanvas.attr('data-close-offcanvas-below') : '';
+  //       if ($(window).outerWidth() < parseInt(_offcanvasClose)) {
+  //         adonisObj.toggleOffCanvas(_offcanvas);
+  //       }
+  //     }
+  //     if (!_this.hasClass('loaded') && _this.attr('data-content')) {
 
-        _target.css('position', 'relative');
+  //       _target.css('position', 'relative');
 
-        if ($('.tab-preloader').length < 1) {
-          $('#site-content-inner').append('<div class="preloader tab-preloader"><div class="preloader-overlay"></div></div>');
-        }
-        $('.tab-preloader').append('<div class="loader-icon"><div class="tab-loader">' + adonisObj.preloaderPlayHtml + '</div></div>');
+  //       if ($('.tab-preloader').length < 1) {
+  //         $('#site-content-inner').append('<div class="preloader tab-preloader"><div class="preloader-overlay"></div></div>');
+  //       }
+  //       $('.tab-preloader').append('<div class="loader-icon"><div class="tab-loader">' + adonisObj.preloaderPlayHtml + '</div></div>');
 
-        adonisObj.activateTabNav(_this, _target);
+  //       adonisObj.activateTabNav(_this, _target);
 
-        $('.tab-preloader:first').fadeIn('fast', function () {
-          _target.css('position', '');
-          var ContentURL = _this.attr('data-content');
-          if (!ContentURL) return;
+  //       $('.tab-preloader:first').fadeIn('fast', function () {
+  //         _target.css('position', '');
+  //         var ContentURL = _this.attr('data-content');
+  //         if (!ContentURL) return;
 
-          $.ajax({
-            url: ContentURL,
-            context: document.body,
-          }).done(function (response) {
+  //         $.ajax({
+  //           url: ContentURL,
+  //           context: document.body,
+  //         }).done(function (response) {
 
-            _target.append(response); // insert new content
+  //           _target.append(response); // insert new content
 
-            _this.addClass('loaded');
+  //           _this.addClass('loaded');
 
-            _target.imagesLoaded(function () {
-              adonisObj.afterAjaxContent(_target);
+  //           _target.imagesLoaded(function () {
+  //             adonisObj.afterAjaxContent(_target);
 
-              $(oldTarget).css('opacity', '0');
+  //             $(oldTarget).css('opacity', '0');
 
-              setTimeout(function () {
-                _target.siblings().css('position', '');
-                /* show/hide target content */
+  //             setTimeout(function () {
+  //               _target.siblings().css('position', '');
+  //               /* show/hide target content */
 
-                var oldHeight = $(oldTarget).height();
+  //               var oldHeight = $(oldTarget).height();
 
-                $(oldTarget).removeClass('active').css('opacity', '');
-                $(_target).addClass('active').css('min-height', oldHeight + 'px');
+  //               $(oldTarget).removeClass('active').css('opacity', '');
+  //               $(_target).addClass('active').css('min-height', oldHeight + 'px');
 
-                adonisObj.removeSectionPreloader($('.tab-preloader'));
+  //               adonisObj.removeSectionPreloader($('.tab-preloader'));
 
-                _target.css('min-height', '');
-              }, 500);
-            });
+  //               _target.css('min-height', '');
+  //             }, 500);
+  //           });
 
-          }).fail(function (jqXHR, textStatus) {
-            return false;
-          });
+  //         }).fail(function (jqXHR, textStatus) {
+  //           return false;
+  //         });
 
-        });
+  //       });
 
 
 
-      } else if (_this.attr('data-target')) {
-        adonisObj.activateTabNav(_this, _target);
-        _target.css('min-height', '');
-      }
-    });
+  //     } else if (_this.attr('data-target')) {
+  //       adonisObj.activateTabNav(_this, _target);
+  //       _target.css('min-height', '');
+  //     }
+  //   });
 
-    // activate tab
-    adonisObj.activateTabNav = function (This, Target) {
+  //   // activate tab
+  //   adonisObj.activateTabNav = function (This, Target) {
 
-      /* Menu: change active class to menu*/
-      if (!This.hasClass('active')) {
-        var Parent = This.parents('.js-parent').length > 0 ? This.parents('.js-parent') : This.parent().parent(),
-          oldActiveMenu = Parent.find('li.active .active'),
-          oldTarget = oldActiveMenu.attr('data-target');
-        Parent.find('.active').removeClass('active');
-        This.addClass('active');
-        This.parent('li').addClass('active');
+  //     /* Menu: change active class to menu*/
+  //     if (!This.hasClass('active')) {
+  //       var Parent = This.parents('.js-parent').length > 0 ? This.parents('.js-parent') : This.parent().parent(),
+  //         oldActiveMenu = Parent.find('li.active .active'),
+  //         oldTarget = oldActiveMenu.attr('data-target');
+  //       Parent.find('.active').removeClass('active');
+  //       This.addClass('active');
+  //       This.parent('li').addClass('active');
 
-        /* Toggle class to a target element on activate or deactivate. eg. make header absolute or relative for a menu */
-        if (typeof This.attr('data-toggle-target') !== 'undefined' && typeof This.attr('data-toogle-class') !== 'undefined') {
-          $(This.attr('data-toggle-target')).toggleClass(This.attr('data-toogle-class'));
-        } else if (typeof oldActiveMenu.attr('data-toggle-target') !== 'undefined' && typeof oldActiveMenu.attr('data-toogle-class') !== 'undefined') {
-          $(oldActiveMenu.attr('data-toggle-target')).toggleClass(oldActiveMenu.attr('data-toogle-class'));
-        }
-      }
+  //       /* Toggle class to a target element on activate or deactivate. eg. make header absolute or relative for a menu */
+  //       if (typeof This.attr('data-toggle-target') !== 'undefined' && typeof This.attr('data-toogle-class') !== 'undefined') {
+  //         $(This.attr('data-toggle-target')).toggleClass(This.attr('data-toogle-class'));
+  //       } else if (typeof oldActiveMenu.attr('data-toggle-target') !== 'undefined' && typeof oldActiveMenu.attr('data-toogle-class') !== 'undefined') {
+  //         $(oldActiveMenu.attr('data-toggle-target')).toggleClass(oldActiveMenu.attr('data-toogle-class'));
+  //       }
+  //     }
 
-      if (!$(Target).hasClass('active') && $(This).hasClass('loaded')) {
-        var oldHeight = $(oldTarget).height();
-        $(Target).addClass('active').css('min-height', oldHeight + 'px');
-        $(oldTarget).removeClass('active');
-      }
-    }
-  }
+  //     if (!$(Target).hasClass('active') && $(This).hasClass('loaded')) {
+  //       var oldHeight = $(oldTarget).height();
+  //       $(Target).addClass('active').css('min-height', oldHeight + 'px');
+  //       $(oldTarget).removeClass('active');
+  //     }
+  //   }
+  // }
 
 
   /**
@@ -1240,7 +1240,7 @@ jQuery(document).ready(function ($) {
     }
 
     // load ajax content on ajax
-    adonisObj.viewportAjax(_el, '.viewport-ajax-content');
+    // adonisObj.viewportAjax(_el, '.viewport-ajax-content');
 
     // viewport animation
     adonisObj.viewportAnimate(_el.find('.viewport-animate'));
@@ -1406,7 +1406,7 @@ jQuery(document).ready(function ($) {
   });
 
   // tabs
-  adonisObj.ajaxTab('.adonis-ajax-load');
+  // adonisObj.ajaxTab('.adonis-ajax-load');
 
   $('[data-toggle="tab"]').click(function () {
     $(this).parent('li').addClass('active').siblings('.active').removeClass('active');
@@ -1416,13 +1416,13 @@ jQuery(document).ready(function ($) {
   adonisObj.viewportAnimate($('.viewport-animate'));
 
   // viewport ajax content
-  adonisObj.viewportAjax($('body'), '.viewport-ajax-content');
+  // adonisObj.viewportAjax($('body'), '.viewport-ajax-content');
 
   // load ajax content on ajax
-  adonisObj.ajaxify();
+  // adonisObj.ajaxify();
 
   // navigation mooving border
-  adonisObj.movingBorder();
+  // adonisObj.movingBorder();
 
   // masonry
   adonisObj.masonry('.adonis-masonry');

@@ -366,6 +366,11 @@ export const storeMovieInformation = ( data ) => ( {
     data
 });
 
+export const storeRelatedMovie = ( data ) => ( {
+    type: "STORE_RELATED_MOVIE",
+    data
+});
+
 /////////////////////////// REDUCER ////////////////////////////////////////
 const carouselMainHomeReducer = ( state = [ ], action ) => {
     switch ( action.type ) {
@@ -939,6 +944,15 @@ const movieInformationReducer = ( state = [ ], action ) => {
     }
 }
 
+const relatedMovieReducer = ( state = [ ], action ) => {
+    switch ( action.type ) {
+        case "STORE_RELATED_MOVIE":
+            return action.data;
+        default: return state;
+    }
+}
+
+
 const reducer = combineReducers( {                                                   
     carousel_Main_Home: carouselMainHomeReducer,
     commonMovies_1: commonMovies_1_Reducer,
@@ -1010,6 +1024,7 @@ const reducer = combineReducers( {
     topViews_Anime: topViews_Anime_Reducer,
     carousel_Anime: carouselAnimeReducer,
     movieInformation: movieInformationReducer,
+    relatedMovie: relatedMovieReducer
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////

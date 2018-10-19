@@ -8,7 +8,6 @@ page, status, author, linkTrailer, createdAt, updatedAt, __v){
 
     if(Number(videos) === 1){
         projection = {
-            "videos.episodes.img": 1,
             "videos.episodes.key": 1,
             "videos.episodes.numberEpisodes": 1,
             "videos.episodes.timeASet": 1,

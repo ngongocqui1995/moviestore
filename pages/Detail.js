@@ -4,7 +4,7 @@ import Header from '../components/Header/Header';
 import fetchData from '../api/api'
 import MainDetail from '../views/MainDetail'
 import {
-  storeMovieInformation
+  storeMovieInformation, storeRelatedMovie
 } from '../store/store'
 import createStore from "../store/store"
 import { Provider } from 'react-redux'
@@ -33,13 +33,14 @@ export default class Detail extends Component {
 Detail.getInitialProps = async function (context) {
     var store = createStore()
     let metaKey = context.query.metaKey
-    let keyEpisodes = context.query.keyEpisodes
 
     const movieInformation = fetchData.__get_Movie_Information(metaKey)
+    const relatedMovie = fetchData.__get_Data_RelatedMovie()
 
-    await Promise.all([movieInformation])
+    await Promise.all([movieInformation, relatedMovie])
     .then((result) => {
         store.dispatch(storeMovieInformation(result[0]))
+        store.dispatch(storeRelatedMovie(result[1]))
     })
     .catch((err) => {
         console.log(err)

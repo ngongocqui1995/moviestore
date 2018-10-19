@@ -3,6 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import classnames from 'classnames'
 import { connect } from 'react-redux'
 import { url } from '../../variables/general'
+import videojs from 'video.js'
 
 let permission = "?authen=exp=1540052097~acl=/R4BehICXpk0/*~hmac=5c8eb39f518e85d5bb061d4f6b5b6886"
 
@@ -15,24 +16,37 @@ class Tab_Video extends Component {
             data: this.props.data,
             videos: [],
             linkVideo: "",
-            imagePoster: ""
+            imagePoster: "",
+            message: ""
         };
         this.toggle = this.toggle.bind(this)
         this.onClickWatchMovie = this.onClickWatchMovie.bind(this)
     }
 
-    onClickWatchMovie(prop){
-        if(prop.linkVideo !== undefined){            
-            this.playVideo(prop.linkVideo + permission)
-            this.setState({linkVideo: prop.linkVideo + permission})
+    async onClickWatchMovie(prop, indexVideo){
+        if(prop.linkVideo !== undefined){    
+            let videos = this.state.videos
+            let numberEpisodes = Number(prop.numberEpisodes)        
+            await this.playVideo(prop.linkVideo + permission)
+            this.setState({
+                linkVideo: prop.linkVideo + permission,
+                message: this.getMessageIndexVideo(videos, indexVideo, numberEpisodes)
+            })
         }
     }
 
-    playVideo(linkVideo){
+    getMessageIndexVideo(videos, indexVideo, numberEpisodes){
+        let message = ""
+        let video = videos[indexVideo]
+        message = `Bạn đang xem tập ${numberEpisodes} của ${video.title}`
+        return message
+    }
+
+    async playVideo(linkVideo){
         let video = videojs('my-video')
         video.src([{src: linkVideo, type: 'video/mp4'}])
-        video.load()
-        video.play()
+        await video.load()
+        await video.play()
     }
 
     toggle(tab) {
@@ -52,25 +66,26 @@ class Tab_Video extends Component {
         return linkVideo
     }
 
-    componentDidMount(){
+    async componentDidMount(){
         let data = this.state.data
         if(data.length > 0){
             let videos = data[0].videos.reverse()
             let linkVideo = this.getLinkVideo(videos)
             let imagePoster = data[0].coverImage
 
-            this.playVideo(linkVideo)
+            await this.playVideo(linkVideo)
 
-            this.setState({ 
-                videos: videos, 
+            this.setState({
+                videos: videos,
                 imagePoster: imagePoster, 
-                linkVideo: linkVideo 
+                linkVideo: linkVideo,
+                message: this.getMessageIndexVideo(videos, 0, 1)
             })
         }
     }
 
     render() {
-        let { videos, data, activeTab, linkVideo, imagePoster } = this.state
+        let { videos, data, activeTab, linkVideo, imagePoster, message } = this.state
         if(!data || data.length === 0){
             return <div className="text-center">Loading fail ...</div>
         }else{
@@ -84,7 +99,7 @@ class Tab_Video extends Component {
                     </div>
                     <Nav tabs style={{cursor: "pointer"}}>
                         {
-                            !videos || videos.length === 0 ? "" : videos.map((prop, key) => (
+                            !videos || videos.length === 0 ? null : videos.map((prop, key) => (
                                 <NavItem key={key}>
                                     <NavLink
                                         className={classnames({ active: activeTab === key })}
@@ -98,6 +113,7 @@ class Tab_Video extends Component {
                         }
                     </Nav>
                     <TabContent activeTab={activeTab}>
+                        <div style={{marginTop: 20}}>{message}</div>
                         <ul className="adonis-album-list pt-e-30">
                             <li>
                                 <div className="item-number h6 inactive-color">#</div>
@@ -111,17 +127,18 @@ class Tab_Video extends Component {
                                         <ul className="adonis-album-list pb-5" style={{overflow: "auto", height: 500}}>
                                             <li></li>
                                             {
-                                                prop.episodes && prop.episodes.length > 0 ? prop.episodes.map((prop, key) => (
-                                                    <li key={key} className="item hover-bg-item" onClick={() => { this.onClickWatchMovie(prop); }}>
+                                                !prop.episodes && prop.episodes.length ==0 ? null : prop.episodes.map((prop2, key2) => (
+                                                    <li key={key2} className="item hover-bg-item" onClick={() => { this.onClickWatchMovie(prop2, key); }} style={{backgroundColor: "#363636"}}>
                                                         <div className="item-number">
-                                                            <span className="hover-hide">{key+1}</span>
+                                                            <span className="hover-hide">{key2+1}</span>
+                                                            
                                                             <span className="hover-show adonis-icon icon-1x"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlinkHref="#icon-brand-play"></use></svg> </span>
                                                         </div>
-                                                        <div className="item-title">{prop.title}{prop.numberEpisodes !== "" ? ` tập ${prop.numberEpisodes}` : ""}</div>
-                                                        <div className="item-duration"><span className="hover-hide hover-lg-show">{prop.timeASet}</span></div>
+                                                        <div className="item-title">{prop2.title}{prop2.numberEpisodes !== "" ? ` tập ${prop2.numberEpisodes}` : ""}</div>
+                                                        <div className="item-duration"><span className="hover-hide hover-lg-show">{prop2.timeASet}</span></div>
                                                         <div className="hover-bg gradient-adonis"></div>
                                                     </li>
-                                                )) : null
+                                                )) 
                                             }
                                         </ul>
                                 </TabPane>

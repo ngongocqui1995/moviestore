@@ -783,4 +783,15 @@ export default class {
     const data = res.data
     return data
   }
+
+  static async __get_Data_RelatedMovie() {
+    const res = await axios.post(`${url}v1/collection/limit`, {
+        "limit": 10,
+        "indexPage": 1,
+        "projection": __get_Projection(1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    })
+    const data = res.data
+    return data
+  }
 }
