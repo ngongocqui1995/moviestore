@@ -32,12 +32,6 @@ class Trends extends Component {
                                             <div  className="music-img-box">
                                                 <div className="img-box">
                                                     <img style={{height:300}}className="retina box-rounded-lg" src={ url + prop.imageMain || ""} alt="" />
-                                                    <div className="absolute-info">
-                                                        <div className="absolute-center">
-                                                            <h4 className="fs-10 m-0 text-light text-center"><span className="font-weight-bold">Chichi</span></h4>
-                                                            <h4 className="fs-10 m-0 text-light text-center"><em><span className="font-weight-light">Daily Radio</span></em></h4>
-                                                        </div>
-                                                    </div>
                                                     <div className="hover-state">
                                                         <div className="absolute-bottom-left pl-e-30 pb-e-30">
                                                             <span className="pointer play-btn-dark round-btn"><a href={`/detail/${prop.key}`}><i className="play-icon"></i></a></span>

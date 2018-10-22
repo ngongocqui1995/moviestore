@@ -13,7 +13,6 @@ page, status, author, linkTrailer, createdAt, updatedAt, __v){
             "videos.episodes.timeASet": 1,
             "videos.episodes.title": 1,
             "videos.episodes.url": 1,
-            "videos.episodes.linkVideo": 1,
             "videos.title": 1
         }
     }

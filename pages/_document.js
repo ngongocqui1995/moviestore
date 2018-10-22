@@ -19,7 +19,6 @@ export default class CustomDocument extends Document {
             <link href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet"/>
             <link href="/assets/css/adonis.css" rel="stylesheet"/>
             <link href="/assets/css/responsive.css" rel="stylesheet"/>
-            <link href="/assets/css/video-js.css" rel="stylesheet"/>
 
             <script src="/assets/vendors/jquery/jquery.min.js"></script>
             <script src="/assets/vendors/bootstrap/js/popper.min.js"></script>
@@ -40,12 +39,12 @@ export default class CustomDocument extends Document {
             <script src="/assets/js/effects.js"></script>
             <script src="/assets/js/dropdown-menu.js"></script>
             <script src="/assets/js/app.js"></script>
-            <script src="/assets/js/videojs-ie8.min.js"></script>
-            <script src="/assets/js/video.js"></script>            
+            <script src="/assets/vendors/jwplayer/jwplayer.js"></script>
+            <script src="/assets/vendors/jwplayer/jwplayer-key.js"></script>
         </Head>
         <body>
           <Main />
-          <NextScript/>
+          <NextScript />
         </body>
       </html>
     )
